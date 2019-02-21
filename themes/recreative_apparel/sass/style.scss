@@ -44,6 +44,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+//abstracts handles function, mixins, and variables
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
 //base handles animations, base, typography, and utilies.
 @import 'base/content';
@@ -52,10 +55,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'base/media';
 @import 'base/modules';
 @import 'base/normalize';
-
-//abstracts handles function, mixins, and variables
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
 
 //components handles individual parts/ component
 @import 'components/cart';
