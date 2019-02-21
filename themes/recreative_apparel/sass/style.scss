@@ -45,21 +45,31 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 
-// Imported but not included in the stylesheet.
+//base handles animations, base, typography, and utilies.
+@import 'base/content';
+@import 'base/elements';
+@import 'base/fonts';
+@import 'base/media';
+@import 'base/modules';
+@import 'base/normalize';
+@import 'base/reset';
 
-@import "variables";
-@import "mixins";
+//abstracts handles function, mixins, and variables
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-// CSS included in style.css.
+//components handles individual parts/ component
+@import 'components/cart';
+@import 'components/forms';
+@import 'components/widgets';
 
-@import "normalize";
-@import "fonts";
-@import "typography";
-@import "elements";
-@import "forms";
-@import "navigation";
-@import "modules";
-@import "widgets";
-@import "content";
-@import "media";
-@import "page-templates";
+//layout has separate folders for Header, footer, grid, navigation
+@import 'layout/navigation/navigation';
+
+//pages handles specific styling only for a single page
+@import 'pages/404';
+@import 'pages/about';
+@import 'pages/blog';
+@import 'pages/impact';
+@import 'pages/recycle';
+@import 'pages/shop';
