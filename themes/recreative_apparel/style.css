@@ -146,6 +146,13 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../fonts/Avenir-Book.eot");
+  src: url("../../fonts/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("../../fonts/Avenir-Book.woff2") format("woff2"), url("../../fonts/Avenir-Book.woff") format("woff"), url("../../fonts/Avenir-Book.ttf") format("truetype"), url("../../fonts/Avenir-Book.svg#Avenir-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

@@ -20,3 +20,18 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+function my_custom_login_logo() {
+	echo '<style type="text/css">                                                                   
+		h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/RA-logo@2x.png) !important; 
+		height: 120px !important; background-size: 250px !important; height: 250px !important; width: 250px !important; margin-left: -40px;}                            
+	</style>';	
+}
+add_action('login_head', 'my_custom_login_logo');
+
+
+function the_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'the_url' );
