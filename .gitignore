@@ -26,6 +26,7 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/recreative_functionality/
+!plugins/recreative-blocks/
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
