@@ -1,22 +1,22 @@
 {
-  "name": "redstarter",
+  "name": "recreativeapparel",
   "version": "1.1.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "Custom theme for Recreative Apparel made by Alex, Ying, Risa, and Nosa - Web Dev Red Academy Co-Op students 2018",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^4.0.2",
     "gulp-prettyerror": "^1.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-terser": "^1.1.5",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "gulp-babel": "^7.0.1"
+    "gulp-terser": "^1.1.5"
   },
   "prettier": {
     "singleQuote": true
@@ -28,10 +28,10 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/redstarter.git"
   },
-  "author": "redacademy",
+  "author": "webdev2018",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/redacademy/recreative-ws2-2018/issues"
   },
   "homepage": "https://github.com/redacademy/redstarter#readme"
 }
