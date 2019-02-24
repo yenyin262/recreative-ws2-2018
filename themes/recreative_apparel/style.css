@@ -611,3 +611,23 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.single-post-image img {
+  width: 100vw; }
+
+.blog-entry-wrapper {
+  padding: 0 10px; }
+
+.blog-entry-header {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+  .blog-entry-header .blog-entry-title {
+    color: #0545B2;
+    font-size: 35pt;
+    line-height: 48pt; }

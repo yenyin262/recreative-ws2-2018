@@ -1,0 +1,32 @@
+.single-post-image{
+  img {
+    width: 100vw;
+  }
+}
+
+.blog-entry-wrapper{
+  padding: 0 10px;
+}
+
+.blog-entry-header{
+
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .wp-post-image{
+
+    // height: 673.92px;	
+    // width: 1010px;	
+    // transform: scaleX(-1);
+
+  }
+  .blog-entry-title {	
+  
+    color: #0545B2;
+    font-size: 35pt;
+    line-height: 48pt;
+    // background-color: #F2F2F2;
+    
+  }
+}
