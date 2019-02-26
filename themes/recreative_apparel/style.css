@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
-  font-family: "Avenir Book", Helvetica, Arial;
+  font-family: "Avenir Book", Helvetica, Helvetica, Arial;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -222,6 +222,9 @@ td,
 th {
   padding: 0; }
 
+/******************************************************/
+/* MEDIA QUERIES  */
+/********************************************************/
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -289,7 +292,7 @@ q {
     content: ''; }
 
 hr {
-  background-color: #ccc;
+  background-color: #979797;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -450,6 +453,15 @@ object {
   content: "";
   display: table; }
 
+.ra-white-logo {
+  position: absolute;
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 18px; }
+  @media (min-width: 1080px) {
+    .ra-white-logo {
+      fill: blue; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -550,7 +562,9 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  bottom: 0; }
   .main-navigation ul {
     display: inline;
     list-style: none;
@@ -627,22 +641,63 @@ a {
     margin-right: 20px;
     padding: 20px; }
 
-.container {
+.page-template-page-impact .impact-container {
   width: 80%;
   margin: 0 auto; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 100px);
-  grid-column-gap: 1em; }
+  .page-template-page-impact .impact-container img {
+    height: 400px;
+    width: 100%; }
+  .page-template-page-impact .impact-container .grid-impact {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-column-gap: 1em;
+    width: 100%; }
+  .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-number {
+    font-size: 7rem;
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1;
+    z-index: 10;
+    margin-left: 20px; }
+  .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-heading {
+    font-size: 2rem;
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 1;
+    z-index: 10;
+    margin: 25px 80px; }
+  .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-img {
+    grid-column: 5 / span 8;
+    grid-row: 2 / span 4; }
+  .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-text {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 2;
+    text-align: right; }
+  .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-number {
+    font-size: 7rem;
+    grid-column: 7 / span 6;
+    grid-row: 2 / span 1;
+    z-index: 100;
+    padding: 20px; }
+  .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-heading {
+    font-size: 3rem;
+    grid-column: 7 / span 6;
+    grid-row: 3 / span 1;
+    z-index: 100;
+    padding: 20px; }
+  .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-img {
+    grid-column: 1 / span 7;
+    grid-row: 2 / span 4;
+    z-index: 10; }
+  .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-text {
+    grid-column: 8 / span 4;
+    grid-row: 4 / span 1; }
 
 .menu-toggle {
   display: none; }
 
 .frontpage-top-content {
   height: 386px; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .frontpage-top-content {
       height: 440px; } }
   @media (min-width: 1080px) {
@@ -667,7 +722,7 @@ a {
   color: #0f4ab4;
   font-weight: bolder;
   margin-top: 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .ra-statement {
       width: 359px;
       margin-bottom: 0;
@@ -684,7 +739,7 @@ a {
   margin-left: 20px;
   width: 270px;
   font-size: 16px; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .home-statement {
       width: 442px;
       margin-left: 100px; } }
@@ -696,7 +751,29 @@ a {
 .image-class {
   height: 429px;
   background-size: cover;
-  background-position: right; }
+  background-repeat: no-repeat;
+  background-position: right -72px; }
+  @media (min-width: 1080px) {
+    .image-class {
+      height: 740px;
+      width: 60%;
+      width: 58%;
+      background-position: top right; } }
+
+.frontpage-content {
+  margin: 0; }
+  @media (min-width: 1080px) {
+    .frontpage-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin: 0 auto; } }
 
 .single-post-image img {
   width: 100%; }

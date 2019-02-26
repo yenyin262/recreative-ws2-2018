@@ -31,7 +31,8 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
-
+	position: fixed;
+	bottom: 0;
 	ul {
 		display: inline;
 		list-style: none;
