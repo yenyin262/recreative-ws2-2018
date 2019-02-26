@@ -453,6 +453,15 @@ object {
   content: "";
   display: table; }
 
+.ra-white-logo {
+  position: absolute;
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 18px; }
+  @media (min-width: 1080px) {
+    .ra-white-logo .blue-logo {
+      fill: blue; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -553,7 +562,9 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  bottom: 0; }
   .main-navigation ul {
     display: inline;
     list-style: none;
