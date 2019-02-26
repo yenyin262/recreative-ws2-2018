@@ -11,13 +11,17 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-      <div class="blog-carousel">
+      <div class="blog-wrapper">
 
-        <?php while ( have_posts() ) : the_post(); ?>
+        <div class="blog-carousel">
 
-          <?php get_template_part( 'template-parts/content', 'home-blog' ); ?>
+          <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php endwhile; // End of the loop. ?>
+            <?php get_template_part( 'template-parts/content', 'home-blog' ); ?>
+
+          <?php endwhile; // End of the loop. ?>
+
+        </div>
 
       </div>
 
@@ -25,3 +29,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary  -->
+
+<?php
+get_footer();
+?>

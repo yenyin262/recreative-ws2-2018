@@ -14,7 +14,7 @@
 			<?php // the_post_thumbnail( 'large' ); ?>
 			<?php //if ( has_post_thumbnail() ) : ?>
             <?php $thumb = get_the_post_thumbnail_url(); ?>
-             <div class="image-class" style="background-image: url('<?php echo $thumb;?>')"></div>
+            <div class="image-class" style="background-image: url('<?php echo $thumb;?>')"></div>
 		<?php endif; ?>
 
 		<!-- <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?> -->
