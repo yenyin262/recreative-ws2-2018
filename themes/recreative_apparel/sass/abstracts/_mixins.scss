@@ -11,18 +11,25 @@
 	margin-right: auto;
 }
 
+/******************************************************/
 
-$desktop-width: 1080px;
-$tablet-width: 600px; 
+/* MEDIA QUERIES  */
 
-@mixin tablet { 
-    @media(min-width: $tablet-width ) {
-        @content; 
-    }
-}
+/********************************************************/
 
-@mixin desktop { 
-    @media (min-width: $desktop-width) { 
-        @content; 
-}
-} 
+@mixin desktop {
+@media (min-width: $breakpoint-desktop) {
+    @content;
+}};
+
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }};
+
+//DO NOT USE FOR NOW
+@mixin mobile {
+    @media (min-width: $breakpoint-mobile) {
+            @content;
+}};
