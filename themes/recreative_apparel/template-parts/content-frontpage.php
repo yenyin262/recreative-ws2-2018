@@ -8,7 +8,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<!-- <div class="content-wrapper">  -->
+	<div class="frontpage-top-content">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php // the_post_thumbnail( 'large' ); ?>
 			<?php //if ( has_post_thumbnail() ) : ?>
@@ -24,10 +25,12 @@
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
+		<div class="frontpage-content">
 		<?php// the_excerpt(); ?>
         <?php the_content(); ?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
+</div><!-- .entry-header -->
+
+
+<!-- </div> -->
 </article><!-- #post-## -->

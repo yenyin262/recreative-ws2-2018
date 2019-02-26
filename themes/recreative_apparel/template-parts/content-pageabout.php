@@ -9,8 +9,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+	<?php $thumb = get_the_post_thumbnail_url(); ?>
+             <div class="image-class" style="background-image: url('<?php echo $thumb;?>')"></div>
 		<?php // the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<div class="photo"><a href="<?php echo esc_url(get_permalink())?>"><?php the_post_thumbnail( 'large' ); ?></a></div>
+		<!-- <div class="photo"><a href="<?php //echo esc_url(get_permalink())?>"><?php //the_post_thumbnail( 'large' ); ?></a></div> -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

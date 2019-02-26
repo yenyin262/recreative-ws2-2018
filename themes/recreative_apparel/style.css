@@ -640,6 +640,22 @@ a {
 .menu-toggle {
   display: none; }
 
+.frontpage-top-content {
+  height: 386px; }
+  @media (min-width: 600px) {
+    .frontpage-top-content {
+      height: 440px; } }
+  @media (min-width: 1080px) {
+    .frontpage-top-content {
+      height: 740px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
+
 .ra-statement {
   width: 260px;
   line-height: 1.7;
@@ -649,7 +665,17 @@ a {
   font-weight: 300rem;
   font-weight: bold;
   color: #0f4ab4;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: 0; }
+  @media (min-width: 600px) {
+    .ra-statement {
+      width: 359px;
+      margin-bottom: 0;
+      margin-left: 100px; } }
+  @media (min-width: 1080px) {
+    .ra-statement {
+      margin-left: 0;
+      width: 272px; } }
 
 .home-statement {
   font-family: 'Avenir Book';
@@ -658,6 +684,14 @@ a {
   margin-left: 20px;
   width: 270px;
   font-size: 16px; }
+  @media (min-width: 600px) {
+    .home-statement {
+      width: 442px;
+      margin-left: 100px; } }
+  @media (min-width: 1080px) {
+    .home-statement {
+      margin-left: 0;
+      width: 253px; } }
 
 .image-class {
   height: 429px;

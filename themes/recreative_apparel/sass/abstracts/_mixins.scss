@@ -10,3 +10,26 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/******************************************************/
+
+/* MEDIA QUERIES  */
+
+/********************************************************/
+
+@mixin desktop {
+@media (min-width: $breakpoint-desktop) {
+    @content;
+}};
+
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }};
+
+//DO NOT USE FOR NOW
+@mixin mobile {
+    @media (min-width: $breakpoint-mobile) {
+            @content;
+}};
