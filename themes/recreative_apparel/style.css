@@ -459,7 +459,7 @@ object {
   margin-left: 20px;
   margin-top: 18px; }
   @media (min-width: 1080px) {
-    .ra-white-logo {
+    .ra-white-logo .blue-logo {
       fill: blue; } }
 
 /*--------------------------------------------------------------
@@ -684,11 +684,8 @@ a {
   .page-template-page-impact .impact-container img {
     height: 400px;
     width: 100%; }
-<<<<<<< HEAD
-=======
   .page-template-page-impact .impact-container .blue-text {
     color: #0545b2; }
->>>>>>> 596a4cfb832e978525d4e35a2a053d430033806d
   .page-template-page-impact .impact-container .grid-impact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
