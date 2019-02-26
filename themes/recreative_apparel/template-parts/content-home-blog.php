@@ -31,7 +31,7 @@
     <div class="blog-entry-meta">
       <p>By <?php echo get_the_author_meta('display_name') ?></p>
       <a href="<?php echo the_permalink(); ?>">
-        <p>see more</p>
+        <p>read more</p>
       </a>
     </div>
 
