@@ -626,20 +626,57 @@ a {
   text-align: right;
   width: 50%; }
 
-.blog-carousel {
+.blog-wrapper {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 627px; }
+  .blog-wrapper .blog-carousel {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 100%; }
+    .blog-wrapper .blog-carousel .post1 {
+      display: inline-block;
+      height: 100%;
+      width: 416px;
+      margin-right: 20px;
+      background-color: white;
+      white-space: normal;
+      vertical-align: top;
+      padding: 0; }
+      .blog-wrapper .blog-carousel .post1 h3 {
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 34px;
+        margin: 0; }
+      .blog-wrapper .blog-carousel .post1 img {
+        height: 364px;
+        width: 416px; }
+      .blog-wrapper .blog-carousel .post1 article {
+        margin: 0;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .blog-wrapper .blog-carousel .post1 article .entry-content {
+          margin-top: 0;
+          height: 166px; }
+
+.blog-entry-meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  overflow-x: scroll;
-  width: 100%; }
-  .blog-carousel .post1 {
-    width: 100%;
-    margin-right: 20px;
-    padding: 20px; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .page-template-page-impact .impact-container {
   width: 80%;
@@ -647,6 +684,11 @@ a {
   .page-template-page-impact .impact-container img {
     height: 400px;
     width: 100%; }
+<<<<<<< HEAD
+=======
+  .page-template-page-impact .impact-container .blue-text {
+    color: #0545b2; }
+>>>>>>> 596a4cfb832e978525d4e35a2a053d430033806d
   .page-template-page-impact .impact-container .grid-impact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
