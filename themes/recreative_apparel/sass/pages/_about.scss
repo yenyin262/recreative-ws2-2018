@@ -1,0 +1,19 @@
+.content-banner { 
+    
+        height: 360px;
+    
+}
+
+.about-banner { 
+    height: 429px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -165px;
+}
+
+.about-logo { 
+    @include desktop
+    {
+    fill: white;
+}
+}

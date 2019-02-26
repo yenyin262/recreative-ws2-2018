@@ -1,12 +1,14 @@
-.ra-white-logo {
-position: absolute;
-width: 70px;
-margin-left: 20px;
-margin-top: 18px;
+.ra-logo, .ra-blue-logo {
+  position: absolute;
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 18px; 
+}
 
-@include desktop { 
-.blue-logo {
-fill: blue;
+.ra-logo{
+@include desktop {
+      fill: #0f4ab4;
+    
 }
 }
-}
+

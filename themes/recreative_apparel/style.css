@@ -453,14 +453,15 @@ object {
   content: "";
   display: table; }
 
-.ra-white-logo {
+.ra-logo, .ra-blue-logo {
   position: absolute;
   width: 70px;
   margin-left: 20px;
   margin-top: 18px; }
-  @media (min-width: 1080px) {
-    .ra-white-logo .blue-logo {
-      fill: blue; } }
+
+@media (min-width: 1080px) {
+  .ra-logo {
+    fill: #0f4ab4; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -625,6 +626,19 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.content-banner {
+  height: 360px; }
+
+.about-banner {
+  height: 429px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -165px; }
+
+@media (min-width: 1080px) {
+  .about-logo {
+    fill: white; } }
 
 .blog-wrapper {
   width: 90%;

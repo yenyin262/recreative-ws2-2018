@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<!-- <div class="content-wrapper">  -->
+
 	<div class="frontpage-top-content">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php // the_post_thumbnail( 'large' ); ?>
@@ -26,11 +26,9 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 		<div class="frontpage-content">
-		<?php// the_excerpt(); ?>
-        <?php the_content(); ?>
-    </div><!-- .entry-content -->
-</div><!-- .entry-header -->
+     	   <?php the_content(); ?>	
+  		</div><!-- .entry-content -->
+	</div><!-- .entry-header -->
 
 
-<!-- </div> -->
 </article><!-- #post-## -->
