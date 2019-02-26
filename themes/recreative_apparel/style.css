@@ -612,9 +612,34 @@ a {
   text-align: right;
   width: 50%; }
 
-<<<<<<< HEAD
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-column-gap: 1em; }
+
 .menu-toggle {
   display: none; }
+
+.frontpage-top-content {
+  height: 386px; }
+  @media (min-width: 600px) {
+    .frontpage-top-content {
+      height: 440px; } }
+  @media (min-width: 1080px) {
+    .frontpage-top-content {
+      height: 740px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
 
 .ra-statement {
   width: 260px;
@@ -625,7 +650,17 @@ a {
   font-weight: 300rem;
   font-weight: bold;
   color: #0f4ab4;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: 0; }
+  @media (min-width: 600px) {
+    .ra-statement {
+      width: 359px;
+      margin-bottom: 0;
+      margin-left: 100px; } }
+  @media (min-width: 1080px) {
+    .ra-statement {
+      margin-left: 0;
+      width: 272px; } }
 
 .home-statement {
   font-family: 'Avenir Book';
@@ -634,21 +669,41 @@ a {
   margin-left: 20px;
   width: 270px;
   font-size: 16px; }
+  @media (min-width: 600px) {
+    .home-statement {
+      width: 442px;
+      margin-left: 100px; } }
+  @media (min-width: 1080px) {
+    .home-statement {
+      margin-left: 0;
+      width: 253px; } }
 
 .image-class {
   height: 429px;
   background-size: cover;
-  background-position: right; }
-=======
-.container {
-  width: 80%;
-  margin: 0 auto; }
+  background-repeat: no-repeat;
+  background-position: right -72px; }
+  @media (min-width: 1080px) {
+    .image-class {
+      height: 740px;
+      width: 60%;
+      width: 58%;
+      background-position: top right; } }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 100px);
-  grid-column-gap: 1em; }
+.frontpage-content {
+  margin: 0; }
+  @media (min-width: 1080px) {
+    .frontpage-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin: 0 auto; } }
 
 .single-post-image img {
   width: 100vw; }
@@ -669,4 +724,3 @@ a {
     color: #0545B2;
     font-size: 35pt;
     line-height: 48pt; }
->>>>>>> 7a6157a315270b443940568de44e86d65acad81b

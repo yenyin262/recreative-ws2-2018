@@ -1,6 +1,22 @@
 .menu-toggle { 
     display: none;
 }
+
+.frontpage-top-content { 
+    height: 386px;
+
+    @include tablet { 
+        height: 440px;
+    }
+
+    @include desktop {
+        height: 740px;
+        display: flex;
+        flex-direction: row-reverse;
+    
+        
+    }
+}
 .ra-statement {
 width: 260px;
 line-height: 1.7;
@@ -11,6 +27,17 @@ line-height: 1.7;
     font-weight: bold;
     color: #0f4ab4;
     font-weight: bolder;
+    margin-top: 0;
+
+    @include tablet { 
+        width: 359px;
+        margin-bottom: 0;
+        margin-left: 100px;
+    }
+    @include desktop {
+        margin-left: 0;
+        width: 272px;
+    }
 }
 
 .home-statement { 
@@ -19,11 +46,39 @@ line-height: 1.7;
     line-height: 1.7;
     margin-left: 20px;
     width: 270px;
-    font-size: 16px
+    font-size: 16px;
+
+    @include tablet { 
+        width: 442px;
+        margin-left: 100px;
+    }
+
+    @include desktop {
+        margin-left: 0;
+        width: 253px;
+    }
 }
 
 .image-class { 
     height: 429px;
     background-size: cover;
-    background-position: right; 
+    background-repeat: no-repeat;
+    background-position: right -72px;
+
+@include desktop {
+    height: 740px;
+    width: 60%;
+    width: 58%;
+    background-position: top right;
+ }
+}
+.frontpage-content {
+    margin: 0;
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 0 auto;
+    }
 }
