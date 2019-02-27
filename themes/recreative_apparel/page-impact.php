@@ -12,9 +12,9 @@ get_header();
       $impacts = CFS()->get( 'impact_content' );
       foreach ( $impacts as $impact ) {?>
           <section class="grid-impact">
-          <div class="blue-text grid-impact-number"><?php echo $impact['impact_number'];?></div>
-          <div class="blue-text grid-impact-heading"><?php echo $impact['impact_heading'];?></div>
           <div class="grid-impact-img"><img src='<?php echo $impact['impact_image'];?>' alt='Impact image'></div>
+          <div class="blue-text heading grid-impact-number"><?php echo $impact['impact_number'];?></div>
+          <div class="blue-text heading grid-impact-heading"><?php echo $impact['impact_heading'];?></div>
           <div class="grid-impact-text"><?php echo $impact['impact_blurb'];?></div>
           </section>
       <?php }?>
