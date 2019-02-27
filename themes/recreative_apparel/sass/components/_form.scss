@@ -1,0 +1,17 @@
+.search-form {
+
+  fieldset{
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+
+    .search-field{
+
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid black;
+
+    }
+  }
+
+}
