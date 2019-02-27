@@ -626,6 +626,11 @@ a {
   text-align: right;
   width: 50%; }
 
+.blog-hero-image {
+  height: 100vh;
+  width: 100vw;
+  background: red; }
+
 .blog-wrapper {
   width: 90%;
   overflow: hidden;
@@ -677,6 +682,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .blog-entry-meta .blog-entry-meta-author {
+    font-size: 14px;
+    text-transform: capitalize; }
 
 .page-template-page-impact .impact-container {
   width: 80%;
