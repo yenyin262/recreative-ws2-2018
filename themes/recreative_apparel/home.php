@@ -6,10 +6,6 @@
  */
 
 get_header(); ?>
-<!-- 
-  <div class="blog-hero-image">
-      <?php the_post_thumbnail( 'large' ); ?>
-  </div> -->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
