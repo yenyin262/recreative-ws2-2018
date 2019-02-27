@@ -6,13 +6,15 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php // the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<div class="photo"><a href="<?php echo esc_url(get_permalink())?>"><?php the_post_thumbnail( 'large' ); ?></a></div>
-	</header><!-- .entry-header -->
-
+	<div class="content-banner">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php // the_post_thumbnail( 'large' ); ?>
+				<?php //if ( has_post_thumbnail() ) : ?>
+				<?php $about = get_the_post_thumbnail_url(); ?>
+				<div class="about-banner" style="background-image: url('<?php echo $about;?>')"></div>
+			<?php endif; ?>
+	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
@@ -22,4 +24,5 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+
 </article><!-- #post-## -->
