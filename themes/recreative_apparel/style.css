@@ -457,7 +457,8 @@ object {
   position: absolute;
   width: 70px;
   margin-left: 20px;
-  margin-top: 18px; }
+  margin-top: 18px;
+  display: none; }
 
 @media (min-width: 1080px) {
   .ra-logo {
@@ -552,50 +553,50 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #0545b2; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
 /* Menus */
+nav {
+  margin-top: 50px; }
+
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
   width: 100%;
-  position: fixed;
-  bottom: 0; }
-  .main-navigation ul {
-    display: inline;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 0px 50px 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-top: #979797 solid 1px; }
+  .main-navigation ul a {
+    width: 200px; }
+  .main-navigation ul a:hover,
+  .main-navigation ul a.focus {
+    color: #0545b2; }
+  .main-navigation li:hover > ul,
+  .main-navigation li.focus > ul {
+    left: auto; }
+  .main-navigation li:hover > a {
+    color: #636363;
+    font-weight: 500;
+    border-top: 5px solid #0545b2; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #979797;
+    line-height: 2.5rem; }
 
 /* Small menu. */
 .menu-toggle,
