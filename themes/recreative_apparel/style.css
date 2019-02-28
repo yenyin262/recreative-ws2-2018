@@ -956,17 +956,6 @@ nav {
     padding: 50px 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-<<<<<<< HEAD
-            justify-content: center; }
-    @media (min-width: 768px) {
-      .page-template-page-impact .impact-container .recycle-form-element {
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; } }
-    .page-template-page-impact .impact-container .recycle-form-element .description {
-      text-align: center; }
-    .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
-      text-align: center; }
-=======
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1009,7 +998,6 @@ nav {
         @media (min-width: 768px) {
           .page-template-page-impact .impact-container .recycle-form-element .recycle-form .recycle-form-btn {
             right: -48.5%; } }
->>>>>>> 97ea441126d7cfe5b0ec5ec1365d26cce13f9e1a
       .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
         border: none;
         border-bottom: 2px solid #979797; }
@@ -1019,17 +1007,6 @@ nav {
           color: #979797; }
         .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::placeholder {
           color: #979797; }
-<<<<<<< HEAD
-      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-submit {
-        position: relative;
-        top: -34px;
-        right: -156px;
-        background: transparent;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        font-size: 1rem;
-        color: #0545b2; }
-=======
         @media (min-width: 768px) {
           .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
             width: 100%; } }
@@ -1052,7 +1029,6 @@ nav {
             align-items: center; }
     .page-template-page-impact .impact-container .recycle-form-msg .blue-text {
       text-align: center; }
->>>>>>> 97ea441126d7cfe5b0ec5ec1365d26cce13f9e1a
 
 * {
   margin: 0px; }
