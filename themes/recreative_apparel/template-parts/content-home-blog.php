@@ -10,9 +10,9 @@
 
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php the_title( '<h3>', '</h3>' ); ?>
+    <div class="upper-content">
+      <?php the_title( '<h3>', '</h3>' ); ?>
 
-    <div>
       <?php if ( has_post_thumbnail() ) : ?>
           <?php the_post_thumbnail( 'large' ); ?>
         <?php endif; ?>

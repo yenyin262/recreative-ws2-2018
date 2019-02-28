@@ -24,15 +24,19 @@
     
       display: inline-block;
       height: 100%;
-      width: 416px;
-      margin-right: 20px;
       background-color: white;
       white-space: normal;
       vertical-align: top;
       padding: 0;
+      @include tablet {
+
+        width: 416px;
+
+      }
 
       h3{
 
+        height: 3em;
         font-size: 25px;	
         font-weight: 900;	
         line-height: 34px;
@@ -41,8 +45,8 @@
       }
       img {
 
-        height: 364px;
-        width: 416px;
+        height: auto;
+        width: 100%;
 
       }
 
@@ -54,11 +58,18 @@
         flex-flow: column nowrap;
         justify-content: space-between;
 
-        .entry-content {
+        .upper-content {
 
-          margin-top: 0;
-          height: 166px;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: column nowrap;
 
+          .entry-content {
+
+            margin-top: 0;
+            height: 166px;
+  
+          }
         }
       }
     }
@@ -69,11 +80,35 @@
 
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+
+  p {
+
+    display: flex; 
+    align-items: center;
+
+  }
 
   .blog-entry-meta-author{
 
-    font-size: 14px;
     text-transform: capitalize;
 
   }
+}
+
+.wrapper-progress-blog {
+
+  background-color: $color__border-gray;
+  width: 90vw;
+  margin: 0 auto;
+
+  .inside-progress {
+
+    height: 8px;
+    background-color: $color__text-main;
+    width: 0;
+
+
+  }
+
 }
