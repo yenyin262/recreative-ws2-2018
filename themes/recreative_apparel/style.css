@@ -666,6 +666,100 @@ nav {
   text-align: right;
   width: 50%; }
 
+.site-footer {
+  border-top: 2px solid #979797;
+  margin: 0 auto; }
+  .site-footer .subscribe-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    width: 95%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .site-footer .subscribe-section i {
+      color: #636363;
+      margin-right: 10px; }
+    .site-footer .subscribe-section .subscribe-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .site-footer .subscribe-section .subscribe-form .notification-check {
+        display: none; }
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text {
+          padding: 0 1rem;
+          color: #979797;
+          padding-left: 20px;
+          position: relative;
+          margin-right: 20px; }
+          .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #999;
+            border-radius: 4px; }
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .subscribe-text {
+          color: #979797; }
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .subscribe-text::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: 5px;
+          width: 7px;
+          height: 14px;
+          -webkit-transform: rotate(40deg);
+                  transform: rotate(40deg);
+          border-bottom: 3px solid #636363;
+          border-right: 3px solid #636363; }
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox {
+          padding: 0 1rem;
+          display: none;
+          color: #979797; }
+      .site-footer .subscribe-section .subscribe-form input[type="email"] {
+        width: 8rem;
+        font-size: 1.3rem;
+        -webkit-transition: all .6s ease;
+        transition: all .6s ease;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid #0545b2; }
+        .site-footer .subscribe-section .subscribe-form input[type="email"]::-webkit-input-placeholder {
+          color: #0545b2; }
+        .site-footer .subscribe-section .subscribe-form input[type="email"]::-ms-input-placeholder {
+          color: #0545b2; }
+        .site-footer .subscribe-section .subscribe-form input[type="email"]::placeholder {
+          color: #0545b2; }
+        .site-footer .subscribe-section .subscribe-form input[type="email"]:focus {
+          width: 13em;
+          outline: 0; }
+          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::-webkit-input-placeholder {
+            color: #979797; }
+          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::-ms-input-placeholder {
+            color: #979797; }
+          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::placeholder {
+            color: #979797; }
+      .site-footer .subscribe-section .subscribe-form .subscribe-btn {
+        background: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: none;
+        color: #0545b2;
+        padding: 10px 8px;
+        font-size: 1rem; }
+
 .content-banner {
   height: 465px; }
   @media (min-width: 1080px) {
@@ -781,6 +875,9 @@ nav {
     height: 8px;
     background-color: #636363;
     width: 0; }
+
+.page-template-page-impact .content-area {
+  position: relative; }
 
 .page-template-page-impact .impact-container {
   width: 100vw;
@@ -983,7 +1080,8 @@ nav {
           .page-template-page-impact .impact-container .recycle-form-element .description p {
             width: 80%; } }
     .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
-      text-align: center; }
+      text-align: center;
+      margin-top: 45px; }
       .page-template-page-impact .impact-container .recycle-form-element .recycle-form .heading {
         text-align: center;
         margin: auto; }
