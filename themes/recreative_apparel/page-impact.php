@@ -1,3 +1,13 @@
+
+<?php if (has_post_thumbnail( $post->ID ) ): ?>
+  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+  <div id="custom-bg" class="header-banner" style="background-image: url('<?php echo $image[0]; ?>'); height: 500px;">
+  </div>
+<?php endif; ?>
+
+<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+    <div class="impact-container">
 <?php
 /*
 Template Name: impact
@@ -5,9 +15,6 @@ Template Name: impact
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-    <div class="impact-container">
     <?php
       $impacts = CFS()->get( 'impact_content' );
       foreach ( $impacts as $impact ) {?>
