@@ -100,7 +100,9 @@ text - contenedor
 .text-recycle{
 
     position: fixed;
-    left: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 40%;
     width: 90vw;
     line-height: 1.5rem;
@@ -126,7 +128,7 @@ text - contenedor
 .story-recycle{
     display: flex;
     flex-direction: column;
-    width: 100;
+    min-width: 90vw;
     margin: 0 5vw;
 
     h2{
