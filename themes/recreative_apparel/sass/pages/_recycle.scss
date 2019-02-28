@@ -7,6 +7,11 @@ body{
 }
 
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 
 /*========================
 wheel - contenedor 
@@ -35,7 +40,13 @@ wheel - contenedor
     }
 
     @include tablet{
-        top: 10vh;
+        top: 30vh;
+    }
+
+    @include desktop{
+        top: 20vh;
+        width: 30%;
+        padding-top: 30%;
     }
 }
 
@@ -89,7 +100,9 @@ text - contenedor
 .text-recycle{
 
     position: fixed;
-    left: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 40%;
     width: 90vw;
     line-height: 1.5rem;
@@ -115,7 +128,7 @@ text - contenedor
 .story-recycle{
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    min-width: 90vw;
     margin: 0 5vw;
 
     h2{
