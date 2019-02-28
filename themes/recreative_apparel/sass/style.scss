@@ -66,6 +66,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 //layout has separate folders for Header, footer, grid, navigation
 @import 'layout/navigation';
+@import 'layout/footer';
 
 //pages handles specific styling only for a single page
 @import 'pages/404';

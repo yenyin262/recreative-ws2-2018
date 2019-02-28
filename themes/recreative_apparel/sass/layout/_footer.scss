@@ -1,0 +1,87 @@
+.site-footer {
+    border-top: 2px solid $color__border-gray;
+    margin: 0 auto;
+    .subscribe-section {
+        display: flex;
+        height: 80px;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            color: $color__text-main;
+            margin-right: 10px;
+        }
+        .subscribe-form {
+            display: flex;
+            align-items: center;
+            .notification-check {
+                display: none;
+                .subscribe-text {
+                    padding: 0 1rem;
+                    color: $color__border-gray;
+                    padding-left: 20px;
+                    position: relative;
+                    margin-right: 20px;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #999;
+                        border-radius: 4px;
+                    }
+                }
+                .subscribe-checkbox:checked+.subscribe-text {
+                    color: $color__border-gray;
+                }
+                .subscribe-checkbox:checked+.subscribe-text::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0px;
+                    left: 5px;
+                    width: 7px;
+                    height: 14px;
+                    transform: rotate(40deg);
+                    border-bottom: 3px solid $color__text-main;
+                    border-right: 3px solid $color__text-main;
+                }
+                .subscribe-checkbox {
+                    padding: 0 1rem;
+                    display: none;
+                    color: $color__border-gray;
+                }
+            }
+            input[type="email"] {
+                width: 8rem;
+                font-size: 1.3rem;
+                transition: all .6s ease;
+                border: none;
+                border-radius: 0;
+                border-bottom: 2px solid $color__brand;
+                &::placeholder {
+                    color: $color__brand;
+                }
+                &:focus {
+                    width: 13em;
+                    outline: 0;
+                    &::placeholder {
+                        color: $color__border-gray;
+                    }
+                }
+            }
+            .subscribe-btn {
+                background: none;
+                box-shadow: none;
+                border: none;
+                color: $color__brand;
+                padding: 10px 8px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
