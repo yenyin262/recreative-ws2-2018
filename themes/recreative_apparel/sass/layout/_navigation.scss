@@ -55,7 +55,6 @@ nav{
 
 	width: 80%;
 	margin: 0 auto;
-	border-top: $color__border-gray  solid 1px;
 
 	ul {
 
@@ -84,17 +83,20 @@ nav{
 			}
 
 	}
-
-	li:hover > ul,
-	li.focus > ul {
-									left: auto;
-								}
-
-	li:hover > a {
+	li{
+		border-top: transparent solid 5px;
+		&:hover,
+		&:active{
 			color : $color__text-main;
 			font-weight: 500;
 			border-top: 5px solid $color__brand;
-	}							
+	}	
+	}
+
+	// li:hover > ul,
+	// li.focus > ul {
+	// 								left: auto;
+	// 							}						
 
 	a {
 

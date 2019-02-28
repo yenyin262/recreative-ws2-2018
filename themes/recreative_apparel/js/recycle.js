@@ -2,6 +2,8 @@
 $(function () {
 
 
+ if (window.location.search === '?page_id=18'){
+
 
 
     let modelCtrl = (function () {
@@ -106,8 +108,7 @@ $(function () {
             $('.imageHolder').on({
                 'touchmove': function (e) {
                     let maxWidth, currentX;
-                    console.log(initialTouch.clientX, initialTouch.touches)
-                    initialValue = initialTouch.touches[0].clientX;
+                   initialValue = initialTouch.touches[0].clientX;
 
 
                     maxWidth = $('.lateralMovement')[0].clientWidth;
@@ -139,5 +140,5 @@ $(function () {
     });
 
 
-
+}
 }) 
