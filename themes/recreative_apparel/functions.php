@@ -85,7 +85,9 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-	wp_enqueue_script('my-custom-script', get_template_directory_uri() .'/js/recycle.js', array('jquery'), null, true);
+	wp_enqueue_script('my-custom-script', get_template_directory_uri() .'/build/js/recycle.min.js', array('jquery'), null, true);
+	wp_enqueue_script('impact-jquery', get_template_directory_uri() .'/build/js/impact.min.js', array('jquery'), null, true);
+
 	wp_enqueue_Style('font_awesome','//use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
@@ -109,4 +111,9 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
+<<<<<<< HEAD
 require get_template_directory() . '/inc/extras.php';
+=======
+require get_template_directory() . '/inc/extras.php';
+
+>>>>>>> 6d4d6293c6d53579e8f3783fec66aa6922750c4f
