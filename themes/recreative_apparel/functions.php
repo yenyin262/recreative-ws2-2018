@@ -111,9 +111,4 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
-<<<<<<< HEAD
 require get_template_directory() . '/inc/extras.php';
-=======
-require get_template_directory() . '/inc/extras.php';
-
->>>>>>> 6d4d6293c6d53579e8f3783fec66aa6922750c4f
