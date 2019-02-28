@@ -11,8 +11,8 @@
 
     @include desktop {
         height: 740px;
-        display: flex;
-        flex-direction: row-reverse;
+        // display: flex;
+        // flex-direction: row-reverse;
     
         
     }
@@ -35,7 +35,7 @@ line-height: 1.7;
         margin-left: 100px;
     }
     @include desktop {
-        margin-left: 0;
+        margin-top: 100px;
         width: 272px;
     }
 }
@@ -54,7 +54,7 @@ line-height: 1.7;
     }
 
     @include desktop {
-        margin-left: 0;
+        
         width: 253px;
     }
 }
@@ -67,8 +67,8 @@ line-height: 1.7;
 
 @include desktop {
     height: 740px;
-    width: 60%;
-    width: 58%;
+    // width: 60%;
+    // width: 58%;
     background-position: top right;
  }
 }
@@ -76,9 +76,12 @@ line-height: 1.7;
     margin: 0;
 
     @include desktop {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
+        position: absolute;
+        top: 0;
         margin: 0 auto;
+        background-repeat: no-repeat;
+        background-color: white;
+        height: 90vh;
+        width: 48%;
     }
 }

@@ -454,15 +454,27 @@ object {
   display: table; }
 
 .ra-logo, .ra-blue-logo {
+  background-image: url("../../images/RA-logo.svg");
   position: absolute;
   width: 70px;
+  height: 70px;
   margin-left: 20px;
   margin-top: 18px;
   display: none; }
 
 @media (min-width: 1080px) {
+  .ra-front-page-logo {
+    background-image: url("../../images/RA-blue-logo.svg");
+    width: 102px;
+    height: 102px;
+    margin-left: 20px;
+    margin-top: 50px; } }
+
+@media (min-width: 1080px) {
   .ra-logo {
-    fill: #0f4ab4; } }
+    background-image: none;
+    width: 102px;
+    height: 102px; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -544,6 +556,15 @@ textarea {
 .widget_search .search-submit {
   display: none; }
 
+.search-form fieldset {
+  border: none;
+  width: 300px;
+  margin: 0 auto; }
+  .search-form fieldset .search-field {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -578,20 +599,18 @@ nav {
   padding-right: 0;
   padding-left: 0;
   width: 80%;
-  margin: 0 auto;
-  border-top: #979797 solid 1px; }
+  margin: 0 auto; }
   .main-navigation ul a {
     width: 200px; }
   .main-navigation ul a:hover,
   .main-navigation ul a.focus {
     color: #0545b2; }
-  .main-navigation li:hover > ul,
-  .main-navigation li.focus > ul {
-    left: auto; }
-  .main-navigation li:hover > a {
-    color: #636363;
-    font-weight: 500;
-    border-top: 5px solid #0545b2; }
+  .main-navigation li {
+    border-top: transparent solid 5px; }
+    .main-navigation li:hover, .main-navigation li:active {
+      color: #636363;
+      font-weight: 500;
+      border-top: 5px solid #0545b2; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -629,17 +648,31 @@ nav {
   width: 50%; }
 
 .content-banner {
-  height: 360px; }
+  height: 465px; }
+  @media (min-width: 1080px) {
+    .content-banner {
+      height: 545px; } }
 
 .about-banner {
+  background-image: url("../../images/RA-logo.svg");
   height: 429px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -165px; }
+  @media (min-width: 768px) {
+    .about-banner {
+      background-position: center; } }
+  @media (min-width: 1080px) {
+    .about-banner {
+      height: 529px; } }
 
-@media (min-width: 1080px) {
-  .about-logo {
-    fill: white; } }
+.about-logo {
+  background-image: url("../../images/RA-logo.svg");
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 18px; }
 
 .blog-hero-image {
   height: 100vh;
@@ -713,6 +746,9 @@ nav {
     width: 100%; }
   .page-template-page-impact .impact-container .blue-text {
     color: #0545b2; }
+  .page-template-page-impact .impact-container .heading {
+    font-size: 1.7rem;
+    font-weight: bold; }
   .page-template-page-impact .impact-container .grid-impact {
     position: relative;
     width: 100%; }
@@ -1009,14 +1045,7 @@ text - contenedor
       height: 440px; } }
   @media (min-width: 1080px) {
     .frontpage-top-content {
-      height: 740px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; } }
+      height: 740px; } }
 
 .ra-statement {
   width: 260px;
@@ -1036,7 +1065,7 @@ text - contenedor
       margin-left: 100px; } }
   @media (min-width: 1080px) {
     .ra-statement {
-      margin-left: 0;
+      margin-top: 100px;
       width: 272px; } }
 
 .home-statement {
@@ -1052,7 +1081,6 @@ text - contenedor
       margin-left: 100px; } }
   @media (min-width: 1080px) {
     .home-statement {
-      margin-left: 0;
       width: 253px; } }
 
 .image-class {
@@ -1063,24 +1091,19 @@ text - contenedor
   @media (min-width: 1080px) {
     .image-class {
       height: 740px;
-      width: 60%;
-      width: 58%;
       background-position: top right; } }
 
 .frontpage-content {
   margin: 0; }
   @media (min-width: 1080px) {
     .frontpage-content {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-item-align: center;
-          align-self: center;
-      margin: 0 auto; } }
+      position: absolute;
+      top: 0;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-color: white;
+      height: 90vh;
+      width: 48%; } }
 
 .single-post-image img {
   width: 100%; }

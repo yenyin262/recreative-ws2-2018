@@ -11,7 +11,11 @@
             width: 100%;
         }
         .blue-text {
-            color: $color__brand ;
+            color: $color__brand;
+        }
+        .heading {
+            font-size: 1.7rem;
+            font-weight: bold;
         }
         .grid-impact {
             position: relative;
@@ -30,6 +34,8 @@
         }
         section:nth-child(odd) {
             .grid-impact-number {
+                font-size: 9rem;
+                font-weight: 1000;
                 height: 150px;
                 z-index: 10;
                 text-align: right;
@@ -102,13 +108,15 @@
         }
         section:nth-child(even) {
             .grid-impact-number {
+                font-size: 9rem;
+                font-weight: 1000;
                 height: 150px;
                 z-index: 10;
                 text-align: left;
                 @include tablet {
                     grid-column: 5 /span 2;
                     grid-row: 2 /span 1;
-                    font-size: 7rem;                
+                    font-size: 7rem;
                 }
                 @include desktop {
                     grid-column: 7/span 5;
@@ -160,12 +168,47 @@
                     padding: 20px 0;
                     grid-row: 4 / span 4;
                     grid-column: 6 / span 4;
-                    margin-left: 0px;                
+                    margin-left: 0px;
                 }
                 @include desktop {
                     grid-column: 8/span 4;
                     grid-row: 4/span 1;
                     margin-left: 0px;
+                }
+            }
+        }
+        .recycle-form-element {
+            width: 87%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid $color__border-gray;
+            margin: 50px auto;
+            padding: 50px 0;
+            justify-content: center;
+            @include tablet {
+                flex-wrap: nowrap;
+            }
+            .description {
+                text-align: center;
+            }
+            .recycle-form {
+                text-align: center;
+                .wpcf7-form-control {
+                    border: none;
+                    border-bottom: 2px solid $color__border-gray;
+                    &::placeholder {
+                        color: #979797;
+                    }
+                }
+                .wpcf7-submit {
+                    position: relative;
+                    top: -34px;
+                    right: -156px;
+                    background: transparent;
+                    box-shadow: none;
+                    font-size: 1rem;
+                    color: $color__brand;
                 }
             }
         }
