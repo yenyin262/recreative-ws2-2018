@@ -20,7 +20,7 @@ wheel - contenedor
 
 .wheelPa{
     position: fixed;
-    top:10vh;
+    top:5vh;
     left: 0;
     right: 0;
     margin: auto;
@@ -48,6 +48,9 @@ wheel - contenedor
         width: 30%;
         padding-top: 30%;
     }
+
+
+   
 }
 
 .wheel{
@@ -65,14 +68,14 @@ wheel - contenedor
     left: 5%;
     top: 5%;
     overflow: hidden;
+    background: #e2e1de;
     
 }
 .imageBackground{
     position: absolute;
-    top: 0px;
-    left: 120px;//any change here its neccesary to change it on JS 47
-    height: 100%;
-    transform: scale(1);
+    top: 30%;
+    left: 150%;//any change here its neccesary to change it on JS 50
+    transform: scale(4.5);
     
 }
 
@@ -103,13 +106,14 @@ text - contenedor
     left: 0;
     right: 0;
     margin: auto;
-    top: 40%;
+    top: 35vh;
     width: 90vw;
     line-height: 1.5rem;
     overflow: hidden;
     @include mobile{
         position: absolute;
         left: 46%;
+        right: initial;
         top: 20%;
         width: 45%;
     }
@@ -128,11 +132,12 @@ text - contenedor
 .story-recycle{
     display: flex;
     flex-direction: column;
-    min-width: 90vw;
+    min-width: 80vw;
     margin: 0 5vw;
 
     h2{
-        color: #0545b2;
+        color: $color__brand;
+        margin-bottom: 1rem;    
     }
 
     p{
@@ -152,6 +157,7 @@ text - contenedor
 
     @include mobile{
         width: 40vw;
+        min-width: 10vw;
         }
 }
 

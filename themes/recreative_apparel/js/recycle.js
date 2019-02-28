@@ -24,7 +24,7 @@ $(function () {
             getImgWidth: function () {
                 let imageWidth;
                 imageWidth = $('.imageBackground')['0'].clientWidth;
-                return imageWidth / 360;
+                return imageWidth / 420;
 
             },
 
@@ -46,8 +46,9 @@ $(function () {
         return {
 
             displayScroll: function (deg, imageW) {
+                if(window.innerWidth>425){
                 $(DOMStrings.scroll).css('transform', `rotate(${deg}deg)`);
-                $(DOMStrings.imageBack).css('left', +120 - (deg * imageW));
+                $(DOMStrings.imageBack).css('left', (150 - (deg * imageW))+"%")};
 
             }
         };
@@ -111,14 +112,15 @@ $(function () {
                     initialValue = initialTouch.touches[0].clientX;
 
 
-                    maxWidth = $('.lateralMovement')[0].clientWidth;
-                    maxWidth -= (maxWidth * 0.25);
+                    maxWidth = $('.lateralMovement')[0].scrollWidth - window.innerWidth*1.12;
                     currentX = e.touches[0].clientX;
                     if (currentX <= initialValue) {
                         movement -= 1;
                     } else if (currentX > initialValue) {
-                        movement += 1;
+                        movement += 2;
                     }
+
+                    $('.wheelPa').css('box-shadow','2px 2px 10px #0545b2');
 
                     if(movement>-maxWidth && movement<1){
                         $('.lateralMovement').css('margin-left', movement);
@@ -139,6 +141,11 @@ $(function () {
         }
     });
 
+
+    $('.imageHolder').on({
+        'touchend': function () {
+            $('.wheelPa').css('box-shadow','none');
+        }});
 
 }
 }) 
