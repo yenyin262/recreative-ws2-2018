@@ -1,19 +1,35 @@
 .content-banner { 
+    height:465px;
     
-        height: 360px;
+
+    @include desktop { 
+        height: 545px;
+    }
     
 }
 
 .about-banner { 
+    background-image:url('../../images/RA-logo.svg');
     height: 429px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -165px;
+    @include tablet { 
+        background-position: center;
+    }
+
+    @include desktop { 
+        height: 529px;
+    }
 }
 
 .about-logo { 
-    @include desktop
-    {
-    fill: white;
+    background-image:url('../../images/RA-logo.svg');
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 18px; 
+  
 }
-}
+

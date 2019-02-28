@@ -26,6 +26,7 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 		<div class="frontpage-content">
+			<div class="ra-front-page-logo"></div>
      	   <?php the_content(); ?>	
   		</div><!-- .entry-content -->
 	</div><!-- .entry-header -->
