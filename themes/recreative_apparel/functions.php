@@ -85,7 +85,11 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+<<<<<<< HEAD
 	wp_enqueue_script('my-custom-script', get_template_directory_uri() .'/build/js/recycle.min.js', array('jquery'), null, true);
+=======
+	wp_enqueue_script('my-custom-script', get_template_directory_uri() .'/js/recycle.min.js', array('jquery'), null, true);
+>>>>>>> f347008cae3d6cfb6e08a6cc8be1fed5e9d82783
 	wp_enqueue_Style('font_awesome','//use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
