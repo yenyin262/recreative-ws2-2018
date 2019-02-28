@@ -876,6 +876,9 @@ nav {
     background-color: #636363;
     width: 0; }
 
+.page-template-page-impact .content-area {
+  position: relative; }
+
 .page-template-page-impact .impact-container {
   width: 100vw;
   overflow: hidden;

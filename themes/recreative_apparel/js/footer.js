@@ -1,7 +1,7 @@
 (function($) {
     'use strict';
     console.log('footer')
-    let checkBox = false;
+    // let checkBox = false;
     $('.subscribe-email').on('focus', ()=> {
         $('.subscribe-email').attr('placeholder', 'email');
         $('.notification-check').css("display","block");
