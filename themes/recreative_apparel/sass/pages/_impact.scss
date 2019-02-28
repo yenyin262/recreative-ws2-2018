@@ -1,4 +1,9 @@
+
+
 .page-template-page-impact {
+    .content-area {
+        position : relative;
+    }
     .impact-container {
         width: 100vw;
         overflow: hidden;
@@ -211,6 +216,7 @@
             }
             .recycle-form {
                 text-align: center;
+                margin-top: 45px;
                 .heading {
                     text-align: center;
                     margin: auto;
@@ -250,3 +256,4 @@
         }
     }
 }
+
