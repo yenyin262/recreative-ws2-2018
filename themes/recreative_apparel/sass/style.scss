@@ -62,9 +62,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'components/cart';
 @import 'components/forms';
 @import 'components/widgets';
+@import 'components/form';
 
 //layout has separate folders for Header, footer, grid, navigation
-@import 'layout/navigation/navigation';
+@import 'layout/navigation';
 
 //pages handles specific styling only for a single page
 @import 'pages/404';

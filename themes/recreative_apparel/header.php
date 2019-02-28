@@ -16,7 +16,8 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+    <body <?php body_class(); ?>>
+
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
@@ -33,10 +34,17 @@
 	
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu(); ?>
-				</nav>
-				<!-- #site-navigation -->
+                <!-- SITE NAVIGATION -->
+					<?php wp_nav_menu(
+                        array(
+                            	'primary' => 'Primary Menu', 
+                            	'container' => 'nav',
+                                'menu_class' => 'main-nav main-navigation',
+                                'role' => 'navigation',
+                                'id' => 'site-navigation'
+                        )); ?>
+                <!-- SITE NAVIGATION -->
+                
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
