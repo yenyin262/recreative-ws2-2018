@@ -943,8 +943,8 @@ wheel - contenedor
   top: 0px;
   left: 120px;
   height: 100%;
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8); }
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 /*========================
 text - contenedor 
