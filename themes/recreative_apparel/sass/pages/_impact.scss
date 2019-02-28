@@ -187,29 +187,54 @@
             padding: 50px 0;
             justify-content: center;
             @include tablet {
+                width:100%;
+                height: 400px;
                 flex-wrap: nowrap;
+                justify-content: space-between;
+                .heading {
+                    width: 80%;
+                }
             }
             .description {
                 text-align: center;
+                p {
+                    margin-top: 2rem;
+                }
+                @include tablet {
+                    flex-basis: 50%;
+                    text-align: left;
+                    p {
+                        width: 70%;
+                    }
+                }
             }
             .recycle-form {
                 text-align: center;
+                .heading {
+                    text-align: center;
+                }
+                .recycle-form-btn {
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    position: relative;
+                    top: -34px;
+                    right: -156px;
+                    @include tablet {
+                        right: -37.5%;
+                    }
+                }
                 .wpcf7-form-control {
                     border: none;
                     border-bottom: 2px solid $color__border-gray;
                     &::placeholder {
                         color: #979797;
                     }
+                    @include tablet {
+                        width: 80%;
+                    }
                 }
-                .wpcf7-submit {
-                    position: relative;
-                    top: -34px;
-                    right: -156px;
-                    background: transparent;
-                    box-shadow: none;
-                    font-size: 1rem;
-                    color: $color__brand;
-                }
+                
             }
         }
     }

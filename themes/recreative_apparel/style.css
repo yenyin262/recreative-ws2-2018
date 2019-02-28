@@ -732,6 +732,8 @@ nav {
         grid-template-rows: repeat(5, 100px);
         grid-column-gap: 1em; } }
   .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-number {
+    font-size: 9rem;
+    font-weight: 1000;
     height: 150px;
     z-index: 10;
     text-align: right; }
@@ -797,6 +799,8 @@ nav {
         grid-row: 4 /span 2;
         margin-right: 10px; } }
   .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-number {
+    font-size: 9rem;
+    font-weight: 1000;
     height: 150px;
     z-index: 10;
     text-align: left;
@@ -858,6 +862,69 @@ nav {
         grid-column: 8/span 4;
         grid-row: 4/span 1;
         margin-left: 0px; } }
+  .page-template-page-impact .impact-container .recycle-form-element {
+    width: 87%;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top: 1px solid #979797;
+    margin: 50px auto;
+    padding: 50px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (min-width: 768px) {
+      .page-template-page-impact .impact-container .recycle-form-element {
+        width: 100%;
+        height: 400px;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .page-template-page-impact .impact-container .recycle-form-element .heading {
+          width: 80%; } }
+    .page-template-page-impact .impact-container .recycle-form-element .description {
+      text-align: center; }
+      .page-template-page-impact .impact-container .recycle-form-element .description p {
+        margin-top: 2rem; }
+      @media (min-width: 768px) {
+        .page-template-page-impact .impact-container .recycle-form-element .description {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          text-align: left; }
+          .page-template-page-impact .impact-container .recycle-form-element .description p {
+            width: 70%; } }
+    .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
+      text-align: center; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .heading {
+        text-align: center; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .recycle-form-btn {
+        border: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        background: transparent;
+        position: relative;
+        top: -34px;
+        right: -156px; }
+        @media (min-width: 768px) {
+          .page-template-page-impact .impact-container .recycle-form-element .recycle-form .recycle-form-btn {
+            right: -37.5%; } }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
+        border: none;
+        border-bottom: 2px solid #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-webkit-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-ms-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::placeholder {
+          color: #979797; }
+        @media (min-width: 768px) {
+          .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
+            width: 80%; } }
 
 * {
   margin: 0px; }
