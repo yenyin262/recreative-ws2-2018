@@ -765,6 +765,8 @@ nav {
         grid-template-rows: repeat(5, 100px);
         grid-column-gap: 1em; } }
   .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-number {
+    font-size: 9rem;
+    font-weight: 1000;
     height: 150px;
     z-index: 10;
     text-align: right; }
@@ -830,6 +832,8 @@ nav {
         grid-row: 4 /span 2;
         margin-right: 10px; } }
   .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-number {
+    font-size: 9rem;
+    font-weight: 1000;
     height: 150px;
     z-index: 10;
     text-align: left;
@@ -891,12 +895,58 @@ nav {
         grid-column: 8/span 4;
         grid-row: 4/span 1;
         margin-left: 0px; } }
+  .page-template-page-impact .impact-container .recycle-form-element {
+    width: 87%;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top: 1px solid #979797;
+    margin: 50px auto;
+    padding: 50px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (min-width: 768px) {
+      .page-template-page-impact .impact-container .recycle-form-element {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    .page-template-page-impact .impact-container .recycle-form-element .description {
+      text-align: center; }
+    .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
+      text-align: center; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
+        border: none;
+        border-bottom: 2px solid #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-webkit-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-ms-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::placeholder {
+          color: #979797; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-submit {
+        position: relative;
+        top: -34px;
+        right: -156px;
+        background: transparent;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        font-size: 1rem;
+        color: #0545b2; }
 
 * {
   margin: 0px; }
 
 body {
   height: auto; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }
 
 /*========================
 wheel - contenedor 
@@ -921,7 +971,12 @@ wheel - contenedor
       padding-top: 33%; } }
   @media (min-width: 768px) {
     .wheelPa {
-      top: 10vh; } }
+      top: 30vh; } }
+  @media (min-width: 1080px) {
+    .wheelPa {
+      top: 20vh;
+      width: 30%;
+      padding-top: 30%; } }
 
 .wheel {
   position: absolute;
@@ -995,7 +1050,7 @@ text - contenedor
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90vw;
+  width: 100;
   margin: 0 5vw; }
   .story-recycle h2 {
     color: #0545b2; }
