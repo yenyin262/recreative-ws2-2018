@@ -3,14 +3,14 @@
 }
 
 .frontpage-top-content { 
-    height: 386px;
+    height: 62vh;
 
     @include tablet { 
-        height: 440px;
+        height: 70vh;
     }
 
     @include desktop {
-        height: 740px;
+        height: 100vh;
         // display: flex;
         // flex-direction: row-reverse;
     
@@ -33,6 +33,7 @@ line-height: 1.7;
         width: 359px;
         margin-bottom: 0;
         margin-left: 100px;
+        margin-top: 44px;
     }
     @include desktop {
         margin-top: 100px;
@@ -60,28 +61,58 @@ line-height: 1.7;
 }
 
 .image-class { 
-    height: 429px;
+    height: 62vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right -72px;
 
+    @include tablet { 
+        height: 70vh;
+    }
+
 @include desktop {
-    height: 740px;
+    // height: 100vh;
     // width: 60%;
     // width: 58%;
-    background-position: top right;
+    // background-position: top right;
+    height: calc(100vh - 75px);
+    background-position: 100% 0;
+    background-size: contain;
  }
 }
 .frontpage-content {
     margin: 0;
 
     @include desktop {
-        position: absolute;
-        top: 0;
-        margin: 0 auto;
-        background-repeat: no-repeat;
-        background-color: white;
-        height: 90vh;
-        width: 48%;
+        // position: fixed;
+        // top: 137px;
+        // margin: 0 auto;
+        // background-repeat: no-repeat;
+        // background-color: white;
+        // position: absolute;
+        // height: 100vh;
+        // width: 48%;
+        top: 33px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: absolute;
+    height: 100vh;
+    width: 48%;
+    }
+}
+
+
+
+
+.ra-front-page-logo {
+    display: none;
+    @include desktop {
+    background-image:url('../../images/RA-blue-logo.svg');
+      width: 102px;
+      height: 102px;
+      margin-left: 20px;
+      margin-top: 50px; 
+      display: inherit;
     }
 }

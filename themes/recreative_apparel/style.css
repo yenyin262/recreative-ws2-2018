@@ -459,16 +459,7 @@ object {
   width: 70px;
   height: 70px;
   margin-left: 20px;
-  margin-top: 18px;
-  display: none; }
-
-@media (min-width: 1080px) {
-  .ra-front-page-logo {
-    background-image: url("../../images/RA-blue-logo.svg");
-    width: 102px;
-    height: 102px;
-    margin-left: 20px;
-    margin-top: 50px; } }
+  margin-top: 18px; }
 
 @media (min-width: 1080px) {
   .ra-logo {
@@ -584,6 +575,31 @@ a {
 nav {
   margin-top: 50px; }
 
+.menu-primary-menu-container {
+  position: absolute;
+  width: 100%;
+  bottom: -32%;
+  border-top: 1px solid #0f4ab4;
+  z-index: 99;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .menu-primary-menu-container {
+      position: absolute;
+      width: 100%;
+      bottom: -40%;
+      border-top: 1px solid #0f4ab4;
+      z-index: 99;
+      background-color: #fff; } }
+  @media (min-width: 1080px) {
+    .menu-primary-menu-container {
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      border-top: 1px solid #0f4ab4;
+      z-index: 99;
+      margin-bottom: 30px;
+      background-color: white; } }
+
 .main-navigation {
   clear: both;
   width: 100%;
@@ -591,13 +607,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0px 0px 50px 0px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  padding-right: 0;
-  padding-left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
   width: 80%;
   margin: 0 auto; }
   .main-navigation ul a {
@@ -606,7 +619,12 @@ nav {
   .main-navigation ul a.focus {
     color: #0545b2; }
   .main-navigation li {
-    border-top: transparent solid 5px; }
+    padding-right: 52px;
+    border-top: transparent solid 5px;
+    font-size: 13px; }
+    @media (min-width: 768px) {
+      .main-navigation li {
+        padding-right: 86px; } }
     .main-navigation li:hover, .main-navigation li:active {
       color: #636363;
       font-weight: 500;
@@ -765,6 +783,8 @@ nav {
         grid-template-rows: repeat(5, 100px);
         grid-column-gap: 1em; } }
   .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-number {
+    font-size: 9rem;
+    font-weight: 1000;
     height: 150px;
     z-index: 10;
     text-align: right; }
@@ -830,6 +850,8 @@ nav {
         grid-row: 4 /span 2;
         margin-right: 10px; } }
   .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-number {
+    font-size: 9rem;
+    font-weight: 1000;
     height: 150px;
     z-index: 10;
     text-align: left;
@@ -891,6 +913,46 @@ nav {
         grid-column: 8/span 4;
         grid-row: 4/span 1;
         margin-left: 0px; } }
+  .page-template-page-impact .impact-container .recycle-form-element {
+    width: 87%;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top: 1px solid #979797;
+    margin: 50px auto;
+    padding: 50px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (min-width: 768px) {
+      .page-template-page-impact .impact-container .recycle-form-element {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    .page-template-page-impact .impact-container .recycle-form-element .description {
+      text-align: center; }
+    .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
+      text-align: center; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
+        border: none;
+        border-bottom: 2px solid #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-webkit-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-ms-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::placeholder {
+          color: #979797; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-submit {
+        position: relative;
+        top: -34px;
+        right: -156px;
+        background: transparent;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        font-size: 1rem;
+        color: #0545b2; }
 
 * {
   margin: 0px; }
@@ -1039,13 +1101,13 @@ text - contenedor
   display: none; }
 
 .frontpage-top-content {
-  height: 386px; }
+  height: 62vh; }
   @media (min-width: 768px) {
     .frontpage-top-content {
-      height: 440px; } }
+      height: 70vh; } }
   @media (min-width: 1080px) {
     .frontpage-top-content {
-      height: 740px; } }
+      height: 100vh; } }
 
 .ra-statement {
   width: 260px;
@@ -1062,7 +1124,8 @@ text - contenedor
     .ra-statement {
       width: 359px;
       margin-bottom: 0;
-      margin-left: 100px; } }
+      margin-left: 100px;
+      margin-top: 44px; } }
   @media (min-width: 1080px) {
     .ra-statement {
       margin-top: 100px;
@@ -1084,26 +1147,41 @@ text - contenedor
       width: 253px; } }
 
 .image-class {
-  height: 429px;
+  height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right -72px; }
+  @media (min-width: 768px) {
+    .image-class {
+      height: 70vh; } }
   @media (min-width: 1080px) {
     .image-class {
-      height: 740px;
-      background-position: top right; } }
+      height: calc(100vh - 75px);
+      background-position: 100% 0;
+      background-size: contain; } }
 
 .frontpage-content {
   margin: 0; }
   @media (min-width: 1080px) {
     .frontpage-content {
-      position: absolute;
-      top: 0;
+      top: 33px;
       margin: 0 auto;
       background-repeat: no-repeat;
-      background-color: white;
-      height: 90vh;
+      background-color: #fff;
+      position: absolute;
+      height: 100vh;
       width: 48%; } }
+
+.ra-front-page-logo {
+  display: none; }
+  @media (min-width: 1080px) {
+    .ra-front-page-logo {
+      background-image: url("../../images/RA-blue-logo.svg");
+      width: 102px;
+      height: 102px;
+      margin-left: 20px;
+      margin-top: 50px;
+      display: inherit; } }
 
 .single-post-image img {
   width: 100%; }
