@@ -24,7 +24,7 @@ $(function () {
             getImgWidth: function () {
                 let imageWidth;
                 imageWidth = $('.imageBackground')['0'].clientWidth;
-                return imageWidth / 360;
+                return imageWidth / 420;
 
             },
 
@@ -47,7 +47,7 @@ $(function () {
 
             displayScroll: function (deg, imageW) {
                 $(DOMStrings.scroll).css('transform', `rotate(${deg}deg)`);
-                $(DOMStrings.imageBack).css('left', +120 - (deg * imageW));
+                $(DOMStrings.imageBack).css('left', (150 - (deg * imageW))+"%");
 
             }
         };
