@@ -110,7 +110,3 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-<<<<<<< HEAD
-add_filter( 'widget_text', 'do_shortcode' );
-=======
->>>>>>> 7313878a795085b2cbde5839b8721c9317ed49be
