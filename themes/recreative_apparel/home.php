@@ -11,9 +11,14 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
       <?php get_search_form(); ?>
+
+      <div class="wrapper-progress-blog">
+        <div id="inProgress" class="inside-progress"></div>
+      </div>
+
       <div class="blog-wrapper">
 
-        <div class="blog-carousel">
+        <div id="blogCarousel" class="blog-carousel">
 
           <?php while ( have_posts() ) : the_post(); ?>
 

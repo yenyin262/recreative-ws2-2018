@@ -106,7 +106,7 @@ $(function () {
             $('.imageHolder').on({
                 'touchmove': function (e) {
                     let maxWidth, currentX;
-                    console.log(initialTouch.clientX, initialTouch.touches)
+                    console.log(initialTouch.clientX, initialTouch.touches);
                     initialValue = initialTouch.touches[0].clientX;
 
 
