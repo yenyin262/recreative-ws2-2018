@@ -65,14 +65,14 @@ wheel - contenedor
     left: 5%;
     top: 5%;
     overflow: hidden;
+    background: #e2e1de;
     
 }
 .imageBackground{
     position: absolute;
-    top: 0px;
-    left: 120px;//any change here its neccesary to change it on JS 47
-    height: 100%;
-    transform: scale(1);
+    top: 30%;
+    left: 150%;//any change here its neccesary to change it on JS 50
+    transform: scale(4.5);
     
 }
 
@@ -110,6 +110,7 @@ text - contenedor
     @include mobile{
         position: absolute;
         left: 46%;
+        right: initial;
         top: 20%;
         width: 45%;
     }
@@ -152,6 +153,7 @@ text - contenedor
 
     @include mobile{
         width: 40vw;
+        min-width: 10vw;
         }
 }
 
