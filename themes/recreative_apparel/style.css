@@ -626,12 +626,13 @@ nav {
   .main-navigation ul a.focus {
     color: #0545b2; }
   .main-navigation li {
-    padding-right: 52px;
+    text-align: center;
+    padding: 0 40px;
     border-top: transparent solid 5px;
     font-size: 13px; }
     @media (min-width: 768px) {
       .main-navigation li {
-        padding-right: 86px; } }
+        padding: 0 40px; } }
     .main-navigation li:hover, .main-navigation li:active {
       color: #636363;
       font-weight: 500;

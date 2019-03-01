@@ -72,7 +72,7 @@ nav{
 }
 
 .main-navigation {
-
+ 
 	clear: both;
 	width: 100%;
 	list-style: none;
@@ -111,12 +111,12 @@ nav{
 
 	}
 	li{
-
-		padding-right: 52px;
+		text-align: center; 
+		padding: 0 40px;
 		border-top: transparent solid 5px;
 		font-size: 13px;
 		@include tablet {
-			padding-right: 86px;
+			padding: 0 40px;
 		}
 		&:hover,
 		&:active{
