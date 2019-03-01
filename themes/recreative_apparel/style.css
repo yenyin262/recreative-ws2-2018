@@ -669,6 +669,10 @@ nav {
 .site-footer {
   border-top: 2px solid #979797;
   margin: 0 auto; }
+  .site-footer .social-icon-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .site-footer .subscribe-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -695,7 +699,6 @@ nav {
       .site-footer .subscribe-section .subscribe-form .notification-check {
         display: none; }
         .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text {
-          padding: 0 1rem;
           color: #979797;
           padding-left: 20px;
           position: relative;
@@ -1082,6 +1085,14 @@ nav {
     .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
       text-align: center;
       margin-top: 45px; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form input {
+        color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form input::-webkit-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form input::-ms-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form input::placeholder {
+          color: #979797; }
       .page-template-page-impact .impact-container .recycle-form-element .recycle-form .heading {
         text-align: center;
         margin: auto; }
@@ -1099,12 +1110,6 @@ nav {
       .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
         border: none;
         border-bottom: 2px solid #979797; }
-        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-webkit-input-placeholder {
-          color: #979797; }
-        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-ms-input-placeholder {
-          color: #979797; }
-        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::placeholder {
-          color: #979797; }
         @media (min-width: 768px) {
           .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
             width: 100%; } }
