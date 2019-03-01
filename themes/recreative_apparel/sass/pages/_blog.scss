@@ -41,6 +41,7 @@
         font-weight: 900;	
         line-height: 34px;
         margin: 0;
+        color: $color__brand;
 
       }
       img {
@@ -108,6 +109,38 @@
     background-color: $color__text-main;
     width: 0;
 
+
+  }
+
+}
+
+//for now since someone is working on hero page
+
+.will-be-hero{
+  height: 100vh;
+  background-size:cover; 
+  background-position: center;
+}
+
+.bottom-margin-50{
+  margin-bottom: 50px;
+}
+
+//styling the search form
+
+.blog-button-styling{
+
+  button {
+
+    border: none; 
+    background: none;
+    box-shadow: none;
+
+  }
+
+  input:focus {
+
+    outline:none;
 
   }
 

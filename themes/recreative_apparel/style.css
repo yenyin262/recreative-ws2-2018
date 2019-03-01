@@ -817,7 +817,8 @@ nav {
         font-size: 25px;
         font-weight: 900;
         line-height: 34px;
-        margin: 0; }
+        margin: 0;
+        color: #0545b2; }
       .blog-wrapper .blog-carousel .post1 img {
         height: auto;
         width: 100%; }
@@ -875,6 +876,23 @@ nav {
     height: 8px;
     background-color: #636363;
     width: 0; }
+
+.will-be-hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+
+.bottom-margin-50 {
+  margin-bottom: 50px; }
+
+.blog-button-styling button {
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.blog-button-styling input:focus {
+  outline: none; }
 
 .page-template-page-impact .content-area {
   position: relative; }
@@ -1145,7 +1163,7 @@ wheel - contenedor
 ====================*/
 .wheelPa {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   left: 0;
   right: 0;
   margin: auto;
@@ -1213,7 +1231,7 @@ text - contenedor
   left: 0;
   right: 0;
   margin: auto;
-  top: 40%;
+  top: 35vh;
   width: 90vw;
   line-height: 1.5rem;
   overflow: hidden; }
@@ -1245,10 +1263,11 @@ text - contenedor
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 90vw;
+  min-width: 80vw;
   margin: 0 5vw; }
   .story-recycle h2 {
-    color: #0545b2; }
+    color: #0545b2;
+    margin-bottom: 1rem; }
   .story-recycle p {
     margin-bottom: 100px;
     font-size: 0.8rem; }
@@ -1386,8 +1405,52 @@ text - contenedor
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+          flex-flow: column nowrap;
+  margin: 0; }
+  .blog-entry-header h1 {
+    margin: 0; }
+  @media (min-width: 768px) {
+    .blog-entry-header {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+      height: 561px; } }
+  .blog-entry-header .wp-post-image {
+    height: 100%; }
   .blog-entry-header .blog-entry-title {
     color: #0545B2;
-    font-size: 35pt;
-    line-height: 48pt; }
+    font-size: 35px;
+    line-height: 48px; }
+    @media (min-width: 768px) {
+      .blog-entry-header .blog-entry-title {
+        background-color: #F2F2F2;
+        font-size: 100px;
+        line-height: 1em;
+        padding: 50px; } }
+
+@media (min-width: 768px) {
+  .blog-entry-content {
+    max-width: 80%;
+    margin: 0 auto; } }
+
+.blog-content-flex {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 100px 0; }
+  @media (min-width: 768px) {
+    .blog-content-flex {
+      max-width: 80%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      padding: 100px 0; } }

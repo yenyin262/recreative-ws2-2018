@@ -13,20 +13,57 @@
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  margin: 0;
+
+  h1 {
+    margin: 0;
+  }
+
+  @include tablet {
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
+    height: 561px;
+  }
 
   .wp-post-image{
 
-    // height: 673.92px;	
-    // width: 1010px;	
-    // transform: scaleX(-1);
+    height: 100%;
 
   }
   .blog-entry-title {	
   
     color: #0545B2;
-    font-size: 35pt;
-    line-height: 48pt;
-    // background-color: #F2F2F2;
+    font-size: 35px;
+    line-height: 48px;
+
+    @include tablet {
+      background-color: #F2F2F2;
+      font-size: 100px;
+      line-height: 1em;
+      padding: 50px;
+    }
     
+  }
+}
+
+.blog-entry-content{
+
+  @include tablet {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.blog-content-flex{
+
+  margin: 0 auto;
+  display: flex; 
+  flex-flow: column nowrap;
+  padding: 100px 0;
+
+  @include tablet {
+    max-width: 80%;
+    flex-flow: row nowrap;
+    padding: 100px 0;
   }
 }

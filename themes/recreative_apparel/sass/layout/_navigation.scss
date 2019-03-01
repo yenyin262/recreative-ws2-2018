@@ -41,12 +41,12 @@ nav{
 }
 
 .menu-primary-menu-container { 
-	position: absolute;
+		position: absolute;
     width: 100%;
     bottom: -32%;
     border-top: 1px solid #0f4ab4;
     z-index: 99;
-	background-color: #fff;
+		background-color: #fff;
 	
 
 	@include tablet { 
