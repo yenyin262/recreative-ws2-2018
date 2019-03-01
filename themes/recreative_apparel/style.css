@@ -454,12 +454,18 @@ object {
   display: table; }
 
 .ra-logo, .ra-blue-logo {
-  background-image: url("../../images/RA-logo.svg");
+  background-image: url(../../images/RA-logo.svg);
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 102px;
+  height: 102px;
   margin-left: 20px;
-  margin-top: 18px; }
+  margin-top: 9px;
+  z-index: 999;
+  background-size: 78%;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .ra-logo, .ra-blue-logo {
+      margin-top: 44px; } }
 
 @media (min-width: 1080px) {
   .ra-logo {
@@ -771,7 +777,7 @@ nav {
   height: 429px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -165px; }
+  background-position: left; }
   @media (min-width: 768px) {
     .about-banner {
       background-position: center; } }
@@ -779,13 +785,35 @@ nav {
     .about-banner {
       height: 529px; } }
 
-.about-logo {
+.white-logo {
   background-image: url("../../images/RA-logo.svg");
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 102px;
+  height: 102px;
   margin-left: 20px;
-  margin-top: 18px; }
+  margin-top: 18px;
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-repeat: no-repeat; }
+  @media (min-width: 1080px) {
+    .white-logo {
+      width: 102px;
+      height: 102px;
+      background-size: 80%; } }
+
+.about-statement {
+  font-size: 30px;
+  width: 400px;
+  color: #0f4ab4;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder; }
+  @media (min-width: 768px) {
+    .about-statement {
+      width: 650px; } }
+  @media (min-width: 1080px) {
+    .about-statement {
+      width: 530px; } }
 
 .blog-hero-image {
   height: 100vh;
@@ -1145,7 +1173,7 @@ wheel - contenedor
 ====================*/
 .wheelPa {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   left: 0;
   right: 0;
   margin: auto;
@@ -1213,7 +1241,7 @@ text - contenedor
   left: 0;
   right: 0;
   margin: auto;
-  top: 40%;
+  top: 35vh;
   width: 90vw;
   line-height: 1.5rem;
   overflow: hidden; }
@@ -1245,10 +1273,11 @@ text - contenedor
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 90vw;
+  min-width: 80vw;
   margin: 0 5vw; }
   .story-recycle h2 {
-    color: #0545b2; }
+    color: #0545b2;
+    margin-bottom: 1rem; }
   .story-recycle p {
     margin-bottom: 100px;
     font-size: 0.8rem; }
@@ -1290,10 +1319,10 @@ text - contenedor
   display: none; }
 
 .frontpage-top-content {
-  height: 62vh; }
+  height: 53vh; }
   @media (min-width: 768px) {
     .frontpage-top-content {
-      height: 70vh; } }
+      height: 73vh; } }
   @media (min-width: 1080px) {
     .frontpage-top-content {
       height: 100vh; } }
@@ -1308,7 +1337,7 @@ text - contenedor
   font-weight: bold;
   color: #0f4ab4;
   font-weight: bolder;
-  margin-top: 0; }
+  margin-top: 30px; }
   @media (min-width: 768px) {
     .ra-statement {
       width: 359px;
@@ -1339,10 +1368,14 @@ text - contenedor
   height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right -72px; }
+  background-position: right;
+  position: relative;
+  bottom: 20%; }
   @media (min-width: 768px) {
     .image-class {
-      height: 70vh; } }
+      position: unset;
+      bottom: unset;
+      height: 73vh; } }
   @media (min-width: 1080px) {
     .image-class {
       height: calc(100vh - 75px);
@@ -1353,7 +1386,7 @@ text - contenedor
   margin: 0; }
   @media (min-width: 1080px) {
     .frontpage-content {
-      top: 33px;
+      top: 0px;
       margin: 0 auto;
       background-repeat: no-repeat;
       background-color: #fff;
@@ -1361,16 +1394,18 @@ text - contenedor
       height: 100vh;
       width: 48%; } }
 
-.ra-front-page-logo {
+.ra-blue-logo, .ra-front-page-logo {
   display: none; }
   @media (min-width: 1080px) {
-    .ra-front-page-logo {
+    .ra-blue-logo, .ra-front-page-logo {
       background-image: url("../../images/RA-blue-logo.svg");
       width: 102px;
       height: 102px;
       margin-left: 20px;
       margin-top: 50px;
-      display: inherit; } }
+      display: inherit;
+      background-size: 90%;
+      background-repeat: no-repeat; } }
 
 .single-post-image img {
   width: 100%; }
