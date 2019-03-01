@@ -48,11 +48,10 @@ $(function () {
             displayScroll: function (deg, imageW) {
                 if(window.innerWidth>425){
                 $(DOMStrings.scroll).css('transform', `rotate(${deg}deg)`);
-                $(DOMStrings.imageBack).css('left', (150 - (deg * imageW))+"%")};
-
+                $(DOMStrings.imageBack).css('left', (150 - (deg * imageW))+"%");
+                }
             }
         };
-
     })();
 
     let controller = (function (view, model) {
