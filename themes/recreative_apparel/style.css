@@ -604,8 +604,8 @@ nav {
       bottom: 0px;
       border-top: 1px solid #0f4ab4;
       z-index: 99;
-      margin-bottom: 30px;
-      background-color: white; } }
+      background-color: white;
+      height: 100px; } }
 
 .main-navigation {
   clear: both;
@@ -1315,6 +1315,9 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
+html {
+  margin-top: 0; }
+
 .menu-toggle {
   display: none; }
 
@@ -1378,7 +1381,7 @@ text - contenedor
       height: 73vh; } }
   @media (min-width: 1080px) {
     .image-class {
-      height: calc(100vh - 75px);
+      height: calc(100vh - 132px);
       background-position: 100% 0;
       background-size: contain; } }
 
