@@ -25,11 +25,13 @@
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php if ( is_front_page()): ?>
-					<div class="ra-logo"></div>
-<?php elseif( is_page('about')): ?>
-<div class="about-logo"></div>
+					<a class="ra-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>					
+<?php elseif( is_page('about') || is_page('impact')):  ?>
+<a class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+<?php elseif( is_page('recycle')): ?>
+<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 <?php else : ?>
-<div class="ra-logo"></div>
+<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>	
 <?php endif; ?>
 	
 				</div><!-- .site-branding -->
