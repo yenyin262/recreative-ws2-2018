@@ -6,7 +6,7 @@
         $('.subscribe-email').attr('placeholder', 'email');
         $('.notification-check').css("display","block");
     })
-    // .blur(function() {
+    // $('.subscribe-form').on('mouseleave', function() {
     //     $('.subscribe-email').attr('placeholder', 'Subscribe');
     //     $('.subscribe-checkbox').css("display","none");
     //     $('.subscribe-text').css("display","none");

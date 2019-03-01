@@ -17,7 +17,7 @@ Template Name: recycle
   <div class="wheelPa">
     <img class="wheel" src="<?php echo get_template_directory_uri(); ?>/images/circle_cycle.png">
     <div class="imageHolder">
-      <img class="imageBackground" src="<?php echo CFS()->get( 'recycle_circle_image' ) ?>"> ;
+      <img class="imageBackground" src="<?php echo CFS()->get( 'recycle_circle_image' ) ?>">
     </div>
   </div>
 
