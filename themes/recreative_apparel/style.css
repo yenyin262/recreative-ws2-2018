@@ -454,12 +454,18 @@ object {
   display: table; }
 
 .ra-logo, .ra-blue-logo {
-  background-image: url("../../images/RA-logo.svg");
+  background-image: url(../../images/RA-logo.svg);
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 102px;
+  height: 102px;
   margin-left: 20px;
-  margin-top: 18px; }
+  margin-top: 9px;
+  z-index: 999;
+  background-size: 78%;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .ra-logo, .ra-blue-logo {
+      margin-top: 44px; } }
 
 @media (min-width: 1080px) {
   .ra-logo {
@@ -620,12 +626,13 @@ nav {
   .main-navigation ul a.focus {
     color: #0545b2; }
   .main-navigation li {
-    padding-right: 52px;
+    text-align: center;
+    padding: 0 40px;
     border-top: transparent solid 5px;
     font-size: 13px; }
     @media (min-width: 768px) {
       .main-navigation li {
-        padding-right: 86px; } }
+        padding: 0 40px; } }
     .main-navigation li:hover, .main-navigation li:active {
       color: #636363;
       font-weight: 500;
@@ -669,6 +676,10 @@ nav {
 .site-footer {
   border-top: 2px solid #979797;
   margin: 0 auto; }
+  .site-footer .social-icon-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .site-footer .subscribe-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -695,7 +706,6 @@ nav {
       .site-footer .subscribe-section .subscribe-form .notification-check {
         display: none; }
         .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text {
-          padding: 0 1rem;
           color: #979797;
           padding-left: 20px;
           position: relative;
@@ -771,7 +781,7 @@ nav {
   height: 429px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -165px; }
+  background-position: left; }
   @media (min-width: 768px) {
     .about-banner {
       background-position: center; } }
@@ -779,13 +789,35 @@ nav {
     .about-banner {
       height: 529px; } }
 
-.about-logo {
+.white-logo {
   background-image: url("../../images/RA-logo.svg");
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 102px;
+  height: 102px;
   margin-left: 20px;
-  margin-top: 18px; }
+  margin-top: 18px;
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-repeat: no-repeat; }
+  @media (min-width: 1080px) {
+    .white-logo {
+      width: 102px;
+      height: 102px;
+      background-size: 80%; } }
+
+.about-statement {
+  font-size: 30px;
+  width: 400px;
+  color: #0f4ab4;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder; }
+  @media (min-width: 768px) {
+    .about-statement {
+      width: 650px; } }
+  @media (min-width: 1080px) {
+    .about-statement {
+      width: 530px; } }
 
 .blog-hero-image {
   height: 100vh;
@@ -1100,6 +1132,14 @@ nav {
     .page-template-page-impact .impact-container .recycle-form-element .recycle-form {
       text-align: center;
       margin-top: 45px; }
+      .page-template-page-impact .impact-container .recycle-form-element .recycle-form input {
+        color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form input::-webkit-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form input::-ms-input-placeholder {
+          color: #979797; }
+        .page-template-page-impact .impact-container .recycle-form-element .recycle-form input::placeholder {
+          color: #979797; }
       .page-template-page-impact .impact-container .recycle-form-element .recycle-form .heading {
         text-align: center;
         margin: auto; }
@@ -1117,12 +1157,6 @@ nav {
       .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
         border: none;
         border-bottom: 2px solid #979797; }
-        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-webkit-input-placeholder {
-          color: #979797; }
-        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::-ms-input-placeholder {
-          color: #979797; }
-        .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control::placeholder {
-          color: #979797; }
         @media (min-width: 768px) {
           .page-template-page-impact .impact-container .recycle-form-element .recycle-form .wpcf7-form-control {
             width: 100%; } }
@@ -1309,10 +1343,10 @@ text - contenedor
   display: none; }
 
 .frontpage-top-content {
-  height: 62vh; }
+  height: 53vh; }
   @media (min-width: 768px) {
     .frontpage-top-content {
-      height: 70vh; } }
+      height: 73vh; } }
   @media (min-width: 1080px) {
     .frontpage-top-content {
       height: 100vh; } }
@@ -1327,7 +1361,7 @@ text - contenedor
   font-weight: bold;
   color: #0f4ab4;
   font-weight: bolder;
-  margin-top: 0; }
+  margin-top: 30px; }
   @media (min-width: 768px) {
     .ra-statement {
       width: 359px;
@@ -1358,10 +1392,14 @@ text - contenedor
   height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right -72px; }
+  background-position: right;
+  position: relative;
+  bottom: 20%; }
   @media (min-width: 768px) {
     .image-class {
-      height: 70vh; } }
+      position: unset;
+      bottom: unset;
+      height: 73vh; } }
   @media (min-width: 1080px) {
     .image-class {
       height: calc(100vh - 75px);
@@ -1372,7 +1410,7 @@ text - contenedor
   margin: 0; }
   @media (min-width: 1080px) {
     .frontpage-content {
-      top: 33px;
+      top: 0px;
       margin: 0 auto;
       background-repeat: no-repeat;
       background-color: #fff;
@@ -1380,16 +1418,18 @@ text - contenedor
       height: 100vh;
       width: 48%; } }
 
-.ra-front-page-logo {
+.ra-blue-logo, .ra-front-page-logo {
   display: none; }
   @media (min-width: 1080px) {
-    .ra-front-page-logo {
+    .ra-blue-logo, .ra-front-page-logo {
       background-image: url("../../images/RA-blue-logo.svg");
       width: 102px;
       height: 102px;
       margin-left: 20px;
       margin-top: 50px;
-      display: inherit; } }
+      display: inherit;
+      background-size: 90%;
+      background-repeat: no-repeat; } }
 
 .single-post-image img {
   width: 100%; }

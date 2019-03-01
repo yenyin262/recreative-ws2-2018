@@ -1,6 +1,9 @@
 .site-footer {
     border-top: 2px solid $color__border-gray;
     margin: 0 auto;
+    .social-icon-section {
+        display: flex;
+    }
     .subscribe-section {
         display: flex;
         height: 80px;
@@ -18,7 +21,6 @@
             .notification-check {
                 display: none;
                 .subscribe-text {
-                    padding: 0 1rem;
                     color: $color__border-gray;
                     padding-left: 20px;
                     position: relative;

@@ -18,11 +18,16 @@
     );
   });
 
-  $('#menu-primary-menu').click(function(){
+  const  headerAnimation = () =>{
     var speed = 1000;
     var position = $('.content-area').offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    $("html, body").animate({scrollTop: position}, speed, "swing");
     return false;
+  };
+
+  $('#menu-primary-menu').click(function(){
+    console.log('footer animation')
+    setTimeout(headerAnimation, 1000);
   });
 
 })(jQuery);
