@@ -912,6 +912,7 @@ nav {
   position: relative; }
 
 .page-template-page-impact .impact-container {
+  max-width: 1440px;
   width: 100vw;
   overflow: hidden;
   margin: 0 auto;
@@ -971,7 +972,7 @@ nav {
         margin: 40px 0px; } }
     @media (min-width: 1080px) {
       .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-heading {
-        grid-column: 3/span 5;
+        grid-column: 2/span 5;
         grid-row: 3/span 1;
         margin: 50px 0px; } }
   .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-img {
