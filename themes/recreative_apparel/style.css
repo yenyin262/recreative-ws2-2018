@@ -1145,7 +1145,7 @@ wheel - contenedor
 ====================*/
 .wheelPa {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   left: 0;
   right: 0;
   margin: auto;
@@ -1213,7 +1213,7 @@ text - contenedor
   left: 0;
   right: 0;
   margin: auto;
-  top: 40%;
+  top: 35vh;
   width: 90vw;
   line-height: 1.5rem;
   overflow: hidden; }
@@ -1245,10 +1245,11 @@ text - contenedor
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 90vw;
+  min-width: 80vw;
   margin: 0 5vw; }
   .story-recycle h2 {
-    color: #0545b2; }
+    color: #0545b2;
+    margin-bottom: 1rem; }
   .story-recycle p {
     margin-bottom: 100px;
     font-size: 0.8rem; }
