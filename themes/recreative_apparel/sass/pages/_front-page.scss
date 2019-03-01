@@ -1,3 +1,6 @@
+html {
+    margin-top: 0;
+}
 .menu-toggle { 
     display: none;
 }
@@ -11,10 +14,8 @@
 
     @include desktop {
         height: 100vh;
-        // display: flex;
-        // flex-direction: row-reverse;
-    
-        
+       
+
     }
  }
 .ra-statement {
@@ -79,7 +80,8 @@ line-height: 1.7;
     // width: 60%;
     // width: 58%;
     // background-position: top right;
-    height: calc(100vh - 75px);
+    // height: calc(100vh - 75px);
+    height: calc(100vh - 132px);
     background-position: 100% 0;
     background-size: contain;
     

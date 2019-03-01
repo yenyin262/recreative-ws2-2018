@@ -17,16 +17,19 @@
 
 	</header>
 
-  <div class="entry-meta">
+	<div class="blog-content-flex">
+		<div class="entry-meta">
 
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 
+		</div>
+
+		<div class="blog-entry-content">
+
+			<?php the_content(); ?> 
+
+		</div>
 	</div>
-
-  <div class="blog-entry-content">
-
-	<?php the_content(); ?> 
-	
-  </div>
+  
 
 </article>
