@@ -11,14 +11,13 @@
   width: 90%;
   overflow: hidden;
   margin: 0 auto;
-  height: 627px;
+  height: auto;
 
   .blog-carousel{
 
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
-    height: 100%;
     
     .post1{
     
@@ -28,21 +27,25 @@
       white-space: normal;
       vertical-align: top;
       padding: 0;
-      margin-right: 20px;
       @include tablet {
 
         width: 416px;
+        margin-right: 20px;
 
       }
 
       h3{
 
-        height: 3em;
-        font-size: 25px;	
-        font-weight: 900;	
+        height: 2.2em;
+        font-size: 1.1rem;	
+        font-weight: 1000;	
         line-height: 34px;
         margin: 0;
         color: $color__brand;
+
+        @include tablet {
+          font-size: 25px;
+        }
 
       }
       img {
@@ -63,13 +66,16 @@
         .upper-content {
 
           display: flex;
-          justify-content: space-between;
           flex-flow: column nowrap;
+          height: 100%;
 
           .entry-content {
 
+            font-size: .9rem;
             margin-top: 0;
-            height: 166px;
+            @include tablet {
+              font-size: 1.1rem;
+            }
   
           }
         }
@@ -94,6 +100,13 @@
   .blog-entry-meta-author{
 
     text-transform: capitalize;
+    display: none; 
+
+    @include tablet {
+
+      display: inline;
+
+    }
 
   }
 }
