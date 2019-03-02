@@ -684,7 +684,7 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 80px;
+    height: 85px;
     width: 95%;
     margin: 0 auto;
     -webkit-box-pack: justify;
@@ -705,12 +705,12 @@ nav {
               align-items: center; }
       .site-footer .subscribe-section .subscribe-form .notification-check {
         display: none; }
-        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text {
+        .site-footer .subscribe-section .subscribe-form .notification-check .confirm-text {
           color: #979797;
           padding-left: 20px;
           position: relative;
           margin-right: 20px; }
-          .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text::before {
+          .site-footer .subscribe-section .subscribe-form .notification-check .confirm-text::before {
             content: "";
             display: block;
             position: absolute;
@@ -738,7 +738,7 @@ nav {
           padding: 0 1rem;
           display: none;
           color: #979797; }
-      .site-footer .subscribe-section .subscribe-form input[type="email"] {
+      .site-footer .subscribe-section .subscribe-form .subscribe-email {
         width: 8rem;
         font-size: 1.3rem;
         -webkit-transition: all .6s ease;
@@ -746,20 +746,20 @@ nav {
         border: none;
         border-radius: 0;
         border-bottom: 2px solid #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]::-webkit-input-placeholder {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email::-webkit-input-placeholder {
           color: #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]::-ms-input-placeholder {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email::-ms-input-placeholder {
           color: #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]::placeholder {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email::placeholder {
           color: #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]:focus {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email:focus {
           width: 13em;
           outline: 0; }
-          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::-webkit-input-placeholder {
+          .site-footer .subscribe-section .subscribe-form .subscribe-email:focus::-webkit-input-placeholder {
             color: #979797; }
-          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::-ms-input-placeholder {
+          .site-footer .subscribe-section .subscribe-form .subscribe-email:focus::-ms-input-placeholder {
             color: #979797; }
-          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::placeholder {
+          .site-footer .subscribe-section .subscribe-form .subscribe-email:focus::placeholder {
             color: #979797; }
       .site-footer .subscribe-section .subscribe-form .subscribe-btn {
         background: none;

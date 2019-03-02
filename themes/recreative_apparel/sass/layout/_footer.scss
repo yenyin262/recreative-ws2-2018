@@ -6,7 +6,7 @@
     }
     .subscribe-section {
         display: flex;
-        height: 80px;
+        height: 85px;
         width: 95%;
         margin: 0 auto;
         justify-content: space-between;
@@ -20,7 +20,7 @@
             align-items: center;
             .notification-check {
                 display: none;
-                .subscribe-text {
+                .confirm-text {
                     color: $color__border-gray;
                     padding-left: 20px;
                     position: relative;
@@ -58,7 +58,7 @@
                     color: $color__border-gray;
                 }
             }
-            input[type="email"] {
+            .subscribe-email {
                 width: 8rem;
                 font-size: 1.3rem;
                 transition: all .6s ease;
