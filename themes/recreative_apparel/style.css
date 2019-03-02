@@ -614,9 +614,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   width: 80%;
   margin: 0 auto; }
@@ -627,7 +627,6 @@ nav {
     color: #0545b2; }
   .main-navigation li {
     text-align: center;
-    padding: 0 40px;
     border-top: transparent solid 5px;
     font-size: 13px; }
     @media (min-width: 768px) {
@@ -840,7 +839,8 @@ nav {
       background-color: white;
       white-space: normal;
       vertical-align: top;
-      padding: 0; }
+      padding: 0;
+      margin-right: 20px; }
       @media (min-width: 768px) {
         .blog-wrapper .blog-carousel .post1 {
           width: 416px; } }
