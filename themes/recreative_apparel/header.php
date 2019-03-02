@@ -46,7 +46,7 @@
                                 'id' => 'site-navigation'
                         )); ?>
                 <!-- SITE NAVIGATION -->
-                
+                <div class="shopping-bag">
+  						</div>
 			</header><!-- #masthead -->
-
 			<div id="content" class="site-content">
