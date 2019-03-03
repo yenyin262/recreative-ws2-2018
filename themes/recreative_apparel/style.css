@@ -718,9 +718,9 @@ nav {
             height: 15px;
             border: 1px solid #999;
             border-radius: 4px; }
-        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .subscribe-text {
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .confirm-text {
           color: #979797; }
-        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .subscribe-text::after {
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .confirm-text::after {
           content: "";
           display: block;
           position: absolute;
@@ -767,6 +767,9 @@ nav {
         color: #0545b2;
         padding: 10px 8px;
         font-size: 1rem; }
+
+.blue-text {
+  color: #0545b2; }
 
 .content-banner {
   height: 465px; }

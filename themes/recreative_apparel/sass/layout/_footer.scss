@@ -37,10 +37,10 @@
                         border-radius: 4px;
                     }
                 }
-                .subscribe-checkbox:checked+.subscribe-text {
+                .subscribe-checkbox:checked+.confirm-text {
                     color: $color__border-gray;
                 }
-                .subscribe-checkbox:checked+.subscribe-text::after {
+                .subscribe-checkbox:checked+.confirm-text::after {
                     content: "";
                     display: block;
                     position: absolute;
@@ -86,4 +86,7 @@
             }
         }
     }
+}
+.blue-text {
+    color: $color__brand;
 }
