@@ -627,12 +627,12 @@ nav {
     color: #0545b2; }
   .main-navigation li {
     text-align: center;
-    padding: 0 40px;
+    padding: 0 20px;
     border-top: transparent solid 5px;
     font-size: 13px; }
     @media (min-width: 768px) {
       .main-navigation li {
-        padding: 0 40px; } }
+        padding: 0 28px; } }
     .main-navigation li:hover, .main-navigation li:active {
       color: #636363;
       font-weight: 500;
@@ -642,6 +642,24 @@ nav {
     text-decoration: none;
     color: #979797;
     line-height: 2.5rem; }
+  .main-navigation:after {
+    content: "";
+    height: 100px;
+    background-image: url(../../images/shopping-bag.svg);
+    width: 25px;
+    height: 34px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 9px;
+    background-size: 80%;
+    padding-left: 20px;
+    left: 7%; }
+    @media (min-width: 768px) {
+      .main-navigation:after {
+        left: 27%; } }
+    @media (min-width: 1080px) {
+      .main-navigation:after {
+        left: 37%; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -787,7 +805,8 @@ nav {
       background-position: center; } }
   @media (min-width: 1080px) {
     .about-banner {
-      height: 529px; } }
+      height: 92vh;
+      background-attachment: fixed; } }
 
 .white-logo {
   background-image: url("../../images/RA-logo.svg");
@@ -1406,7 +1425,7 @@ html {
       height: 73vh; } }
   @media (min-width: 1080px) {
     .image-class {
-      height: calc(100vh - 132px);
+      height: calc(100vh - 100px);
       background-position: 100% 0;
       background-size: contain; } }
 

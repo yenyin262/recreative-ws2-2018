@@ -45,8 +45,7 @@
                                 'role' => 'navigation',
                                 'id' => 'site-navigation'
                         )); ?>
-                <!-- SITE NAVIGATION -->
-                <div class="shopping-bag">
-  						</div>
+				<!-- SITE NAVIGATION -->
+				
 			</header><!-- #masthead -->
 			<div id="content" class="site-content">
