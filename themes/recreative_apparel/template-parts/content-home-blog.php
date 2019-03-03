@@ -20,7 +20,7 @@
       </div>
 
       <div class="entry-content">
-        <?php echo wp_trim_words( get_the_content(), 50 );?>
+        <?php echo wp_trim_words( get_the_content(), 40 );?>
         <?php
           wp_link_pages( array(
             'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -31,11 +31,11 @@
     </div>
     
     <div class="blog-entry-meta">
-        <p class="blog-entry-meta-author">By <?php echo get_the_author_meta('display_name') ?></p>
-        <a href="<?php echo the_permalink(); ?>">
-          <p>read more</p>
-        </a>
-      </div>
+      <p class="blog-entry-meta-author">By <?php echo get_the_author_meta('display_name') ?></p>
+      <a href="<?php echo the_permalink(); ?>">
+        <p>read more</p>
+      </a>
+    </div>
 
   </article>
 

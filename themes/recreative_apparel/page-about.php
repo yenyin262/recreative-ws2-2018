@@ -16,22 +16,13 @@ get_header(); ?>
 				<div class="about-banner" style="background-image: url('<?php echo $about;?>')"></div>
 			<?php endif; ?>
 
-
-		<div class="blog-wrapper">
-
-<div id="blogCarousel" class="blog-carousel">
-
-  <?php while ( have_posts() ) : the_post(); ?>
-
-	<?php get_template_part( 'template-parts/content-pageabout' ); ?>
-
-  <?php endwhile; // End of the loop. ?>
-
-</div>
-
-</div>
-
-
+				<div class="content-section">
+					<div class="blog-wrapper">
+						<div id="blogCarousel" class="blog-carousel">
+							<?php get_template_part( 'template-parts/content-pageabout' ); ?>
+						</div>
+					</div>
+				</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
