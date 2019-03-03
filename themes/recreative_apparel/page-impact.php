@@ -7,7 +7,7 @@ get_header();
 ?>
   <?php if (has_post_thumbnail($post->ID)): ?>
   <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');?>
-  <div id="custom-bg" class="header-banner" style="background-image: url('<?php echo $image[0]; ?>'); height: 92vh; background-attachment: fixed; background-size: cover;">
+  <div id="custom-bg" class="header-banner" style="background-image: url('<?php echo $image[0]; ?>'); height: 92vh; background-attachment: fixed; background-size: cover;  background-position: center">
   </div>
   <?php endif;?>
 

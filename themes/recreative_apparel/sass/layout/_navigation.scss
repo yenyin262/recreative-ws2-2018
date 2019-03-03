@@ -40,24 +40,23 @@ nav{
 
 }
 
-.menu-primary-menu-container { 
+.menu-primary-menu-container {
+
 		position: absolute;
     width: 100%;
-    bottom: -32%;
+    bottom: 0;
     border-top: 1px solid #0f4ab4;
     z-index: 99;
 		background-color: #fff;
-	
-	
 
 	@include tablet { 
+
 		position: absolute;
     width: 100%;
-    bottom: -40%;
     border-top: 1px solid #0f4ab4;
     z-index: 99;
     background-color: #fff;
-   
+
 	}
 
 @include desktop {
@@ -75,12 +74,12 @@ nav{
 
 
 .main-navigation {
- 
+
 	clear: both;
 	width: 100%;
 	list-style: none;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	// margin: 0px 0px 50px 0px;
 	padding: 0;
 	width: 80%;

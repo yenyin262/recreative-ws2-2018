@@ -25,22 +25,6 @@ $(function() {
       };
     })();
 
-<<<<<<< HEAD
-    let viewCtrl = (function() {
-      let DOMStrings = {
-        scroll: '.wheel',
-        imageBack: '.imageBackground'
-      };
-
-      return {
-        displayScroll: function(deg, imageW) {
-          if (window.innerWidth > 425) {
-            $(DOMStrings.scroll).css('transform', `rotate(${deg}deg)`);
-            $(DOMStrings.imageBack).css('left', 150 - deg * imageW + '%');
-          }
-        }
-      };
-=======
     let viewCtrl = (function () {
         let DOMStrings = {
             'scroll': '.wheel',
@@ -56,7 +40,6 @@ $(function() {
                 }
             }
         };
->>>>>>> e272a9f5c7786e39957ea047b7ef08927ef23370
     })();
 
     let controller = function(view, model) {
