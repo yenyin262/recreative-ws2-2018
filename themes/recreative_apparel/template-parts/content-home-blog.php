@@ -27,20 +27,15 @@
             'after'  => '</div>',
           ) );
         ?>
-
-<div class="blog-entry-meta">
+      </div>
+    </div>
+    
+    <div class="blog-entry-meta">
         <p class="blog-entry-meta-author">By <?php echo get_the_author_meta('display_name') ?></p>
         <a href="<?php echo the_permalink(); ?>">
           <p>read more</p>
         </a>
       </div>
-      </div>
-
-      
-
-    </div>
-    
-    
 
   </article>
 

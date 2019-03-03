@@ -84,6 +84,10 @@ nav{
 	width: 80%;
 	margin: 0 auto;
 
+	@include tablet {
+		width: 40%;
+	}
+
 	ul {
 
 		// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);

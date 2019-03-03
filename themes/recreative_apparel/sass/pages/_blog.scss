@@ -18,6 +18,13 @@
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
+    height: 500px;
+
+    @include tablet {
+
+      height: 620px;
+
+    }
     
     .post1{
     
@@ -115,11 +122,11 @@
 
   background-color: $color__border-gray;
   width: 90vw;
-  margin: 0 auto;
+  margin: 20px auto;
 
   .inside-progress {
 
-    height: 8px;
+    height: 4px;
     background-color: $color__text-main;
     width: 0;
 

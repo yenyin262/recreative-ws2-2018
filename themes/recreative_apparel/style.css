@@ -619,6 +619,9 @@ nav {
   padding: 0;
   width: 80%;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .main-navigation {
+      width: 40%; } }
   .main-navigation ul a {
     width: 200px; }
   .main-navigation ul a:hover,
@@ -830,7 +833,11 @@ nav {
   .blog-wrapper .blog-carousel {
     overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap; }
+    white-space: nowrap;
+    height: 500px; }
+    @media (min-width: 768px) {
+      .blog-wrapper .blog-carousel {
+        height: 620px; } }
     .blog-wrapper .blog-carousel .post1 {
       display: inline-block;
       height: 100%;
@@ -909,9 +916,9 @@ nav {
 .wrapper-progress-blog {
   background-color: #979797;
   width: 90vw;
-  margin: 0 auto; }
+  margin: 20px auto; }
   .wrapper-progress-blog .inside-progress {
-    height: 8px;
+    height: 4px;
     background-color: #636363;
     width: 0; }
 
