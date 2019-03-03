@@ -13,12 +13,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+   
+    
+
     @include tablet { 
         background-position: center;
     }
 
     @include desktop { 
-        height: 529px;
+        // height: 529px;
+        height: 92vh;
+        background-attachment: fixed;
     }
 }
 

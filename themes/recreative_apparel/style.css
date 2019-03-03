@@ -629,11 +629,12 @@ nav {
     color: #0545b2; }
   .main-navigation li {
     text-align: center;
+    padding: 0 20px;
     border-top: transparent solid 5px;
     font-size: 13px; }
     @media (min-width: 768px) {
       .main-navigation li {
-        padding: 0 40px; } }
+        padding: 0 28px; } }
     .main-navigation li:hover, .main-navigation li:active {
       color: #636363;
       font-weight: 500;
@@ -643,6 +644,24 @@ nav {
     text-decoration: none;
     color: #979797;
     line-height: 2.5rem; }
+  .main-navigation:after {
+    content: "";
+    height: 100px;
+    background-image: url(../../images/shopping-bag.svg);
+    width: 25px;
+    height: 34px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 9px;
+    background-size: 80%;
+    padding-left: 20px;
+    left: 7%; }
+    @media (min-width: 768px) {
+      .main-navigation:after {
+        left: 27%; } }
+    @media (min-width: 1080px) {
+      .main-navigation:after {
+        left: 37%; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -685,7 +704,7 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 80px;
+    height: 85px;
     width: 95%;
     margin: 0 auto;
     -webkit-box-pack: justify;
@@ -706,12 +725,12 @@ nav {
               align-items: center; }
       .site-footer .subscribe-section .subscribe-form .notification-check {
         display: none; }
-        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text {
+        .site-footer .subscribe-section .subscribe-form .notification-check .confirm-text {
           color: #979797;
           padding-left: 20px;
           position: relative;
           margin-right: 20px; }
-          .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-text::before {
+          .site-footer .subscribe-section .subscribe-form .notification-check .confirm-text::before {
             content: "";
             display: block;
             position: absolute;
@@ -721,9 +740,9 @@ nav {
             height: 15px;
             border: 1px solid #999;
             border-radius: 4px; }
-        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .subscribe-text {
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .confirm-text {
           color: #979797; }
-        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .subscribe-text::after {
+        .site-footer .subscribe-section .subscribe-form .notification-check .subscribe-checkbox:checked + .confirm-text::after {
           content: "";
           display: block;
           position: absolute;
@@ -739,7 +758,7 @@ nav {
           padding: 0 1rem;
           display: none;
           color: #979797; }
-      .site-footer .subscribe-section .subscribe-form input[type="email"] {
+      .site-footer .subscribe-section .subscribe-form .subscribe-email {
         width: 8rem;
         font-size: 1.3rem;
         -webkit-transition: all .6s ease;
@@ -747,20 +766,20 @@ nav {
         border: none;
         border-radius: 0;
         border-bottom: 2px solid #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]::-webkit-input-placeholder {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email::-webkit-input-placeholder {
           color: #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]::-ms-input-placeholder {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email::-ms-input-placeholder {
           color: #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]::placeholder {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email::placeholder {
           color: #0545b2; }
-        .site-footer .subscribe-section .subscribe-form input[type="email"]:focus {
+        .site-footer .subscribe-section .subscribe-form .subscribe-email:focus {
           width: 13em;
           outline: 0; }
-          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::-webkit-input-placeholder {
+          .site-footer .subscribe-section .subscribe-form .subscribe-email:focus::-webkit-input-placeholder {
             color: #979797; }
-          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::-ms-input-placeholder {
+          .site-footer .subscribe-section .subscribe-form .subscribe-email:focus::-ms-input-placeholder {
             color: #979797; }
-          .site-footer .subscribe-section .subscribe-form input[type="email"]:focus::placeholder {
+          .site-footer .subscribe-section .subscribe-form .subscribe-email:focus::placeholder {
             color: #979797; }
       .site-footer .subscribe-section .subscribe-form .subscribe-btn {
         background: none;
@@ -770,6 +789,9 @@ nav {
         color: #0545b2;
         padding: 10px 8px;
         font-size: 1rem; }
+
+.blue-text {
+  color: #0545b2; }
 
 .content-banner {
   height: 465px; }
@@ -788,7 +810,8 @@ nav {
       background-position: center; } }
   @media (min-width: 1080px) {
     .about-banner {
-      height: 529px; } }
+      height: 92vh;
+      background-attachment: fixed; } }
 
 .white-logo {
   background-image: url("../../images/RA-logo.svg");
@@ -1419,7 +1442,7 @@ html {
       height: 73vh; } }
   @media (min-width: 1080px) {
     .image-class {
-      height: calc(100vh - 132px);
+      height: calc(100vh - 100px);
       background-position: 100% 0;
       background-size: contain; } }
 

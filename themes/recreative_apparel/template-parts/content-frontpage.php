@@ -14,6 +14,7 @@
             <?php $featuredImage = get_the_post_thumbnail_url(); ?>
             <div class="image-class" style="background-image: url('<?php echo $featuredImage;?>')"></div>
 		<?php endif; ?>
+</div>
 
 
 
