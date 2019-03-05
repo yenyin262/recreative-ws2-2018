@@ -36,16 +36,7 @@
 	
 				</div><!-- .site-branding -->
 
-                <!-- SITE NAVIGATION -->
-					<?php wp_nav_menu(
-                        array(
-                            	'primary' => 'Primary Menu', 
-                            	'container' => 'nav',
-                                'menu_class' => 'main-nav main-navigation',
-                                'role' => 'navigation',
-                                'id' => 'site-navigation'
-                        )); ?>
-				<!-- SITE NAVIGATION -->
+                
 				
 			</header><!-- #masthead -->
 			<div id="content" class="site-content">

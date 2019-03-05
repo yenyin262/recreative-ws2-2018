@@ -34,15 +34,15 @@ a {
 
 /* Menus */
 
-nav{
+// nav{
 
-	margin-top: 50px;
+// 	margin-top: 50px;
 
-}
+// }
 
 .menu-primary-menu-container {
 
-		position: absolute;
+		position: relative;
     width: 100%;
     bottom: 0;
     border-top: 1px solid #0f4ab4;
@@ -51,7 +51,7 @@ nav{
 
 	@include tablet { 
 
-		position: absolute;
+		position: relative;
     width: 100%;
     border-top: 1px solid #0f4ab4;
     z-index: 99;
@@ -60,7 +60,7 @@ nav{
 	}
 
 @include desktop {
-	position: absolute;
+	position: relative;
     width: 100%;
     bottom: 0px;
     border-top: 1px solid #0f4ab4;
@@ -75,7 +75,7 @@ nav{
 
 .main-navigation {
 
-	clear: both;
+	// clear: both;
 	width: 100%;
 	list-style: none;
 	display: flex;

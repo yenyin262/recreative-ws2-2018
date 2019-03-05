@@ -579,11 +579,8 @@ a {
     outline: 0; }
 
 /* Menus */
-nav {
-  margin-top: 50px; }
-
 .menu-primary-menu-container {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
   border-top: 1px solid #0f4ab4;
@@ -591,14 +588,14 @@ nav {
   background-color: #fff; }
   @media (min-width: 768px) {
     .menu-primary-menu-container {
-      position: absolute;
+      position: relative;
       width: 100%;
       border-top: 1px solid #0f4ab4;
       z-index: 99;
       background-color: #fff; } }
   @media (min-width: 1080px) {
     .menu-primary-menu-container {
-      position: absolute;
+      position: relative;
       width: 100%;
       bottom: 0px;
       border-top: 1px solid #0f4ab4;
@@ -607,7 +604,6 @@ nav {
       height: 100px; } }
 
 .main-navigation {
-  clear: both;
   width: 100%;
   list-style: none;
   display: -webkit-box;
@@ -1222,6 +1218,20 @@ nav {
 
 body {
   height: auto; }
+
+.recycle-banner {
+  background-image: url("../../images/RA-logo.svg");
+  height: 356px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left; }
+  @media (min-width: 768px) {
+    .recycle-banner {
+      background-position: center; } }
+  @media (min-width: 1080px) {
+    .recycle-banner {
+      height: 92vh;
+      background-attachment: fixed; } }
 
 ::-webkit-scrollbar {
   width: 0px;

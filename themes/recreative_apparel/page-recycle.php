@@ -9,6 +9,11 @@ Template Name: recycle
 
 
 <p id="demo"></p>
+<?php if ( has_post_thumbnail() ) : ?>
+				<?php $recycle = get_the_post_thumbnail_url(); ?>
+				<div class="recycle-banner" style="background-image: url('<?php echo $recycle;?>')"></div>
+			<?php endif; ?>
+<?php get_template_part( 'template-parts/content-navbar' ); ?>
   <div class="whiteOut">
 
   </div>

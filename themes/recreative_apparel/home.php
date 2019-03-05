@@ -21,7 +21,7 @@ get_header(); ?>
     <?php } ?>
 
     <?php wp_reset_postdata(); ?>
-
+    <?php get_template_part( 'template-parts/content-navbar' ); ?>
     <?php get_search_form(); ?>
 
     <div class="content-section">
