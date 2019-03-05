@@ -1471,11 +1471,11 @@ html {
       background-size: 90%;
       background-repeat: no-repeat; } }
 
+.wrapper-20 {
+  margin: 0 20px; }
+
 .single-post-image img {
   width: 100%; }
-
-.blog-entry-wrapper {
-  padding: 0 10px; }
 
 .blog-entry-header {
   width: 100%;
@@ -1497,29 +1497,47 @@ html {
               flex-flow: row nowrap;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+      height: auto; } }
+  @media (min-width: 1080px) {
+    .blog-entry-header {
       height: 561px; } }
   .blog-entry-header .wp-post-image {
     height: 100%;
-    width: 50%; }
+    width: 100%; }
+    @media (min-width: 768px) {
+      .blog-entry-header .wp-post-image {
+        width: 50%; } }
   .blog-entry-header .blog-entry-title {
     color: #0545B2;
     font-size: 35px;
-    line-height: 48px; }
+    line-height: 2rem;
+    margin-bottom: 2rem; }
     @media (min-width: 768px) {
       .blog-entry-header .blog-entry-title {
         background-color: #F2F2F2;
-        font-size: 100px;
-        line-height: 1em;
+        font-size: 50px;
+        line-height: 1.5em;
         padding: 50px;
-        width: 50%; } }
+        width: 50%;
+        margin: 0; } }
+    @media (min-width: 1080px) {
+      .blog-entry-header .blog-entry-title {
+        font-size: 100px; } }
+
+.blog-entry-content p {
+  line-height: 2rem;
+  margin-bottom: 2rem; }
 
 @media (min-width: 768px) {
   .blog-entry-content {
-    max-width: 80%;
-    margin: 0 auto; } }
+    max-width: 55.16%;
+    margin-left: 50px; } }
+
+@media (min-width: 1080px) {
+  .blog-entry-content {
+    margin-left: 100px; } }
 
 .blog-content-flex {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1530,9 +1548,22 @@ html {
   padding: 100px 0; }
   @media (min-width: 768px) {
     .blog-content-flex {
-      max-width: 80%;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      padding: 100px 0; } }
+              flex-flow: row nowrap; } }
+  .blog-content-flex .single-blog-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-transform: capitalize;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .blog-content-flex .single-blog-meta {
+        margin: 0; } }
+    .blog-content-flex .single-blog-meta time {
+      font-style: italic; }
