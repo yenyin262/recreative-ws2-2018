@@ -24,15 +24,15 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php if ( is_front_page()): ?>
+				<?php if ( is_front_page()): ?>
 					<a class="ra-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>					
-<?php elseif( is_page('about') || is_page('impact')):  ?>
-<a class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-<?php elseif( is_page('recycle')): ?>
-<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-<?php else : ?>
-<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>	
-<?php endif; ?>
+				<?php elseif( is_page('about') || is_page('impact')):  ?>
+					<a class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+				<?php elseif( is_page('recycle')): ?>
+					<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+				<?php else : ?>
+					<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>	
+				<?php endif; ?>
 	
 				</div><!-- .site-branding -->
 

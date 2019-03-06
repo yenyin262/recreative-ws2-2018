@@ -8,7 +8,7 @@
 
 .blog-wrapper {
 
-  width: 90%;
+  width: 98%;
   overflow: hidden;
   margin: 0 auto;
   height: auto;
@@ -36,22 +36,32 @@
       padding: 0;
       @include tablet {
 
-        width: 416px;
-        margin-right: 20px;
+        width: 275px;
+        margin-right: 15px;
+
+      }
+
+      @include desktop {
+
+        width: 380px;
 
       }
 
       h3{
 
-        height: 2.2em;
-        font-size: 1.1rem;	
-        font-weight: 1000;	
-        line-height: 34px;
+        height: 2.5rem;
+        font-size: 1.5rem;	
+        line-height: 1.5rem;
         margin: 0;
+        margin-bottom: 10px;
         color: $color__brand;
 
         @include tablet {
-          font-size: 25px;
+          font-size: 20px;
+        }
+
+        @include desktop {
+          font-size: 28px;
         }
 
       }

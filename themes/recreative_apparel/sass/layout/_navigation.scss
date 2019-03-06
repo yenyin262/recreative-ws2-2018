@@ -88,7 +88,7 @@ a {
 	@include tablet {
 		width: 40%;
 	}
-
+ 
 	ul {
 
 		// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -124,10 +124,10 @@ a {
 		font-size: 13px;
 		@include tablet {
 			padding: 0 28px;
+			padding: 0 20px;
 		}
 	
-		&:hover,
-		&:active{
+		&:hover{
 			color : $color__text-main;
 			font-weight: 500;
 			border-top: 5px solid $color__brand;
@@ -219,3 +219,10 @@ a {
 	// 	&.focus > a {
 	// 	}
 	// }
+
+
+.active {
+			color : $color__text-main;
+			font-weight: 500;
+			border-top: 5px solid $color__brand;
+}
