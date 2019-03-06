@@ -10,7 +10,7 @@ get_header();
   <div id="custom-bg" class="header-banner" style="background-image: url('<?php echo $image[0]; ?>'); height: 100vh; background-attachment: fixed; background-size: cover;  background-position: center">
   </div>
   <?php endif;?>
-
+	<?php get_template_part( 'template-parts/content-navbar' ); ?>
 
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

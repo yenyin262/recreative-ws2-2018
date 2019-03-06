@@ -29,5 +29,17 @@
   		</div><!-- .entry-content -->
 	</div><!-- .entry-header -->
 
+<!-- SITE NAVIGATION -->
+  <?php // wp_nav_menu(
+                       // array(
+                          //  	'primary' => 'Primary Menu', 
+                          //  	'container' => 'nav',
+                            //    'menu_class' => 'main-nav main-navigation',
+                             //   'role' => 'navigation',
+                              //  'id' => 'site-navigation'
+                      //  )); //?>
+				<!-- SITE NAVIGATION -->
+	
+	<?php get_template_part( 'template-parts/content-navbar' ); ?>
 
 </article><!-- #post-## -->
