@@ -6,23 +6,27 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="content-banner">
-			<?php if ( has_post_thumbnail() ) : ?>
-				<?php // the_post_thumbnail( 'large' ); ?>
-				<?php //if ( has_post_thumbnail() ) : ?>
-				<?php $about = get_the_post_thumbnail_url(); ?>
-				<div class="about-banner" style="background-image: url('<?php echo $about;?>')"></div>
-			<?php endif; ?>
-	</div>
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+<?php $row = CFS()->get('content_for_about');
+		foreach ( $row as $content ) {?>
+<div class="post1">
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="upper-content">
+			<div>
+				<h3><?php echo $content['about_content_title'];?></h3>
+				<img src='<?php echo $content['about_content_image'];?>'>
+			</div>
 
-</article><!-- #post-## -->
+			<div class="entry-content">
+				<p><?php echo $content['about_content_blurb'];?></p>
+			</div>
+		</div>
+		
+		<div class="blog-entry-meta">
+			<a href="<?php echo wp_trim_words($content['about_more_link'],20) ?>">
+				<p>show me the process</p>
+			</a>
+		</div>
+
+	</article>
+</div>
+<?php }?>

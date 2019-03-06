@@ -11,13 +11,10 @@ $(function(){
     $('#blogCarousel').on('scroll', function(){
       scrollLeftAmount = $('#blogCarousel')[0].scrollLeft;
       updateProgress = ((wrapperWidth + scrollLeftAmount)/postLength) ;
-      console.log(updateProgress);
 
       $('#inProgress').width(`${updateProgress*100}%`);
 
     })
-
-
   }
 
 })

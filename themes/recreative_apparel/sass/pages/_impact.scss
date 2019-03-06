@@ -1,10 +1,9 @@
-
-
 .page-template-page-impact {
     .content-area {
-        position : relative;
+        position: relative;
     }
     .impact-container {
+        max-width: 1440px;
         width: 100vw;
         overflow: hidden;
         margin: 0 auto;
@@ -67,7 +66,7 @@
                     margin: 40px 0px;
                 }
                 @include desktop {
-                    grid-column: 3/span 5;
+                    grid-column: 2/span 5;
                     grid-row: 3/span 1;
                     margin: 50px 0px;
                 }
@@ -217,6 +216,12 @@
             .recycle-form {
                 text-align: center;
                 margin-top: 45px;
+                input {
+                    color: $color__border-gray;
+                    &::placeholder {
+                        color: $color__border-gray;
+                    }
+                }
                 .heading {
                     text-align: center;
                     margin: auto;
@@ -235,9 +240,6 @@
                 .wpcf7-form-control {
                     border: none;
                     border-bottom: 2px solid $color__border-gray;
-                    &::placeholder {
-                        color: #979797;
-                    }
                     @include tablet {
                         width: 100%;
                     }
@@ -256,4 +258,3 @@
         }
     }
 }
-

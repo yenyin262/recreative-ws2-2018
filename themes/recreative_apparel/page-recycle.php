@@ -23,6 +23,11 @@ Template Name: recycle
 
 
 <p id="demo"></p>
+<?php if ( has_post_thumbnail() ) : ?>
+				<?php $recycle = get_the_post_thumbnail_url(); ?>
+				<div class="recycle-banner" style="background-image: url('<?php echo $recycle;?>')"></div>
+			<?php endif; ?>
+<?php get_template_part( 'template-parts/content-navbar' ); ?>
   <div class="whiteOut">
 
   </div>
@@ -31,7 +36,7 @@ Template Name: recycle
   <div class="wheelPa">
     <img class="wheel" src="<?php echo get_template_directory_uri(); ?>/images/circle_cycle.png">
     <div class="imageHolder">
-      <img class="imageBackground" src="<?php echo CFS()->get( 'recycle_circle_image' ) ?>"> ;
+      <img class="imageBackground" src="<?php echo CFS()->get( 'recycle_circle_image' ) ?>">
     </div>
   </div>
 

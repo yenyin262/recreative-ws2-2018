@@ -1,22 +1,23 @@
+html {
+    margin-top: 0;
+}
 .menu-toggle { 
     display: none;
 }
 
 .frontpage-top-content { 
-    height: 62vh;
+    height: 53vh;
 
     @include tablet { 
-        height: 70vh;
+        height: 73vh;
     }
 
     @include desktop {
         height: 100vh;
-        // display: flex;
-        // flex-direction: row-reverse;
-    
-        
+       
+
     }
-}
+ }
 .ra-statement {
 width: 260px;
 line-height: 1.7;
@@ -27,7 +28,7 @@ line-height: 1.7;
     font-weight: bold;
     color: #0f4ab4;
     font-weight: bolder;
-    margin-top: 0;
+    margin-top: 30px;
 
     @include tablet { 
         width: 359px;
@@ -55,7 +56,6 @@ line-height: 1.7;
     }
 
     @include desktop {
-        
         width: 253px;
     }
 }
@@ -64,10 +64,15 @@ line-height: 1.7;
     height: 62vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right -72px;
+    background-position: right;
+    position: relative;
+    bottom: 20%;
 
     @include tablet { 
-        height: 70vh;
+        position: unset;
+        bottom:unset;
+        height: 73vh;
+
     }
 
 @include desktop {
@@ -75,9 +80,11 @@ line-height: 1.7;
     // width: 60%;
     // width: 58%;
     // background-position: top right;
-    height: calc(100vh - 75px);
+    // height: calc(100vh - 75px);
+    height: calc(100vh - 100px);
     background-position: 100% 0;
     background-size: contain;
+    
  }
 }
 .frontpage-content {
@@ -92,7 +99,7 @@ line-height: 1.7;
         // position: absolute;
         // height: 100vh;
         // width: 48%;
-        top: 33px;
+        top: 0px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -103,9 +110,7 @@ line-height: 1.7;
 }
 
 
-
-
-.ra-front-page-logo {
+.ra-blue-logo, .ra-front-page-logo {
     display: none;
     @include desktop {
     background-image:url('../../images/RA-blue-logo.svg');
@@ -114,5 +119,7 @@ line-height: 1.7;
       margin-left: 20px;
       margin-top: 50px; 
       display: inherit;
+      background-size: 90%;
+      background-repeat: no-repeat;
     }
 }

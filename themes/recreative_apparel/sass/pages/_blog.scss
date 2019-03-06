@@ -11,14 +11,20 @@
   width: 90%;
   overflow: hidden;
   margin: 0 auto;
-  height: 627px;
+  height: auto;
 
   .blog-carousel{
 
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
-    height: 100%;
+    height: 500px;
+
+    @include tablet {
+
+      height: 620px;
+
+    }
     
     .post1{
     
@@ -31,16 +37,22 @@
       @include tablet {
 
         width: 416px;
+        margin-right: 20px;
 
       }
 
       h3{
 
-        height: 3em;
-        font-size: 25px;	
-        font-weight: 900;	
+        height: 2.2em;
+        font-size: 1.1rem;	
+        font-weight: 1000;	
         line-height: 34px;
         margin: 0;
+        color: $color__brand;
+
+        @include tablet {
+          font-size: 25px;
+        }
 
       }
       img {
@@ -61,13 +73,16 @@
         .upper-content {
 
           display: flex;
-          justify-content: space-between;
           flex-flow: column nowrap;
+          height: 100%;
 
           .entry-content {
 
+            font-size: .9rem;
             margin-top: 0;
-            height: 166px;
+            @include tablet {
+              font-size: 1.1rem;
+            }
   
           }
         }
@@ -92,6 +107,13 @@
   .blog-entry-meta-author{
 
     text-transform: capitalize;
+    display: none; 
+
+    @include tablet {
+
+      display: inline;
+
+    }
 
   }
 }
@@ -100,14 +122,46 @@
 
   background-color: $color__border-gray;
   width: 90vw;
-  margin: 0 auto;
+  margin: 20px auto;
 
   .inside-progress {
 
-    height: 8px;
+    height: 4px;
     background-color: $color__text-main;
     width: 0;
 
+
+  }
+
+}
+
+//for now since someone is working on hero page
+
+.will-be-hero{
+  height: 100vh;
+  background-size:cover; 
+  background-position: center;
+}
+
+.bottom-margin-50{
+  margin-bottom: 50px;
+}
+
+//styling the search form
+
+.blog-button-styling{
+
+  button {
+
+    border: none; 
+    background: none;
+    box-shadow: none;
+
+  }
+
+  input:focus {
+
+    outline:none;
 
   }
 

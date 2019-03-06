@@ -11,13 +11,11 @@
 
 	<div class="frontpage-top-content">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php // the_post_thumbnail( 'large' ); ?>
-			<?php //if ( has_post_thumbnail() ) : ?>
-            <?php $thumb = get_the_post_thumbnail_url(); ?>
-            <div class="image-class" style="background-image: url('<?php echo $thumb;?>')"></div>
+            <?php $featuredImage = get_the_post_thumbnail_url(); ?>
+            <div class="image-class" style="background-image: url('<?php echo $featuredImage;?>')"></div>
 		<?php endif; ?>
+</div>
 
-		<!-- <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?> -->
 
 
 		<?php if ( 'post' === get_post_type() ) : ?>
@@ -26,10 +24,22 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 		<div class="frontpage-content">
-			<div class="ra-front-page-logo"></div>
+			<a class="ra-front-page-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
      	   <?php the_content(); ?>	
   		</div><!-- .entry-content -->
 	</div><!-- .entry-header -->
 
+<!-- SITE NAVIGATION -->
+  <?php // wp_nav_menu(
+                       // array(
+                          //  	'primary' => 'Primary Menu', 
+                          //  	'container' => 'nav',
+                            //    'menu_class' => 'main-nav main-navigation',
+                             //   'role' => 'navigation',
+                              //  'id' => 'site-navigation'
+                      //  )); //?>
+				<!-- SITE NAVIGATION -->
+	
+	<?php get_template_part( 'template-parts/content-navbar' ); ?>
 
 </article><!-- #post-## -->

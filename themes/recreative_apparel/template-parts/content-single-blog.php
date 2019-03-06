@@ -17,16 +17,25 @@
 
 	</header>
 
-  <div class="entry-meta">
+	<div class="blog-content-flex">
+		<div class="entry-meta single-blog-meta">
 
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+		<?php if($avatar = get_avatar(get_the_author_meta('ID')) !== FALSE): ?>
+                            <img src="<?php echo $avatar; ?>" alt="an avatar of the writter"/>
+                        <?php else: ?>
+                            <img src="/images/no-image-default.jpg"/>
+                        <?php endif; ?>
+			<?php the_author(); ?>
+			<?php red_starter_posted_on(); ?>
 
+		</div>
+
+		<div class="blog-entry-content">
+
+			<?php the_content(); ?> 
+
+		</div>
 	</div>
-
-  <div class="blog-entry-content">
-
-	<?php the_content(); ?> 
-	
-  </div>
+  
 
 </article>

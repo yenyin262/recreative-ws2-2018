@@ -1,10 +1,17 @@
 .ra-logo, .ra-blue-logo {
-background-image:url('../../images/RA-logo.svg');
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  margin-left: 20px;
-  margin-top: 18px; 
+    background-image: url(../../images/RA-logo.svg);
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    margin-left: 20px;
+    margin-top: 9px;
+    z-index: 999;
+    background-size: 78%;
+    background-repeat: no-repeat;
+
+    @include tablet { 
+        margin-top: 44px;
+    }
 }
 
 
@@ -17,4 +24,3 @@ background-image:url('../../images/RA-logo.svg');
     
 }
 }
-

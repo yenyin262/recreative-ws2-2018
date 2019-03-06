@@ -1,6 +1,5 @@
 .content-banner { 
     height:465px;
-    
 
     @include desktop { 
         height: 545px;
@@ -13,23 +12,54 @@
     height: 429px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -165px;
+    background-position: left;
+   
+    
+
     @include tablet { 
         background-position: center;
     }
 
     @include desktop { 
-        height: 529px;
+        // height: 529px;
+        height: 92vh;
+        background-attachment: fixed;
     }
 }
 
-.about-logo { 
+.white-logo { 
     background-image:url('../../images/RA-logo.svg');
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 102px;
+    height: 102px;
     margin-left: 20px;
     margin-top: 18px; 
+    background-repeat: no-repeat;
+    background-size: 78%;
+    background-repeat: no-repeat;
+
+    @include desktop {
+        width: 102px;
+        height: 102px;
+        background-size: 80%;
+      
+    }
   
 }
 
+.about-statement { 
+    font-size: 30px;
+    width: 400px;
+    color: #0f4ab4;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bolder;
+
+    @include tablet {
+        width: 650px;
+    }
+
+    @include desktop { 
+        width: 530px;
+    }
+}

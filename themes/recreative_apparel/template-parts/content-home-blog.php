@@ -11,14 +11,16 @@
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <div class="upper-content">
-      <?php the_title( '<h3>', '</h3>' ); ?>
+      <div>
+        <?php the_title( '<h3>', '</h3>' ); ?>
 
-      <?php if ( has_post_thumbnail() ) : ?>
+        <?php if ( has_post_thumbnail() ) : ?>
           <?php the_post_thumbnail( 'large' ); ?>
         <?php endif; ?>
+      </div>
 
       <div class="entry-content">
-        <?php echo wp_trim_words( get_the_content(), 50 );?>
+        <?php echo wp_trim_words( get_the_content(), 40 );?>
         <?php
           wp_link_pages( array(
             'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
