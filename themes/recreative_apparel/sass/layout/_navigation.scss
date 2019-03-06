@@ -119,11 +119,12 @@ nav{
 	li{
 	
 		text-align: center; 
-		padding: 0 20px;
+		padding: 0 10px;
 		border-top: transparent solid 5px;
 		font-size: 13px;
 		@include tablet {
 			padding: 0 28px;
+			padding: 0 20px;
 		}
 	
 		&:hover,
