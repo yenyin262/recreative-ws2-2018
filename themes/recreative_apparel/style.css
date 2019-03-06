@@ -1397,16 +1397,14 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
-<<<<<<< HEAD
 /* ================
 Nav
 ================== */
 .menu-primary-menu-container {
   top: 60vh; }
-=======
+
 html {
   margin-top: 0; }
->>>>>>> 885febf45189767bafcb42d2050c0fd94c47365c
 
 .menu-toggle {
   display: none; }
