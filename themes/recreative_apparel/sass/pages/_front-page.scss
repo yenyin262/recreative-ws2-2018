@@ -47,8 +47,11 @@ line-height: 1.7;
     text-align: left;
     line-height: 1.7;
     margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
     width: 270px;
     font-size: 16px;
+
 
     @include tablet { 
         width: 442px;
@@ -67,6 +70,7 @@ line-height: 1.7;
     background-position: right;
     position: relative;
     bottom: 20%;
+    width: 102%;
 
     @include tablet { 
         position: unset;
@@ -122,4 +126,15 @@ line-height: 1.7;
       background-size: 90%;
       background-repeat: no-repeat;
     }
+}
+
+ .hentry { 
+    margin: 0;
+}
+
+div.nav-wrapper  {
+
+ .home-navigation {
+    color: blue; 
+ }
 }

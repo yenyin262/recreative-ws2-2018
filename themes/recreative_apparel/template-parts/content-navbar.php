@@ -16,7 +16,7 @@
                         array(
                             	'primary' => 'Primary Menu', 
                             	'container' => 'nav',
-                                'menu_class' => 'main-nav main-navigation',
+                                'menu_class' => 'main-nav main-navigation home-navigation',
                                 'role' => 'navigation',
                                 'id' => 'site-navigation'
                         )); ?>

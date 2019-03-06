@@ -39,7 +39,7 @@
                               //  'id' => 'site-navigation'
                       //  )); //?>
 				<!-- SITE NAVIGATION -->
-	
+	<div class="nav-wrapper">
 	<?php get_template_part( 'template-parts/content-navbar' ); ?>
-
+	</div>
 </article><!-- #post-## -->

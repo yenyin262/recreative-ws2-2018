@@ -18,7 +18,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content-navbar' ); ?>
 				<div class="content-section">
 					<div class="blog-wrapper">
-						<div id="blogCarousel" class="blog-carousel">
+						<div id="blogCarousel about-carousel" class="blog-carousel about-carousel">
 							<?php get_template_part( 'template-parts/content-pageabout' ); ?>
 						</div>
 					</div>
