@@ -13,6 +13,18 @@ body{
 }
 
 
+
+
+.backgroundBigImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100vw;
+    height: 65vh;
+}
+
+
 /*========================
 wheel - contenedor 
 ====================*/
@@ -33,18 +45,20 @@ wheel - contenedor
     @include mobile {
     left: 8%;
     right: initial;
-    top: 33%;
+    /* top: 33% */;
+    position: absolute;
+    top:90vh;
     width: 33%;
     padding-top: 33%;
       
     }
 
-    @include tablet{
+    /* @include tablet{
         top: 30vh;
-    }
+    } */
 
     @include desktop{
-        top: 20vh;
+       /*  top: 20vh; */
         width: 30%;
         padding-top: 30%;
     }
@@ -91,8 +105,8 @@ text - contenedor
     top: 0%;
     height: 100vh;
     background: transparent;
-    border-top:100px solid white;
-    border-bottom: 100px solid white;
+    /* border-top:100px solid white;
+    border-bottom: 100px solid white; */
     z-index: 1;
     }
 
@@ -114,7 +128,8 @@ text - contenedor
         position: absolute;
         left: 46%;
         right: initial;
-        top: 20%;
+        /* top: 20%; */
+        top: 90vh;
         width: 45%;
     }
     
@@ -142,7 +157,7 @@ text - contenedor
 
     p{
         margin-bottom: 100px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     
         @include mobile{
             font-size: 1rem;
@@ -187,4 +202,13 @@ text - contenedor
         font-size: 2rem;
         cursor: pointer;
      }
+}
+
+
+/* ================
+Nav
+================== */
+
+.menu-primary-menu-container{
+    top: 60vh;
 }
