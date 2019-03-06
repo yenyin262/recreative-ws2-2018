@@ -1,9 +1,7 @@
 (function($) {
   'use strict';
-  console.log('hello');
 
   $('.recycle-form-btn').on('click', function() {
-    console.log('clicked');
     $('.recycle-form').replaceWith(
       "<div class='recycle-form-msg'>" +
         "<svg width='140px' height='140px' viewBox='0 0 140 140' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>" +
@@ -18,16 +16,5 @@
     );
   });
 
-  const  headerAnimation = () =>{
-    var speed = 1000;
-    var position = $('.content-area').offset().top;
-    $("html, body").animate({scrollTop: position}, speed, "swing");
-    return false;
-  };
-
-  $('#menu-primary-menu').click(function(){
-    console.log('footer animation')
-    setTimeout(headerAnimation, 1000);
-  });
 
 })(jQuery);

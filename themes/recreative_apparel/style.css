@@ -635,7 +635,7 @@ nav {
     @media (min-width: 768px) {
       .main-navigation li {
         padding: 0 28px; } }
-    .main-navigation li:hover, .main-navigation li:active {
+    .main-navigation li:hover {
       color: #636363;
       font-weight: 500;
       border-top: 5px solid #0545b2; }
@@ -692,6 +692,11 @@ nav {
   float: right;
   text-align: right;
   width: 50%; }
+
+.active {
+  color: #636363;
+  font-weight: 500;
+  border-top: 5px solid #0545b2; }
 
 .site-footer {
   border-top: 2px solid #979797;

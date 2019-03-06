@@ -88,7 +88,7 @@ nav{
 	@include tablet {
 		width: 40%;
 	}
-
+ 
 	ul {
 
 		// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -126,8 +126,7 @@ nav{
 			padding: 0 28px;
 		}
 	
-		&:hover,
-		&:active{
+		&:hover{
 			color : $color__text-main;
 			font-weight: 500;
 			border-top: 5px solid $color__brand;
@@ -214,3 +213,10 @@ nav{
 	// 	&.focus > a {
 	// 	}
 	// }
+
+
+.active {
+			color : $color__text-main;
+			font-weight: 500;
+			border-top: 5px solid $color__brand;
+}
