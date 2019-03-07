@@ -30,7 +30,7 @@ wheel - contenedor
     border-radius: 50%;
     z-index: 2;
 
-    @include desktop{
+    @include mobile{
         position: sticky;
         display: inline-block;
         margin-top:100px;
