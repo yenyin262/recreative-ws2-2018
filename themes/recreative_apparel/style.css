@@ -335,6 +335,19 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../fonts/Avenir-Heavy.eot");
+  src: url("../../fonts/Avenir-Heavy.eot?#iefix") format("embedded-opentype"), url("../../fonts/Avenir-Heavy.woff2") format("woff2"), url("../../fonts/Avenir-Bold.woff") format("woff"), url("../../fonts/Avenir-Bold.ttf") format("truetype"), url("../../fonts/Avenir-Bold.svg#Avenir-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../fonts/Avenir-Bold.woff") format("woff"), url("../../fonts/Avenir-Bold.otf") format("otf"), url("../../fonts/Avenir-Bold.ttf") format("truetype"), url("../../fonts/Avenir-Bold.svg#Avenir-Bold") format("svg");
+  font-weight: 1000;
+  font-style: bold; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -600,8 +613,7 @@ a {
       bottom: 0px;
       border-top: 1px solid #0f4ab4;
       z-index: 99;
-      background-color: white;
-      height: 100px; } }
+      background-color: white; } }
 
 .main-navigation {
   width: 100%;
@@ -924,13 +936,14 @@ a {
         line-height: 1.5rem;
         margin: 0;
         margin-bottom: 10px;
-        color: #0545b2; }
+        color: #0545b2;
+        font-weight: 800; }
         @media (min-width: 768px) {
           .blog-wrapper .blog-carousel .post1 h3 {
             font-size: 20px; } }
         @media (min-width: 1080px) {
           .blog-wrapper .blog-carousel .post1 h3 {
-            font-size: 28px; } }
+            font-size: 25px; } }
       .blog-wrapper .blog-carousel .post1 img {
         height: auto;
         width: 100%; }
@@ -987,7 +1000,7 @@ a {
 
 .wrapper-progress-blog {
   background-color: #979797;
-  width: 90vw;
+  width: 95vw;
   margin: 20px auto; }
   .wrapper-progress-blog .inside-progress {
     height: 4px;
@@ -1449,6 +1462,7 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
+=======
 html {
   margin-top: 0; }
 
@@ -1595,7 +1609,7 @@ html {
       .blog-entry-header .blog-entry-title {
         background-color: #F2F2F2;
         font-size: 50px;
-        line-height: 1.5em;
+        line-height: 1.2em;
         padding: 50px;
         width: 50%;
         margin: 0; } }

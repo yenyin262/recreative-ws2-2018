@@ -21,8 +21,8 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="about-statement"> 
 			<?php the_content(); ?>				
-			 </div>
-			 <?php endwhile; ?>
+			</div>
+			<?php endwhile; ?>
 				<div class="content-section">
 					<div class="blog-wrapper">
 						<div id="blogCarousel about-carousel" class="blog-carousel about-carousel">

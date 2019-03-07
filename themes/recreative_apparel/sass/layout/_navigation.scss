@@ -66,7 +66,6 @@ a {
     border-top: 1px solid #0f4ab4;
     z-index: 99;
 	background-color: white;
-	height: 100px;
 	
 }
 }
@@ -227,10 +226,14 @@ a {
 			border-top: 5px solid $color__brand;
 }
 
+.sticky-nav {
+	position: sticky;
+	top: 0;
+}
 .home {
 	a {
 			color: #0f4ab4;
-	 }
+	  }
 	}
 	
 	

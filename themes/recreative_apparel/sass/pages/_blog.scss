@@ -55,13 +55,14 @@
         margin: 0;
         margin-bottom: 10px;
         color: $color__brand;
+        font-weight: 800;
 
         @include tablet {
           font-size: 20px;
         }
 
         @include desktop {
-          font-size: 28px;
+          font-size: 25px;
         }
 
       }
@@ -131,7 +132,7 @@
 .wrapper-progress-blog {
 
   background-color: $color__border-gray;
-  width: 90vw;
+  width: 95vw;
   margin: 20px auto;
 
   .inside-progress {
