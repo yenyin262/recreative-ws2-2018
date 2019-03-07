@@ -36,13 +36,8 @@ $(function() {
             displayScroll: function (deg, imageW) {
                 if(window.innerWidth>425){
                 $(DOMStrings.scroll).css('transform', `rotate(${deg}deg)`);
-<<<<<<< HEAD
-                $(DOMStrings.imageBack).css('left', (150 - (deg * imageW))+'%')}
-
-=======
                 $(DOMStrings.imageBack).css('left', (150 - (deg * imageW))+"%");
                 }
->>>>>>> 885febf45189767bafcb42d2050c0fd94c47365c
             }
         };
     })();
@@ -131,33 +126,9 @@ $(function() {
     });
 
     $('.imageHolder').on({
-<<<<<<< HEAD
-        'touchend': function () {
-            $('.wheelPa').css('box-shadow','none');
-        }});
-
- let fixedscreen = $('.menu-primary-menu-container')['0'].offsetTop;
-
-    window.onscroll = function () {
-
-        console.log(fixedscreen,window.pageYOffset-95)
-        let fixChanged = $('.menu-primary-menu-container');
-        
-     if(!(fixedscreen > window.pageYOffset-95)){
-        fixChanged.css({'position':'fixed','top':'-50px','height':'10px'})
-     }else{
-        fixChanged.css({'position':'absolute','top':'60vh'})
-     }
-        
-     }
-
-}
-}) 
-=======
       touchend: function() {
         $('.wheelPa').css('box-shadow', 'none');
       }
     });
   }
 });
->>>>>>> 885febf45189767bafcb42d2050c0fd94c47365c
