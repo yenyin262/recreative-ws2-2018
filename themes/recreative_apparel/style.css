@@ -869,6 +869,11 @@ a {
         width: 600px;
         margin-right: 82px;
         margin-left: 82px; } }
+    @media (min-width: 1080px) {
+      .content-section .blog-wrapper .about-carousel .about-post {
+        width: 320px;
+        margin-right: 10px;
+        margin-left: 10px; } }
     .content-section .blog-wrapper .about-carousel .about-post .about-content {
       margin-top: 20px; }
     .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta {
