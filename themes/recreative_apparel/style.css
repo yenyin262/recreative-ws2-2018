@@ -710,6 +710,11 @@ a {
   font-weight: 500;
   border-top: 5px solid #0545b2; }
 
+.sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+
 .home a {
   color: #0f4ab4; }
 
@@ -1344,19 +1349,19 @@ wheel - contenedor
 text - contenedor 
 ====================*/
 .text-recycle {
-  margin-top: -70vh;
-  display: inline-block;
-  left: 46%;
-  margin-left: 40vw;
-  right: initial;
-  /* top: 20%; */
-  top: 90vh;
-  width: 45%; }
+  width: 90vw;
+  line-height: 1.5rem;
+  overflow: hidden; }
   @media (min-width: 425px) {
     .text-recycle {
-      width: 90vw;
-      line-height: 1.5rem;
-      overflow: hidden; } }
+      margin-top: -70vh;
+      display: inline-block;
+      left: 46%;
+      margin-left: 40vw;
+      right: initial;
+      /* top: 20%; */
+      top: 90vh;
+      width: 45%; } }
 
 .lateralMovement {
   display: -webkit-box;
@@ -1425,7 +1430,6 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
-=======
 html {
   margin-top: 0; }
 
