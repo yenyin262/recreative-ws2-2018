@@ -710,10 +710,11 @@ a {
   font-weight: 500;
   border-top: 5px solid #0545b2; }
 
-.sticky-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0; }
+.home a {
+  color: #0f4ab4; }
+
+.current-menu-item a {
+  color: #0f4ab4; }
 
 .site-footer {
   border-top: 2px solid #979797;
@@ -857,35 +858,40 @@ a {
   color: #0f4ab4;
   text-align: center;
   margin: 0 auto;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: 40px;
+  margin-bottom: 80px; }
   @media (min-width: 768px) {
     .about-statement {
-      width: 650px; } }
+      width: 650px;
+      margin-top: 60px;
+      margin-bottom: 60px; } }
   @media (min-width: 1080px) {
     .about-statement {
       width: 530px; } }
 
-div.blog-wrapper .about-carousel {
+.content-section .blog-wrapper .about-carousel {
   height: 900px; }
-
-@media (min-width: 768px) {
-  div.blog-wrapper div.about-post {
-    width: 600px;
-    margin-right: 60px;
-    margin-left: 60px; } }
-
-div.blog-wrapper div.about-post .about-content {
-  margin-top: 20px; }
-
-div.blog-wrapper div.about-post .about-entry-meta {
-  border-top: solid 1px grey;
-  padding-top: 20px;
-  margin-bottom: 50px; }
-  div.blog-wrapper div.about-post .about-entry-meta a {
-    text-decoration: none; }
-  div.blog-wrapper div.about-post .about-entry-meta .text {
-    text-decoration: none;
-    color: #0f4ab4; }
+  .content-section .blog-wrapper .about-carousel .about-post {
+    width: 357px;
+    margin-right: 32px;
+    margin-left: 32px; }
+    @media (min-width: 768px) {
+      .content-section .blog-wrapper .about-carousel .about-post {
+        width: 600px;
+        margin-right: 82px;
+        margin-left: 82px; } }
+    .content-section .blog-wrapper .about-carousel .about-post .about-content {
+      margin-top: 20px; }
+    .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta {
+      border-top: solid 1px grey;
+      padding-top: 20px;
+      margin-bottom: 50px; }
+      .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta a {
+        text-decoration: none; }
+      .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta .text {
+        text-decoration: none;
+        color: #0f4ab4; }
 
 .blog-hero-image {
   height: 100vh;
@@ -1451,9 +1457,7 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
-/* ================
-Nav
-================== */
+=======
 html {
   margin-top: 0; }
 
@@ -1554,9 +1558,6 @@ html {
 
 .hentry {
   margin: 0; }
-
-div.nav-wrapper .home-navigation {
-  color: blue; }
 
 .wrapper-20 {
   margin: 0 20px; }
