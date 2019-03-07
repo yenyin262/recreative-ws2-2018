@@ -335,6 +335,19 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../fonts/Avenir-Heavy.eot");
+  src: url("../../fonts/Avenir-Heavy.eot?#iefix") format("embedded-opentype"), url("../../fonts/Avenir-Heavy.woff2") format("woff2"), url("../../fonts/Avenir-Bold.woff") format("woff"), url("../../fonts/Avenir-Bold.ttf") format("truetype"), url("../../fonts/Avenir-Bold.svg#Avenir-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../fonts/Avenir-Bold.woff") format("woff"), url("../../fonts/Avenir-Bold.otf") format("otf"), url("../../fonts/Avenir-Bold.ttf") format("truetype"), url("../../fonts/Avenir-Bold.svg#Avenir-Bold") format("svg");
+  font-weight: 1000;
+  font-style: bold; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -600,8 +613,7 @@ a {
       bottom: 0px;
       border-top: 1px solid #0f4ab4;
       z-index: 99;
-      background-color: white;
-      height: 100px; } }
+      background-color: white; } }
 
 .main-navigation {
   width: 100%;
@@ -697,6 +709,12 @@ a {
   color: #636363;
   font-weight: 500;
   border-top: 5px solid #0545b2; }
+
+.home a {
+  color: #0f4ab4; }
+
+.current-menu-item a {
+  color: #0f4ab4; }
 
 .site-footer {
   border-top: 2px solid #979797;
@@ -840,35 +858,45 @@ a {
   color: #0f4ab4;
   text-align: center;
   margin: 0 auto;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: 40px;
+  margin-bottom: 80px; }
   @media (min-width: 768px) {
     .about-statement {
-      width: 650px; } }
+      width: 650px;
+      margin-top: 60px;
+      margin-bottom: 60px; } }
   @media (min-width: 1080px) {
     .about-statement {
       width: 530px; } }
 
-div.blog-wrapper .about-carousel {
+.content-section .blog-wrapper .about-carousel {
   height: 900px; }
-
-@media (min-width: 768px) {
-  div.blog-wrapper div.about-post {
-    width: 600px;
-    margin-right: 60px;
-    margin-left: 60px; } }
-
-div.blog-wrapper div.about-post .about-content {
-  margin-top: 20px; }
-
-div.blog-wrapper div.about-post .about-entry-meta {
-  border-top: solid 1px grey;
-  padding-top: 20px;
-  margin-bottom: 50px; }
-  div.blog-wrapper div.about-post .about-entry-meta a {
-    text-decoration: none; }
-  div.blog-wrapper div.about-post .about-entry-meta .text {
-    text-decoration: none;
-    color: #0f4ab4; }
+  .content-section .blog-wrapper .about-carousel .about-post {
+    width: 357px;
+    margin-right: 32px;
+    margin-left: 32px; }
+    @media (min-width: 768px) {
+      .content-section .blog-wrapper .about-carousel .about-post {
+        width: 600px;
+        margin-right: 82px;
+        margin-left: 82px; } }
+    @media (min-width: 1080px) {
+      .content-section .blog-wrapper .about-carousel .about-post {
+        width: 320px;
+        margin-right: 10px;
+        margin-left: 10px; } }
+    .content-section .blog-wrapper .about-carousel .about-post .about-content {
+      margin-top: 20px; }
+    .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta {
+      border-top: solid 1px grey;
+      padding-top: 20px;
+      margin-bottom: 50px; }
+      .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta a {
+        text-decoration: none; }
+      .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta .text {
+        text-decoration: none;
+        color: #0f4ab4; }
 
 .blog-hero-image {
   height: 100vh;
@@ -908,13 +936,14 @@ div.blog-wrapper div.about-post .about-entry-meta {
         line-height: 1.5rem;
         margin: 0;
         margin-bottom: 10px;
-        color: #0545b2; }
+        color: #0545b2;
+        font-weight: 800; }
         @media (min-width: 768px) {
           .blog-wrapper .blog-carousel .post1 h3 {
             font-size: 20px; } }
         @media (min-width: 1080px) {
           .blog-wrapper .blog-carousel .post1 h3 {
-            font-size: 28px; } }
+            font-size: 25px; } }
       .blog-wrapper .blog-carousel .post1 img {
         height: auto;
         width: 100%; }
@@ -971,7 +1000,7 @@ div.blog-wrapper div.about-post .about-entry-meta {
 
 .wrapper-progress-blog {
   background-color: #979797;
-  width: 90vw;
+  width: 95vw;
   margin: 20px auto; }
   .wrapper-progress-blog .inside-progress {
     height: 4px;
@@ -1396,12 +1425,7 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
-/* ================
-Nav
-================== */
-.menu-primary-menu-container {
-  top: 60vh; }
-
+=======
 html {
   margin-top: 0; }
 
@@ -1503,9 +1527,6 @@ html {
 .hentry {
   margin: 0; }
 
-div.nav-wrapper .home-navigation {
-  color: blue; }
-
 .wrapper-20 {
   margin: 0 20px; }
 
@@ -1551,7 +1572,7 @@ div.nav-wrapper .home-navigation {
       .blog-entry-header .blog-entry-title {
         background-color: #F2F2F2;
         font-size: 50px;
-        line-height: 1.5em;
+        line-height: 1.2em;
         padding: 50px;
         width: 50%;
         margin: 0; } }
