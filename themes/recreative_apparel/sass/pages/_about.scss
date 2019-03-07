@@ -49,28 +49,36 @@
   text-align: center;
   margin: 0 auto;
   font-weight: bolder;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
 
   @include tablet {
     width: 650px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   @include desktop {
     width: 530px;
   }
 }
-
-div.blog-wrapper {
+.content-section {
+.blog-wrapper {
+  
   .about-carousel {
     height: 900px;
-  }
-
-  div.about-post {
+  
+  .about-post {
+    width: 357px;
+    margin-right: 32px;
+    margin-left: 32px;
     @include tablet {
       width: 600px;
-      margin-right: 60px;
-      margin-left: 60px;
+      margin-right: 82px;
+      margin-left: 82px;
     }
-
+  
     .about-content {
       margin-top: 20px;
     }
@@ -89,4 +97,6 @@ div.blog-wrapper {
       }
     }
   }
+}
+}
 }
