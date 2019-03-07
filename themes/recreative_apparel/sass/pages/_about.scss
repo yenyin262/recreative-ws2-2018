@@ -1,81 +1,92 @@
-.content-banner { 
-    height:465px;
+.content-banner {
+  height: 465px;
 
-    @include desktop { 
-        height: 545px;
-    }
-    
+  @include desktop {
+    height: 545px;
+  }
 }
 
-.about-banner { 
-    background-image:url('../../images/RA-logo.svg');
-    height: 429px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-   
-    
+.about-banner {
+  background-image: url("../../images/RA-logo.svg");
+  height: 429px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
 
-    @include tablet { 
-        background-position: center;
-    }
+  @include tablet {
+    background-position: center;
+  }
 
-    @include desktop { 
-        // height: 529px;
-        height: 92vh;
-        background-attachment: fixed;
-    }
+  @include desktop {
+    // height: 529px;
+    height: 92vh;
+    background-attachment: fixed;
+  }
 }
 
-.white-logo { 
-    background-image:url('../../images/RA-logo.svg');
-    position: absolute;
+.white-logo {
+  background-image: url("../../images/RA-logo.svg");
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  margin-left: 20px;
+  margin-top: 18px;
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-repeat: no-repeat;
+
+  @include desktop {
     width: 102px;
     height: 102px;
-    margin-left: 20px;
-    margin-top: 18px; 
-    background-repeat: no-repeat;
-    background-size: 78%;
-    background-repeat: no-repeat;
-
-    @include desktop {
-        width: 102px;
-        height: 102px;
-        background-size: 80%;
-      
-    }
-  
+    background-size: 80%;
+  }
 }
 
-.about-statement { 
-    font-size: 30px;
-    width: 400px;
-    color: #0f4ab4;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: bolder;
+.about-statement {
+  font-size: 30px;
+  width: 400px;
+  color: #0f4ab4;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
 
-    @include tablet {
-        width: 650px;
-    }
+  @include tablet {
+    width: 650px;
+  }
 
-    @include desktop { 
-        width: 530px;
-    }
+  @include desktop {
+    width: 530px;
+  }
 }
 
-div.blog-wrapper  { 
-     .about-carousel { 
+div.blog-wrapper {
+  .about-carousel {
     height: 900px;
-}
-}
+  }
 
-.about-content { 
- margin-top: 20px;
-}
+  div.about-post {
+    @include tablet {
+      width: 600px;
+      margin-right: 60px;
+      margin-left: 60px;
+    }
 
-.about-entry-meta { 
-    border-top: solid 1px grey;
-    padding-top: 20px;
-    margin-bottom: 50px;
+    .about-content {
+      margin-top: 20px;
+    }
+
+    .about-entry-meta {
+      border-top: solid 1px grey;
+      padding-top: 20px;
+      margin-bottom: 50px;
+      a {
+        text-decoration: none;
+      }
+
+      .text {
+        text-decoration: none;
+        color: #0f4ab4;
+      }
+    }
+  }
 }

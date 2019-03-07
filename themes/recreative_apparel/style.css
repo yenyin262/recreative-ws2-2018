@@ -632,7 +632,7 @@ a {
       .main-navigation li {
         padding: 0 28px;
         padding: 0 20px; } }
-    .main-navigation li:hover, .main-navigation li:active {
+    .main-navigation li:hover {
       color: #636363;
       font-weight: 500;
       border-top: 5px solid #0545b2; }
@@ -851,13 +851,24 @@ a {
 div.blog-wrapper .about-carousel {
   height: 900px; }
 
-.about-content {
+@media (min-width: 768px) {
+  div.blog-wrapper div.about-post {
+    width: 600px;
+    margin-right: 60px;
+    margin-left: 60px; } }
+
+div.blog-wrapper div.about-post .about-content {
   margin-top: 20px; }
 
-.about-entry-meta {
+div.blog-wrapper div.about-post .about-entry-meta {
   border-top: solid 1px grey;
   padding-top: 20px;
   margin-bottom: 50px; }
+  div.blog-wrapper div.about-post .about-entry-meta a {
+    text-decoration: none; }
+  div.blog-wrapper div.about-post .about-entry-meta .text {
+    text-decoration: none;
+    color: #0f4ab4; }
 
 .blog-hero-image {
   height: 100vh;
