@@ -1300,18 +1300,18 @@ body {
 wheel - contenedor 
 ====================*/
 .wheelPa {
-  width: 180px;
+  width: 150px;
   top: 10vh;
   left: 0;
   right: 0;
   margin: auto;
   position: -webkit-sticky;
   position: sticky;
-  padding-top: 180px;
+  padding-top: 150px;
   height: auto;
   border-radius: 50%;
   z-index: 2; }
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     .wheelPa {
       position: -webkit-sticky;
       position: sticky;
@@ -1350,9 +1350,10 @@ text - contenedor
 ====================*/
 .text-recycle {
   width: 90vw;
+  margin-top: 40px;
   line-height: 1.5rem;
   overflow: hidden; }
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     .text-recycle {
       margin-top: -70vh;
       display: inline-block;
@@ -1368,7 +1369,7 @@ text - contenedor
   display: -ms-flexbox;
   display: flex;
   width: 360vw; }
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     .lateralMovement {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1383,27 +1384,28 @@ text - contenedor
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 80vw;
+  min-width: 90vw;
   margin: 0 5vw; }
   .story-recycle h2 {
     color: #0545b2;
     margin-bottom: 1rem; }
   .story-recycle p {
-    margin-bottom: 100px;
+    width: 90%;
     font-size: 0.6rem; }
-    @media (min-width: 425px) {
+    @media (min-width: 600px) {
       .story-recycle p {
+        margin-bottom: 100px;
         font-size: 1rem; } }
   .story-recycle img {
     width: 100%; }
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     .story-recycle {
       width: 40vw;
       min-width: 10vw; } }
 
 .arrow-down {
   display: none; }
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     .arrow-down {
       display: block;
       position: -webkit-sticky;
@@ -1417,7 +1419,7 @@ text - contenedor
 
 .arrow-up {
   display: none; }
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     .arrow-up {
       display: block;
       position: -webkit-sticky;
@@ -1429,6 +1431,11 @@ text - contenedor
       z-index: 4;
       font-size: 2rem;
       cursor: pointer; } }
+
+.whiter {
+  background: white;
+  height: auto;
+  width: 100%; }
 
 html {
   margin-top: 0; }

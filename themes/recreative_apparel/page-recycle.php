@@ -18,12 +18,15 @@ Template Name: recycle
     <i class="fas fa-angle-up"></i>
       </div>
 
+  <div class="whiter">
   <div class="wheelPa">
     <img class="wheel" src="<?php echo get_template_directory_uri(); ?>/images/circle_cycle.png">
     <div class="imageHolder">
       <img class="imageBackground" src="<?php echo CFS()->get( 'recycle_circle_image' ) ?>">
     </div>
   </div>
+</div>
+  
 
   
         <div class="arrow-down">
