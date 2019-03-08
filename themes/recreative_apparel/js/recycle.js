@@ -1,14 +1,22 @@
 $(function() {
+  console.log('hi');
+ 
+  
   if (window.location.search === '?page_id=18') {
+
+
+
+
     let modelCtrl = (function() {
       let data, max, percentage, degree, hScreen;
 
       return {
-        calculateScroll: function(info) {
+        calculateScroll: function(info,textR) {
           max = $('.wheelPercentage')['0'].offsetTop;
-          data = info.path[1].pageYOffset;
+          data = info.path[1].pageYOffset - textR;
           hScreen = info.path[1].outerHeight;
-          percentage = Math.round((data / (max - hScreen / 2)) * 100);
+          percentage = Math.round((data / (max- textR - hScreen / 2)) * 100);
+          console.log('data=' + data + 'percentage=' + percentage + 'max=' + max + 'hScreen=' + hScreen );
           percentage = percentage > 100 ? 100 : percentage;
           degree = Math.round(percentage * 3.6);
         },
@@ -44,10 +52,15 @@ $(function() {
 
     let controller = function(view, model) {
       window.onscroll = function(e) {
+
+        let windowY = window.pageYOffset;
+        let textR = $('.text-recycle').offset().top;
+
+        if(windowY>textR){
         let movement, imageWidth;
 
         // calculate values
-        model.calculateScroll(e);
+        model.calculateScroll(e,textR);
 
         // obtain Values from scroll
 
@@ -57,6 +70,7 @@ $(function() {
         //create the view changes
 
         view.displayScroll(movement, imageWidth);
+      }
       };
     };
 
