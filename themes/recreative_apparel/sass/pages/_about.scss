@@ -18,8 +18,8 @@
   }
 
   @include desktop {
-    // height: 529px;
-    height: 92vh;
+    // height: 92vh;
+    height: 100vh;
     background-attachment: fixed;
   }
 }
@@ -60,7 +60,8 @@
   }
 
   @include desktop {
-    width: 530px;
+    width: 650px;
+    font-size: 35px;
   }
 }
 .content-section {
@@ -68,6 +69,11 @@
   
   .about-carousel {
     height: 900px;
+    @include desktop { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   
   .about-post {
     width: 357px;
@@ -85,11 +91,11 @@
       margin-left: 10px;
     }
 
-  //   @include desktop-large { 
-  // width: 450px;
-  // margin-right: 60px;
-  // margin-left: 60px;
-  //   }
+    @include desktop-large { 
+  width: 450px;
+  margin-right: 60px;
+  margin-left: 60px;
+    }
   
     .about-content {
       margin-top: 20px;

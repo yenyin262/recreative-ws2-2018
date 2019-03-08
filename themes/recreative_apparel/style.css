@@ -642,14 +642,11 @@ a {
     font-size: 13px; }
     @media (min-width: 768px) {
       .main-navigation li {
-        padding: 0 28px;
-        padding: 0 20px; } }
+        padding: 0 35px; } }
     .main-navigation li:hover {
       color: #636363;
       font-weight: 500;
       border-top: 5px solid #0545b2; }
-  .main-navigation :link {
-    color: #979797; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -670,7 +667,7 @@ a {
     left: 7%; }
     @media (min-width: 768px) {
       .main-navigation:after {
-        left: 27%; } }
+        left: 20%; } }
     @media (min-width: 1080px) {
       .main-navigation:after {
         left: 37%; } }
@@ -709,6 +706,11 @@ a {
   color: #636363;
   font-weight: 500;
   border-top: 5px solid #0545b2; }
+
+.sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 .home a {
   color: #0f4ab4; }
@@ -833,7 +835,7 @@ a {
       background-position: center; } }
   @media (min-width: 1080px) {
     .about-banner {
-      height: 92vh;
+      height: 100vh;
       background-attachment: fixed; } }
 
 .white-logo {
@@ -868,10 +870,22 @@ a {
       margin-bottom: 60px; } }
   @media (min-width: 1080px) {
     .about-statement {
-      width: 530px; } }
+      width: 650px;
+      font-size: 35px; } }
 
 .content-section .blog-wrapper .about-carousel {
   height: 900px; }
+  @media (min-width: 1080px) {
+    .content-section .blog-wrapper .about-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .content-section .blog-wrapper .about-carousel .about-post {
     width: 357px;
     margin-right: 32px;
@@ -886,6 +900,11 @@ a {
         width: 320px;
         margin-right: 10px;
         margin-left: 10px; } }
+    @media (min-width: 1200px) {
+      .content-section .blog-wrapper .about-carousel .about-post {
+        width: 450px;
+        margin-right: 60px;
+        margin-left: 60px; } }
     .content-section .blog-wrapper .about-carousel .about-post .about-content {
       margin-top: 20px; }
     .content-section .blog-wrapper .about-carousel .about-post .about-entry-meta {
@@ -1462,7 +1481,6 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
-=======
 html {
   margin-top: 0; }
 
@@ -1532,9 +1550,9 @@ html {
       height: 73vh; } }
   @media (min-width: 1080px) {
     .image-class {
-      height: calc(100vh - 100px);
+      height: 100vh;
       background-position: 100% 0;
-      background-size: contain; } }
+      background-size: cover; } }
 
 .frontpage-content {
   margin: 0; }

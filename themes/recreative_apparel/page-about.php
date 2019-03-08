@@ -19,9 +19,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content-navbar' ); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
-			<div class="about-statement"> 
 			<?php the_content(); ?>				
-			</div>
 			<?php endwhile; ?>
 				<div class="content-section">
 					<div class="blog-wrapper">
