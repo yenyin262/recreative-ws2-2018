@@ -184,6 +184,6 @@ text - contenedor
     width: 100%;
     z-index: 0;
     @include mobile-recycle {
-        display: none;
+        background: transparent;
     }
 }

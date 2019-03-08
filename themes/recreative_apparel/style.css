@@ -1434,8 +1434,16 @@ text - contenedor
 
 .whiter {
   background: white;
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
   height: auto;
-  width: 100%; }
+  top: 50px;
+  width: 100%;
+  z-index: 0; }
+  @media (min-width: 600px) {
+    .whiter {
+      background: transparent; } }
 
 html {
   margin-top: 0; }
