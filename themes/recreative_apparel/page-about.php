@@ -21,9 +21,12 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>				
 			<?php endwhile; ?>
+			<div class="wrapper-progress-about">
+        <div id="progressAbout" class="progress-about"></div>
+      </div>
 				<div class="content-section">
 					<div class="blog-wrapper">
-						<div id="blogCarousel about-carousel" class="blog-carousel about-carousel">
+						<div id="blogCarousel" class="blog-carousel about-carousel">
 							<?php get_template_part( 'template-parts/content-pageabout' ); ?>
 						</div>
 					</div>

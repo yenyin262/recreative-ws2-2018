@@ -917,6 +917,15 @@ a {
         text-decoration: none;
         color: #0f4ab4; }
 
+.wrapper-progress-about {
+  background-color: #979797;
+  width: 90vw;
+  margin: 20px auto; }
+  .wrapper-progress-about .progress-about {
+    height: 4px;
+    background-color: #636363;
+    width: 33.3%; }
+
 .blog-hero-image {
   height: 100vh;
   width: 100vw;
