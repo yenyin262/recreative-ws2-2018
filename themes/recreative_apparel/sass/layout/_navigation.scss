@@ -226,3 +226,8 @@ a {
 			font-weight: 500;
 			border-top: 5px solid $color__brand;
 }
+
+.header-sticky {
+	position: sticky !important;
+	top: 0;
+}

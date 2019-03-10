@@ -698,6 +698,11 @@ a {
   font-weight: 500;
   border-top: 5px solid #0545b2; }
 
+.header-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0; }
+
 .site-footer {
   border-top: 2px solid #979797;
   margin: 0 auto; }
@@ -871,7 +876,7 @@ div.blog-wrapper div.about-post .about-entry-meta {
     color: #0f4ab4; }
 
 .blog-hero-image {
-  height: 100vh;
+  height: 86vh;
   width: 100vw;
   background: red; }
 
@@ -1436,9 +1441,6 @@ text - contenedor
 /* ================
 Nav
 ================== */
-.menu-primary-menu-container {
-  top: 60vh; }
-
 html {
   margin-top: 0; }
 
@@ -1639,3 +1641,9 @@ div.nav-wrapper .home-navigation {
         margin: 0; } }
     .blog-content-flex .single-blog-meta time {
       font-style: italic; }
+
+.search-page-header {
+  text-align: center;
+  margin: 50px 0; }
+  .search-page-header .search-word {
+    border-bottom: 1px dotted #0545b2; }

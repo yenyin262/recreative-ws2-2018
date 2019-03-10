@@ -7,23 +7,24 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( has_post_thumbnail() ) : ?>
-				<?php $about = get_the_post_thumbnail_url(); ?>
-				<div class="about-banner" style="background-image: url('<?php echo $about;?>')"></div>
-			<?php endif; ?>
+			<?php $about = get_the_post_thumbnail_url(); ?>
+			<div class="about-banner" style="background-image: url('<?php echo $about;?>')"></div>
+		<?php endif; ?>
+
 			<?php get_template_part( 'template-parts/content-navbar' ); ?>
+
 				<div class="content-section">
 					<div class="blog-wrapper">
 						<div id="blogCarousel about-carousel" class="blog-carousel about-carousel">
 							<?php get_template_part( 'template-parts/content-pageabout' ); ?>
-						</div>
 					</div>
 				</div>
 
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
