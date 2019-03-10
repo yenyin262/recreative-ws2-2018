@@ -1741,6 +1741,8 @@ html {
             justify-content: flex-end;
     text-transform: capitalize;
     color: #979797; }
+  .entry-meta .social-meta {
+    color: #0545b2; }
 
 .hide-social .social-meta i {
   display: none; }

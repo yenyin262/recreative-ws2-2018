@@ -138,6 +138,9 @@
     text-transform: capitalize;
     color:$color__border-gray;
   }
+  .social-meta {
+    color: $color__brand;
+  }
 }
 
 .hide-social{
@@ -162,5 +165,4 @@
       font-size: 2rem;
     }
   }
-  
 }
