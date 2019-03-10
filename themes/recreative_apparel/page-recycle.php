@@ -38,9 +38,9 @@ Template Name: recycle
     <div class="lateralMovement">
       <?php
       $fields = CFS()->get( 'sub_pages' );
-
+      $targetX = 1;
       foreach ( $fields as $field ) {?>
-      <div class="story-recycle">
+      <div class="story-recycle story-recycle<?php echo $targetX;$targetX++?>">
         <img src='<?php echo $field['recycle_image'];?>'><br>
         <h2><?php echo $field['recycle_subtitle'];?></h2>
         <p><?php echo $field['recycle_content'];?></p>
