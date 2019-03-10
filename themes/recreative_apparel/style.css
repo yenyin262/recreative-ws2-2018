@@ -943,8 +943,17 @@ a {
         text-decoration: none;
         color: #0f4ab4; }
 
+.wrapper-progress-about {
+  background-color: #979797;
+  width: 90vw;
+  margin: 20px auto; }
+  .wrapper-progress-about .progress-about {
+    height: 4px;
+    background-color: #636363;
+    width: 33.3%; }
+
 .blog-hero-image {
-  height: 100vh;
+  height: 86vh;
   width: 100vw;
   background: red; }
 
@@ -1749,3 +1758,9 @@ html {
     text-decoration: none; }
     .post-up-next a .post-nav-title {
       font-size: 2rem; }
+
+.search-page-header {
+  text-align: center;
+  margin: 50px 0; }
+  .search-page-header .search-word {
+    border-bottom: 1px dotted #0545b2; }

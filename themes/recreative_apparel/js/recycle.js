@@ -1,7 +1,7 @@
 $(function() {
-  console.log('hi');
- 
   
+ 
+ 
   if (window.location.search === '?page_id=18') {
 
 
@@ -16,7 +16,6 @@ $(function() {
           data = info.path[1].pageYOffset - textR;
           hScreen = info.path[1].outerHeight;
           percentage = Math.round((data / (max- textR - hScreen / 2)) * 100);
-          console.log('data=' + data + 'percentage=' + percentage + 'max=' + max + 'hScreen=' + hScreen );
           percentage = percentage > 100 ? 100 : percentage;
           degree = Math.round(percentage * 3.6);
         },
@@ -102,47 +101,52 @@ $(function() {
       );
     });
 
-    /* Testing mobile
-     */
 
-    let movement = 0;
-    $('.imageHolder').on({
+/* ================
+Testing mobile
+ =================    */
+
+
+if(window.innerWidth<=600){
+
+    
+
+    let m__d = 15;
+    let movementdirectional = 0;
+    let story1 = $('.story-recycle1')[0].offsetLeft-m__d;
+    let story2 = $('.story-recycle2')[0].offsetLeft-m__d;
+    let story3 = $('.story-recycle3')[0].offsetLeft-m__d;
+    let story4 = $('.story-recycle4')[0].offsetLeft-m__d;
+    let story5 = $('.story-recycle5')[0].offsetLeft-m__d;
+    let story6 = $('.story-recycle6')[0].offsetLeft-m__d;
+    
+    
+    $(window).on({
       touchstart: function(initialTouch) {
-        let initialValue = 0;
-        $('.imageHolder').on({
-          touchmove: function(e) {
-            let maxWidth, currentX;
-            initialValue = initialTouch.touches[0].clientX;
+        let lMovement = Math.abs($('.lateralMovement')[0].offsetLeft)
 
-            maxWidth =
-              $('.lateralMovement')[0].scrollWidth - window.innerWidth * 1.12;
-            currentX = e.touches[0].clientX;
-            if (currentX <= initialValue) {
-              movement -= 1;
-            } else if (currentX > initialValue) {
-              movement += 2;
-            }
+        if(window.innerWidth/2<initialTouch.touches[0].clientX){
+       
+       
+       if(lMovement<story2){movementdirectional = story2} 
+        else if(lMovement<story3){movementdirectional= story3}
+        else if(lMovement<story4){movementdirectional =story4}
+        else if (lMovement<story5){movementdirectional =story5}
+        else if (lMovement+20<story6){movementdirectional = story6;}
+        else{movementdirectional = story1}
 
-            $('.wheelPa').css('box-shadow', '2px 2px 10px #0545b2');
-
-            if (movement > -maxWidth && movement < 1) {
-              $('.lateralMovement').css('margin-left', movement);
-            }
-
-            /*  if(currentX<initialValue && movement>-maxWidth){
-                     
-                     } else if (currentX>initialValue && movement<1){
-                      $('.lateralMovement').css('margin-left', movement );
-                     } */
-          }
-        });
       }
-    });
-
-    $('.imageHolder').on({
-      touchend: function() {
-        $('.wheelPa').css('box-shadow', 'none');
+      else{
+        if (lMovement> story5){movementdirectional = story5;}
+        else if (lMovement>story4){movementdirectional =story4}
+        else if (lMovement>story3){movementdirectional =story3}
+        else if (lMovement>story2){movementdirectional =story2}
+        else if (lMovement>story1){movementdirectional =story1}
+        
       }
-    });
-  }
-});
+
+        $('.lateralMovement').animate({'margin-left':-movementdirectional},'slow');
+            
+        
+  }}) }
+}})
