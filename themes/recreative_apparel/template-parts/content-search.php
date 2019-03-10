@@ -12,10 +12,19 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<div class="content-section">
+                  <div class="blog-wrapper">
+                    <div id="blogCarousel" class="blog-carousel">
+                      <?php while (have_posts()): the_post();?>
+                            <?php get_template_part('template-parts/content', 'home-blog');?>
+                          <?php endwhile; // End of the loop. ?>
+                      <?php wp_reset_postdata();?>
+                    </div>
+                  </div>
+              <div class="wrapper-progress-blog">
+                <div id="inProgress" class="inside-progress"></div>
+              </div>
+           </div>		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">

@@ -929,8 +929,17 @@ a {
         text-decoration: none;
         color: #0f4ab4; }
 
+.wrapper-progress-about {
+  background-color: #979797;
+  width: 90vw;
+  margin: 20px auto; }
+  .wrapper-progress-about .progress-about {
+    height: 4px;
+    background-color: #636363;
+    width: 33.3%; }
+
 .blog-hero-image {
-  height: 100vh;
+  height: 86vh;
   width: 100vw;
   background: red; }
 
@@ -1466,6 +1475,7 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
+=======
 .whiter {
   background: white;
   padding: 20px 0;
@@ -1677,3 +1687,9 @@ html {
         margin: 0; } }
     .blog-content-flex .single-blog-meta time {
       font-style: italic; }
+
+.search-page-header {
+  text-align: center;
+  margin: 50px 0; }
+  .search-page-header .search-word {
+    border-bottom: 1px dotted #0545b2; }

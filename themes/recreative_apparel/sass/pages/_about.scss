@@ -118,3 +118,19 @@
 }
 }
 }
+
+.wrapper-progress-about {
+
+  background-color: $color__border-gray;
+  width: 90vw;
+  margin: 20px auto;
+
+  .progress-about {
+    height: 4px;
+    background-color: $color__text-main;
+    width: 33.3%;
+
+
+  }
+
+}
