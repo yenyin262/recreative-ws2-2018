@@ -18,8 +18,8 @@
   }
 
   @include desktop {
-    // height: 529px;
-    height: 92vh;
+    // height: 92vh;
+    height: 100vh;
     background-attachment: fixed;
   }
 }
@@ -49,28 +49,54 @@
   text-align: center;
   margin: 0 auto;
   font-weight: bolder;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
 
   @include tablet {
     width: 650px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   @include desktop {
-    width: 530px;
+    width: 650px;
+    font-size: 35px;
   }
 }
-
-div.blog-wrapper {
+.content-section {
+.blog-wrapper {
+  
   .about-carousel {
     height: 900px;
-  }
-
-  div.about-post {
+    @include desktop { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  .about-post {
+    width: 357px;
+    margin-right: 32px;
+    margin-left: 32px;
     @include tablet {
       width: 600px;
-      margin-right: 60px;
-      margin-left: 60px;
+      margin-right: 82px;
+      margin-left: 82px;
+    }
+    @include desktop { 
+     
+      width: 320px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
 
+    @include desktop-large { 
+  width: 450px;
+  margin-right: 60px;
+  margin-left: 60px;
+    }
+  
     .about-content {
       margin-top: 20px;
     }
@@ -89,4 +115,22 @@ div.blog-wrapper {
       }
     }
   }
+}
+}
+}
+
+.wrapper-progress-about {
+
+  background-color: $color__border-gray;
+  width: 90vw;
+  margin: 20px auto;
+
+  .progress-about {
+    height: 4px;
+    background-color: $color__text-main;
+    width: 33.3%;
+
+
+  }
+
 }

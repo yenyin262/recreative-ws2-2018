@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // (function($) {
 //   // 'use strict';
 
@@ -33,3 +34,19 @@
 // })(jQuery);
 
 // //   url: red_vars.rest_url + 'wp/v2/pages/' + red_vars.page_id,
+=======
+(function($) {
+  'use strict';
+  const headerAnimation = () => {
+    const speed = 1000;
+    var position = $('#primary').offset().top - 500;
+    $("html, body").animate({scrollTop: position}, speed, "swing");
+    return false;
+  };
+
+  $('#menu-primary-menu').click(function() {
+    console.log('hey');
+    setTimeout(headerAnimation, 1000);
+  });
+})(jQuery);
+>>>>>>> 08347360509c85f490ec6410a62bdeee04a788e2

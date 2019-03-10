@@ -66,7 +66,6 @@ a {
     border-top: 1px solid #0f4ab4;
     z-index: 99;
 	background-color: white;
-	height: 100px;
 	
 }
 }
@@ -123,8 +122,8 @@ a {
 		border-top: transparent solid 5px;
 		font-size: 13px;
 		@include tablet {
-			padding: 0 28px;
-			padding: 0 20px;
+			padding: 0 35px;
+
 		}
 	
 		&:hover{
@@ -138,9 +137,9 @@ a {
 	// li.focus > ul {
 	// 								left: auto;
 	// 							}						
-	:link { 
-		color: $color__border-gray;
-	}
+	// :link { 
+	// 	color: $color__border-gray;
+	// }
 	a {
 
 			display: block;
@@ -166,7 +165,7 @@ a {
 			left: 7%;
 
 			@include tablet {
-				left: 27%;
+				left: 20%;
 			}
 			@include desktop { 
 				left: 37%;
@@ -227,7 +226,19 @@ a {
 			border-top: 5px solid $color__brand;
 }
 
-.header-sticky {
-	position: sticky !important;
+.sticky-nav {
+	position: sticky;
 	top: 0;
 }
+.home {
+	a {
+			color: #0f4ab4;
+	  }
+	}
+	
+	.current-menu-item { 
+			a {
+			color: #0f4ab4;
+	}
+	}
+	
