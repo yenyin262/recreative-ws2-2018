@@ -1,7 +1,5 @@
 $(function () {
 
-
-
   if (window.location.search === '?page_id=18') {
 
     let modelCtrl = (function () {
@@ -79,57 +77,45 @@ $(function () {
     Arrow Up and arrow down
      =================    */
 
-    if (window.innerWidth > 600) {
-      let storyTop1, storyTop2, storyTop3, storyTop4, storyTop5, storyTop6, top, placeWindow, mT;
 
+    if (window.innerWidth > 600) {
+      let recorder, baseselector, recorderInverse, finalScore, top, mT;
       top = 0;
       mT = 50;
-      storyTop1 = $('.story-recycle1')[0].offsetTop - mT;
-      storyTop2 = $('.story-recycle2')[0].offsetTop - mT;
-      storyTop3 = $('.story-recycle3')[0].offsetTop - mT;
-      storyTop4 = $('.story-recycle4')[0].offsetTop - mT;
-      storyTop5 = $('.story-recycle5')[0].offsetTop - mT;
-      storyTop6 = $('.story-recycle6')[0].offsetTop - mT;
+
+      recorder = []
+      baseselector = $('.lateralMovement')[0].childNodes;
+      baseselector.forEach(element => {
+        if (element.offsetTop) { recorder.push(element.offsetTop - mT) }
+      });
+      recorder.pop();
+      recorderInverse = recorder.slice().reverse();
 
 
       $('.fa-angle-down').on('click', function (e) {
         top = window.pageYOffset;
-
-        if (top < storyTop2) { placeWindow = storyTop2 }
-        else if (top < storyTop3) { placeWindow = storyTop3 }
-        else if (top < storyTop4) { placeWindow = storyTop4 }
-        else if (top < storyTop5) { placeWindow = storyTop5 }
-        else if (top < storyTop6 - 200) { placeWindow = storyTop6 }
-        else { placeWindow = storyTop1 }
-        screenMovement(placeWindow);
+        finalScore = recorder.find(element => {
+          return top < element
+        });
+        finalScore ? "" : finalScore = recorder[0];
+        screenMovement(finalScore)
       });
 
+
       $('.fa-angle-up').on('click', function (e) {
-
         top = window.pageYOffset;
-
-        if (top > storyTop6 - mT) { placeWindow = storyTop5 }
-        else if (top > storyTop5) { placeWindow = storyTop4 }
-        else if (top > storyTop4) { placeWindow = storyTop3 }
-        else if (top > storyTop3) { placeWindow = storyTop2 }
-        else { placeWindow = storyTop1 }
-
-        screenMovement(placeWindow);
-
+        finalScore = recorderInverse.find(element => {
+          return top > element
+        });
+        finalScore ? "" : finalScore = recorder[0];
+        screenMovement(finalScore - mT);
       });
 
       let screenMovement = function (MoveIt) {
-
-        $('html, body').animate(
-          {
-            scrollTop: MoveIt + mT
-          },
-          1500,
-          'linear'
+        $('html, body').animate({
+          scrollTop: MoveIt + mT
+        }, 1500, 'linear'
         );
-
-
-
       }
     }
 
@@ -139,47 +125,42 @@ $(function () {
 
 
     if (window.innerWidth <= 600) {
-      let m__d, movementdirectional, story1, story2, story3, story4, story5, story6;
+      let recorder, baseselector, recorderInverse, movementdirectional, mT, lMovement;
 
-
-      m__d = 20;
+      mT = 20;
       movementdirectional = 0;
-      story1 = $('.story-recycle1')[0].offsetLeft - m__d;
-      story2 = $('.story-recycle2')[0].offsetLeft - m__d;
-      story3 = $('.story-recycle3')[0].offsetLeft - m__d;
-      story4 = $('.story-recycle4')[0].offsetLeft - m__d;
-      story5 = $('.story-recycle5')[0].offsetLeft - m__d;
-      story6 = $('.story-recycle6')[0].offsetLeft - m__d;
+      recorder = []
+      baseselector = $('.lateralMovement')[0].childNodes;
 
+      baseselector.forEach(element => {
+        if (element.offsetLeft) { recorder.push(element.offsetLeft - mT) }
+      });
+      recorder.pop();
+      recorderInverse = recorder.slice().reverse();
+      
 
       $(window).on({
         touchstart: function (initialTouch) {
-          let lMovement = Math.abs($('.lateralMovement')[0].offsetLeft)
+          lMovement = Math.abs($('.lateralMovement')[0].offsetLeft)
 
           if (window.innerWidth / 2 < initialTouch.touches[0].clientX) {
-
-
-            if (lMovement < story2) { movementdirectional = story2 }
-            else if (lMovement < story3) { movementdirectional = story3 }
-            else if (lMovement < story4) { movementdirectional = story4 }
-            else if (lMovement < story5) { movementdirectional = story5 }
-            else if (lMovement + 20 < story6) { movementdirectional = story6; }
-            else { movementdirectional = story1 }
-
-          }
+            movementdirectional = recorder.find(element => {
+              return lMovement < element});
+            }
           else {
-            if (lMovement > story5) { movementdirectional = story5; }
-            else if (lMovement > story4) { movementdirectional = story4 }
-            else if (lMovement > story3) { movementdirectional = story3 }
-            else if (lMovement > story2) { movementdirectional = story2 }
-            else if (lMovement > story1) { movementdirectional = story1 }
+            movementdirectional = recorderInverse.find(element => {return lMovement > element});
+            }
 
-          }
+          movementdirectional ? "" : movementdirectional = recorder[0];
 
-          let degree = (movementdirectional / story6) * 360;
+          let degree = (movementdirectional / recorder[recorder.length-1]) * 360;
+
+
+          //View controller. 
 
           $('.lateralMovement').animate({ 'margin-left': -movementdirectional }, 'slow');
 
+          $('.imageBackground').animate({ 'margin-left': -(degree + 15) }, 'slow');
 
           $('.wheel').animate({ rotate: degree }, {
             step: function (now, fx) {
@@ -187,10 +168,6 @@ $(function () {
             },
             duration: 'slow'
           }, 'linear');
-
-
-
-
         }
       })
     }
