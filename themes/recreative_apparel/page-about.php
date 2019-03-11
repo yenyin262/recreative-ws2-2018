@@ -25,7 +25,7 @@ get_header(); ?>
         <div id="progressAbout" class="progress-about"></div>
       </div>
 				<div class="content-section">
-					<div class="blog-wrapper">
+					<div class="blog-wrapper about-wrapper">
 						<div id="blogCarousel" class="blog-carousel about-carousel">
 							<?php get_template_part( 'template-parts/content-pageabout' ); ?>
 						</div>
