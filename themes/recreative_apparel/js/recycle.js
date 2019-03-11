@@ -4,9 +4,6 @@ $(function() {
  
   if (window.location.search === '?page_id=18') {
 
-
-
-
     let modelCtrl = (function() {
       let data, max, percentage, degree, hScreen;
 
@@ -75,50 +72,82 @@ $(function() {
 
     controller(viewCtrl, modelCtrl);
 
-    // I will change to the MVC model once I have worked more on it.
+    // I will change to the MVC model once I have worked more on it.\
 
+    
+/* ================
+Arrow Up and arrow down
+ =================    */
+
+ if(window.innerWidth>600){
+let storyTop1,storyTop2,storyTop3,storyTop4,storyTop5,storyTop6,top,placeWindow,mT;
+
+    top = 0;
+    mT = 50;
+    storyTop1 = $('.story-recycle1')[0].offsetTop-mT;
+    storyTop2 = $('.story-recycle2')[0].offsetTop-mT;
+    storyTop3 = $('.story-recycle3')[0].offsetTop-mT;
+    storyTop4 = $('.story-recycle4')[0].offsetTop-mT;
+    storyTop5 = $('.story-recycle5')[0].offsetTop-mT;
+    storyTop6 = $('.story-recycle6')[0].offsetTop-mT;
+
+    
     $('.fa-angle-down').on('click', function(e) {
-      e.preventDefault();
-
-      $('html, body').animate(
-        {
-          scrollTop: $(window).scrollTop() + 520
-        },
-        1500,
-        'linear'
-      );
+      top = window.pageYOffset;
+     
+      if (top<storyTop2){placeWindow=storyTop2}
+      else if (top < storyTop3){placeWindow=storyTop3}
+      else if (top < storyTop4){placeWindow=storyTop4}
+      else if (top < storyTop5){placeWindow=storyTop5}
+      else if (top < storyTop6-200){placeWindow=storyTop6}
+      else {placeWindow=storyTop1}
+      screenMovement(placeWindow);
     });
 
     $('.fa-angle-up').on('click', function(e) {
-      e.preventDefault();
+
+      top = window.pageYOffset;
+     
+      if (top>storyTop6-mT){placeWindow=storyTop5}
+      else if (top > storyTop5){placeWindow=storyTop4}
+      else if (top > storyTop4){placeWindow=storyTop3}
+      else if (top > storyTop3){placeWindow=storyTop2}
+      else {placeWindow=storyTop1}
+      
+    screenMovement(placeWindow);
+      
+    });
+
+    let screenMovement = function(MoveIt){
 
       $('html, body').animate(
         {
-          scrollTop: $(window).scrollTop() - 520
+         scrollTop: MoveIt + mT
         },
         1500,
         'linear'
       );
-    });
 
+    }
+  }
 
 /* ================
-Testing mobile
+Testing mobile - scroll movement on touch
  =================    */
 
 
 if(window.innerWidth<=600){
-
+  let m__d,movementdirectional,story1,story2,story3,story4,story5,story6;
     
 
-    let m__d = 15;
-    let movementdirectional = 0;
-    let story1 = $('.story-recycle1')[0].offsetLeft-m__d;
-    let story2 = $('.story-recycle2')[0].offsetLeft-m__d;
-    let story3 = $('.story-recycle3')[0].offsetLeft-m__d;
-    let story4 = $('.story-recycle4')[0].offsetLeft-m__d;
-    let story5 = $('.story-recycle5')[0].offsetLeft-m__d;
-    let story6 = $('.story-recycle6')[0].offsetLeft-m__d;
+    m__d = 20;
+    movementdirectional = 0;
+    story1 = $('.story-recycle1')[0].offsetLeft-m__d;
+    story2 = $('.story-recycle2')[0].offsetLeft-m__d;
+    story3 = $('.story-recycle3')[0].offsetLeft-m__d;
+    story4 = $('.story-recycle4')[0].offsetLeft-m__d;
+    story5 = $('.story-recycle5')[0].offsetLeft-m__d;
+    story6 = $('.story-recycle6')[0].offsetLeft-m__d;
     
     
     $(window).on({
