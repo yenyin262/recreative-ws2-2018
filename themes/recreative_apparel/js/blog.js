@@ -17,5 +17,20 @@ $(function(){
     })
   }
 
+  // element to detect scroll direction of
+  const el = $('#blogCarousel');
+  let lastX = el.scrollLeft();
+  
+  el.on('scroll', function() {
+    var 
+    currX = el.scrollLeft(),
+        x = (currX > lastX) ? 'right' : ((currX === lastX) ? 'none' : 'left');
+
+  // do something here…
+    console.log(x);
+
+  // update last scroll position to current position
+  lastX = currX;
+  });
 })
 
