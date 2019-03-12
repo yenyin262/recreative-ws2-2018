@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: recycle
-*/ 
+ */
 ?>
 <?php get_header(); ?>
 	
@@ -38,43 +38,21 @@ Template Name: recycle
     <div class="lateralMovement">
       <?php
       $fields = CFS()->get( 'sub_pages' );
-
+      $targetX = 1;
       foreach ( $fields as $field ) {?>
-      <div class="story-recycle">
+      <div class="story-recycle story-recycle<?php echo $targetX;$targetX++?>">
         <img src='<?php echo $field['recycle_image'];?>'><br>
         <h2><?php echo $field['recycle_subtitle'];?></h2>
         <p><?php echo $field['recycle_content'];?></p>
         </div>
      <?php }
     ?>
-
       
-        <h1 class="wheelPercentage">Hello</h1>
+        <h1 class="wheelPercentage"></h1>
       </div>
-    </div>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+          
 		</main><!-- #main -->
 	</div><!-- #primary  -->
 
-<?php get_footer(); ?>
+<?php get_footer();?>

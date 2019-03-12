@@ -1,6 +1,5 @@
 (function($) {
   'use strict';
-
   $('.recycle-form-btn').on('click', function() {
     $('.recycle-form').replaceWith(
       "<div class='recycle-form-msg'>" +

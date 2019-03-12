@@ -30,8 +30,13 @@
 					<a class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 				<?php elseif( is_page('recycle')): ?>
 					<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+<<<<<<< HEAD
 					<?php elseif( is_page('shop')|| is_single()): ?>
 					<a class="rc-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+=======
+				<?php elseif( is_search()): ?>
+				
+>>>>>>> 2826afe810ce84d3bbdcb88cdaa15314bac6beab
 				<?php else : ?>
 					<a class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>	
 				<?php endif; ?>

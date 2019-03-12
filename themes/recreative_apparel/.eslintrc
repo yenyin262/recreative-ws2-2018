@@ -17,6 +17,8 @@
   },
   "globals": {
     "jQuery": false,
+    "Barba": false,
+    "red_vars": false,
     "$": false,
     "_": false
   },

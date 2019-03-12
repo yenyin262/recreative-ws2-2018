@@ -2,6 +2,7 @@
 /*
   Template to style a single blog
 */ 
+
 ?>
 
 
@@ -17,23 +18,19 @@
 
 	</header>
 
-	<div class="blog-content-flex">
-		<div class="entry-meta single-blog-meta">
+		<div class="blog-content-flex">
+			<div class="entry-meta single-blog-meta">
+				<?php get_template_part( 'template-parts/content', 'author-info' ); ?>
+			</div>
 
-		<?php if( get_avatar(get_the_author_meta('ID')) != '' ) : ?>
-		  <?php echo get_avatar(get_the_author_meta('ID')) ?>
-		<?php else: ?>
-			<img src="/images/no-image-default.jpg"/>
-		<?php endif; ?>
-			<?php the_author(); ?>
-			<?php red_starter_posted_on(); ?>
-
-		</div>
-
-		<div class="blog-entry-content">
+			<div class="blog-entry-content">
 
 			<?php the_content(); ?> 
-
+			<hr/>
+			<div class="entry-meta single-blog-meta hide-social">
+				<?php get_template_part( 'template-parts/content', 'author-info' ); ?>
+			</div>
+			<p><?php the_author_meta('description');?></p>
 		</div>
 	</div>
   
