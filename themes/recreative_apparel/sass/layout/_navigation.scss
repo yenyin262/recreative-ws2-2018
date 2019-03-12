@@ -45,15 +45,15 @@ a {
 		position: relative;
     width: 100%;
     bottom: 0;
-    border-top: 1px solid #0f4ab4;
+    border-top: 1px solid  #0545b2;
     z-index: 99;
 		background-color: #fff;
-
+		
 	@include tablet { 
 
 		position: relative;
     width: 100%;
-    border-top: 1px solid #0f4ab4;
+    border-top: 1px solid  #0545b2;
     z-index: 99;
     background-color: #fff;
 
@@ -63,7 +63,7 @@ a {
 	position: relative;
     width: 100%;
     bottom: 0px;
-    border-top: 1px solid #0f4ab4;
+    border-top: 1px solid  #0545b2;
     z-index: 99;
 	background-color: white;
 	
@@ -118,7 +118,7 @@ a {
 	li{
 	
 		text-align: center; 
-		padding: 0 10px;
+		padding: 0 5px;
 		border-top: transparent solid 5px;
 		font-size: 13px;
 		@include tablet {
@@ -232,13 +232,13 @@ a {
 }
 .home {
 	a {
-			color: #0f4ab4;
+		color: #0545b2;
 	  }
 	}
 	
 	.current-menu-item { 
 			a {
-			color: #0f4ab4;
+				color: #0545b2;
 	}
 	}
 	
