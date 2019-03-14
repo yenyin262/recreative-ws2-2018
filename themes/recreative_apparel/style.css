@@ -657,6 +657,9 @@ a {
     @media (min-width: 768px) {
       .main-navigation li {
         padding: 0 35px; } }
+    @media (min-width: 1024px) {
+      .main-navigation li {
+        font-size: 16px; } }
     .main-navigation li:hover {
       color: #636363;
       font-weight: 500;
@@ -1064,13 +1067,20 @@ a {
       .blog-entry-meta .blog-entry-meta-author {
         display: inline; } }
 
-.wrapper-progress-blog {
-  background-color: #979797;
+.outer-wrapper-progress {
   width: 90vw;
   margin: 20px auto; }
   @media (min-width: 768px) {
-    .wrapper-progress-blog {
+    .outer-wrapper-progress {
       width: 95vw; } }
+  .outer-wrapper-progress .arrow-ui {
+    text-align: right; }
+    .outer-wrapper-progress .arrow-ui i {
+      margin-left: 10px;
+      cursor: pointer; }
+
+.wrapper-progress-blog {
+  background-color: #979797; }
   .wrapper-progress-blog .inside-progress {
     height: 4px;
     background-color: #636363;
@@ -1079,10 +1089,13 @@ a {
 <<<<<<< HEAD
 .will-be-hero {
   height: 87vh;
+<<<<<<< HEAD
+=======
 =======
 .top-banner {
   height: 94vh;
 >>>>>>> b6b39a30465d07bc7466907b823fd380bd3ecda0
+>>>>>>> 02f165103c3b541d63002b78fa762c369b0f70df
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -1560,10 +1573,10 @@ html {
   height: 53vh; }
   @media (min-width: 768px) {
     .frontpage-top-content {
-      height: 73vh; } }
+      height: 90vh; } }
   @media (min-width: 1024px) {
     .frontpage-top-content {
-      height: 100vh; } }
+      height: 90vh; } }
 
 .ra-statement {
   width: 260px;
@@ -1584,25 +1597,36 @@ html {
       margin-top: 44px; } }
   @media (min-width: 1024px) {
     .ra-statement {
-      margin-top: 100px;
-      width: 272px; } }
+      margin-top: 30px;
+      width: 240px;
+      font-size: 23px; } }
+  @media (min-width: 1200px) {
+    .ra-statement {
+      font-size: 25px;
+      width: 270px; } }
 
 .home-statement {
-  font-family: 'Avenir Book';
+  font-family: "Avenir Book";
   text-align: left;
   line-height: 1.7;
   margin-left: 20px;
   margin-top: 40px;
   margin-bottom: 100px;
   width: 270px;
-  font-size: 16px; }
+  font-size: 25px; }
   @media (min-width: 768px) {
     .home-statement {
       width: 442px;
       margin-left: 100px; } }
   @media (min-width: 1024px) {
     .home-statement {
-      width: 253px; } }
+      width: 253px;
+      font-size: 18px;
+      margin-top: 25px; } }
+  @media (min-width: 1200px) {
+    .home-statement {
+      font-size: 22px;
+      width: 270px; } }
 
 .image-class {
   height: 62vh;
@@ -1616,11 +1640,10 @@ html {
     .image-class {
       position: unset;
       bottom: unset;
-      height: 73vh; } }
+      height: 90vh; } }
   @media (min-width: 1024px) {
     .image-class {
-      height: 100vh;
-      background-position: 100% 0;
+      background-position: bottom;
       background-size: cover; } }
 
 .frontpage-content {
@@ -1632,13 +1655,15 @@ html {
       background-repeat: no-repeat;
       background-color: #fff;
       position: absolute;
-      height: 100vh;
+      height: 90vh;
       width: 48%; } }
 
-.ra-blue-logo, .ra-front-page-logo {
+.ra-blue-logo,
+.ra-front-page-logo {
   display: none; }
   @media (min-width: 1024px) {
-    .ra-blue-logo, .ra-front-page-logo {
+    .ra-blue-logo,
+    .ra-front-page-logo {
       background-image: url("../../images/RA-blue-logo.svg");
       width: 102px;
       height: 102px;

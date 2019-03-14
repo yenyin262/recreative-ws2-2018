@@ -134,15 +134,24 @@
   }
 }
 
-.wrapper-progress-blog {
-
-  background-color: $color__border-gray;
+.outer-wrapper-progress{
   width: 90vw;
   margin: 20px auto;
-
   @include tablet {
     width: 95vw;
   }
+  .arrow-ui{
+    text-align: right;
+    i{
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.wrapper-progress-blog {
+
+  background-color: $color__border-gray;
 
   .inside-progress {
 
@@ -156,14 +165,8 @@
 }
 
 //for now since someone is working on hero page
-
-<<<<<<< HEAD
-.will-be-hero{
-  height: 87vh;
-=======
 .top-banner{
   height: 94vh;
->>>>>>> b6b39a30465d07bc7466907b823fd380bd3ecda0
   background-size:cover; 
   background-position: center;
   background-attachment: fixed;

@@ -35,10 +35,16 @@ get_header(); ?>
         </div>
       </div>
 
-      <div class="wrapper-progress-blog">
-        <div id="inProgress" class="inside-progress"></div>
+      <div class="outer-wrapper-progress">
+        <div class="arrow-ui">
+          <i id="left-arrow" class="fas fa-chevron-left"></i>
+          <i id="right-arrow" class="fas fa-chevron-right"></i>
+        </div>
+        <div class="wrapper-progress-blog">
+          <div id="inProgress" class="inside-progress"></div>
+        </div>
       </div>
-
+      
     </div>
 
 		</main><!-- #main -->
