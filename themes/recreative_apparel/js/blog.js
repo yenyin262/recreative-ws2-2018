@@ -18,19 +18,18 @@ $(function(){
   }
 
   // element to detect scroll direction of
-  const el = $('#blogCarousel');
-  let lastX = el.scrollLeft();
+  const left = $('#left-arrow');
+  const right = $('#right-arrow');
 
-  el.on('scroll', function() {
-    var 
-    currX = el.scrollLeft(),
-        x = (currX > lastX) ? 'right' : ((currX === lastX) ? 'none' : 'left');
+  const handleRight = () => {
+    
+  }
 
-  // do something here…
-    console.log(x);
+  const handleLeft = () => {
+    console.log('left');
+  }
 
-  // update last scroll position to current position
-  lastX = currX;
-  });
+  right.click(handleRight);
+  left.click(handleLeft);
 })
 
