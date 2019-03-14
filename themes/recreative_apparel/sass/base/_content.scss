@@ -47,3 +47,13 @@
 .bypostauthor {
 	display: block;
 }
+
+.social-meta{
+	display: flex; 
+	justify-content: space-evenly;
+	align-items: center;
+	margin-right: 20px;
+	i {
+		color: $color__brand;
+	}
+}

@@ -7,7 +7,11 @@ get_header();
 ?>
       <?php if (has_post_thumbnail($post->ID)): ?>
       <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');?>
+<<<<<<< HEAD
       <div id="custom-bg" class="will-be-hero" style="background-image: url('<?php echo $image[0]; ?>');">
+=======
+      <div id="custom-bg" class="top-banner" style="background-image: url('<?php echo $image[0]; ?>');">
+>>>>>>> b6b39a30465d07bc7466907b823fd380bd3ecda0
       </div>
       <?php endif;?>
       <?php get_template_part( 'template-parts/content-navbar' ); ?>
