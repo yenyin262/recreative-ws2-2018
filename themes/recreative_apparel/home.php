@@ -7,7 +7,6 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main bottom-margin-50" role="main">
       
@@ -50,7 +49,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary  -->
-
 <?php
 get_footer();
 ?>

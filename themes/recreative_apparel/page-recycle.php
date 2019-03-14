@@ -8,6 +8,7 @@ Template Name: recycle
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
   <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'full'); ?>
   <div id="custom-bg" class="top-banner" style="background-image: url('<?php echo $image[0]; ?>');">
+
   </div>
 <?php endif; ?>
 <?php get_template_part( 'template-parts/content-navbar' ); ?>
