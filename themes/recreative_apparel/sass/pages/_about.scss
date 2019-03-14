@@ -18,7 +18,6 @@
   }
 
   @include desktop {
-    // height: 92vh;
     height: 100vh;
     background-attachment: fixed;
   }
@@ -33,7 +32,6 @@
   margin-top: 18px;
   background-repeat: no-repeat;
   background-size: 78%;
- 
 
   @include desktop {
     width: 102px;
@@ -43,17 +41,14 @@
 }
 
 .about-statement {
-  // font-size: 30px;
-  // width: 400px;
   font-size: 26px;
   width: 360px;
-  color:  #0545b2;
+  color: #0545b2;
   text-align: center;
   margin: 0 auto;
   font-weight: bolder;
   margin-top: 40px;
   margin-bottom: 80px;
-
 
   @include tablet {
     width: 650px;
@@ -67,75 +62,72 @@
   }
 }
 .content-section {
-.about-wrapper {
-  height: 900px;
-  .about-carousel {
+  .about-wrapper {
     height: 900px;
-    @include desktop { 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-  .about-post {
-    width: 357px;
-    margin-right: 32px;
-    margin-left: 32px;
-    @include tablet {
-      width: 600px;
-      margin-right: 82px;
-      margin-left: 82px;
-    }
-    @include desktop { 
-     
-      width: 320px;
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-
-    @include desktop-large { 
-  width: 450px;
-  margin-right: 60px;
-  margin-left: 60px;
-    }
-  
-    .about-content {
-      margin-top: 20px;
-    }
-
-    .about-entry-meta {
-      border-top: solid 1px grey;
-      padding-top: 20px;
-      margin-bottom: 50px;
-      a {
-        text-decoration: none;
+    .about-carousel {
+      height: 900px;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      .text {
-        text-decoration: none;
-        color:  #0545b2;
+      .about-post {
+        width: 357px;
+        margin-right: 32px;
+        margin-left: 32px;
+        @include tablet {
+          width: 600px;
+          margin-right: 82px;
+          margin-left: 82px;
+        }
+        @include desktop {
+          width: 320px;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+
+        @include desktop-large {
+          width: 450px;
+          margin-right: 60px;
+          margin-left: 60px;
+        }
+
+        .about-content {
+          margin-top: 20px;
+        }
+
+        .about-entry-meta {
+          border-top: solid 1px grey;
+          padding-top: 20px;
+          margin-bottom: 50px;
+          a {
+            text-decoration: none;
+          }
+
+          .text {
+            text-decoration: none;
+            color: #0545b2;
+          }
+        }
       }
     }
   }
-}
-}
 }
 
 .wrapper-progress-about {
   background-color: $color__border-gray;
   width: 90vw;
   margin: 20px auto;
-@include tablet { 
-  display: none;
-}
+  @include tablet {
+    display: none;
+  }
   .progress-about {
     height: 4px;
     background-color: $color__text-main;
     width: 0;
-    @include tablet { 
+    @include tablet {
       display: none;
     }
-
   }
-
 }

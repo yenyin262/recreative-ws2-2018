@@ -123,7 +123,9 @@ a {
 		font-size: 13px;
 		@include tablet {
 			padding: 0 35px;
-
+		}
+		@include desktop {
+			font-size:16px;
 		}
 	
 		&:hover{
