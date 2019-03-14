@@ -1414,7 +1414,6 @@ wheel - contenedor
 text - contenedor 
 ====================*/
 .text-recycle {
-  width: 90vw;
   margin-top: 40px;
   line-height: 1.5rem;
   overflow: hidden; }
@@ -1455,7 +1454,6 @@ text - contenedor
     color: #0545b2;
     margin-bottom: 1rem; }
   .story-recycle p {
-    width: 90%;
     font-size: 0.6rem; }
     @media (min-width: 600px) {
       .story-recycle p {
@@ -1498,6 +1496,7 @@ text - contenedor
       cursor: pointer; } }
 
 .whiter {
+  display: none;
   background: white;
   padding: 20px 0;
   position: -webkit-sticky;
@@ -1508,7 +1507,8 @@ text - contenedor
   z-index: 0; }
   @media (min-width: 600px) {
     .whiter {
-      background: transparent; } }
+      background: transparent;
+      display: block; } }
 
 .shop-header {
   height: 10vh; }
@@ -1746,7 +1746,7 @@ html {
     text-transform: capitalize;
     margin-bottom: 20px;
     display: grid;
-    grid-template-areas: ' one two' 'three three';
+    grid-template-areas: ' one two' 'three three';
     width: 250px; }
     .blog-content-flex .single-blog-meta .author-info {
       display: -webkit-box;

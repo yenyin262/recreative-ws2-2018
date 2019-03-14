@@ -84,7 +84,6 @@ text - contenedor
 
 .text-recycle{
     
-    width: 90vw;
     margin-top:40px;
     line-height: 1.5rem;
     overflow: hidden;
@@ -122,7 +121,7 @@ text - contenedor
     }
 
     p{
-        width: 90%;
+        
         font-size: 0.6rem;
     
         @include mobile-recycle {
@@ -176,6 +175,7 @@ text - contenedor
 
 
 .whiter{
+    display: none;
     background: white;
     padding: 20px 0;
     position: sticky;
@@ -185,5 +185,6 @@ text - contenedor
     z-index: 0;
     @include mobile-recycle {
         background: transparent;
+        display: block;
     }
 }
