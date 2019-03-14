@@ -1064,13 +1064,20 @@ a {
       .blog-entry-meta .blog-entry-meta-author {
         display: inline; } }
 
-.wrapper-progress-blog {
-  background-color: #979797;
+.outer-wrapper-progress {
   width: 90vw;
   margin: 20px auto; }
   @media (min-width: 768px) {
-    .wrapper-progress-blog {
+    .outer-wrapper-progress {
       width: 95vw; } }
+  .outer-wrapper-progress .arrow-ui {
+    text-align: right; }
+    .outer-wrapper-progress .arrow-ui i {
+      margin-left: 10px;
+      cursor: pointer; }
+
+.wrapper-progress-blog {
+  background-color: #979797; }
   .wrapper-progress-blog .inside-progress {
     height: 4px;
     background-color: #636363;
