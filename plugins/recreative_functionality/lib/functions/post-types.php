@@ -42,7 +42,7 @@ function custom_post_type() {
 		'label'                 => __( 'Product', 'text_domain' ),
 		'description'           => __( 'Product items', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
