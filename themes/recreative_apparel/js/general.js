@@ -1,35 +1,14 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> b6b39a30465d07bc7466907b823fd380bd3ecda0
 // (function($) {
-//   // 'use strict';
 
-//   //Scroll animation
-//   // const headerAnimation = () => {
-//   //   const speed = 1000;
-//   //   var position = $('#primary').offset().top - 500;
-//   //   console.log(position);
-//   //   $('html, body').animate({ scrollTop: position }, speed, 'swing');
-//   //   return false;
-//   // };
-//   // setTimeout(headerAnimation, 1000);
 
-//   // header animation
-//   // $('.header-banner').toggle('slide', 'right', 1000);
 
-//   // $('#menu-primary-menu a').click(function(e) {
-//   //   e.preventDefault();
-//   //   var link = $(this).attr('href');
-//   //   $.ajax({
-//   //     method: 'get',
-//   //     url: link,
-//   //     beforeSend: function(xhr) {
-//   //       xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
-//   //     }
-//   //   }).done(function(response) {
-//   //     console.log(response);
-//   //     console.log('clicked ajax');
-//   //     $('html').empty();
-//   //     $('html').html(response);
-//   //   });
-//   // });
 // })(jQuery);
+<<<<<<< HEAD
+=======
 
 // //   url: red_vars.rest_url + 'wp/v2/pages/' + red_vars.page_id,
+>>>>>>> b6b39a30465d07bc7466907b823fd380bd3ecda0
