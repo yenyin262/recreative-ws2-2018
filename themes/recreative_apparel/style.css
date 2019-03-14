@@ -1055,7 +1055,7 @@ a {
     width: 0; }
 
 .will-be-hero {
-  height: 100vh;
+  height: 87vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -1475,7 +1475,6 @@ text - contenedor
       font-size: 2rem;
       cursor: pointer; } }
 
-=======
 .whiter {
   background: white;
   padding: 20px 0;
