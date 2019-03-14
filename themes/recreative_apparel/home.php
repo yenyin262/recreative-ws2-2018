@@ -7,7 +7,6 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main bottom-margin-50" role="main">
       
@@ -17,7 +16,7 @@ get_header(); ?>
         $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full'); 
         $featured_image = $img[0];
         ?>
-        <div class="will-be-hero" style="background-image:url(<?php echo ($featured_image) ?>);">
+        <div class="top-banner" style="background-image:url(<?php echo ($featured_image) ?>);">
         </div>
     <?php } ?>
 
@@ -44,7 +43,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary  -->
-
 <?php
 get_footer();
 ?>

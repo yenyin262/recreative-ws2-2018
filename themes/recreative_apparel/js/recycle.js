@@ -38,7 +38,7 @@ $(function () {
         displayScroll: function (deg, imageW) {
           if (window.innerWidth > 600) {
             $(DOMStrings.scroll).css('transform', `rotate(${deg}deg)`);
-            $(DOMStrings.imageBack).css('left', (150 - (deg * imageW)) + "%");
+            $(DOMStrings.imageBack).css('left', (150 - (deg * imageW)) + '%');
           }
         }
       };
@@ -92,22 +92,22 @@ $(function () {
       recorderInverse = recorder.slice().reverse();
 
 
-      $('.fa-angle-down').on('click', function (e) {
+      $('.fa-angle-down').on('click', function () {
         top = window.pageYOffset;
         finalScore = recorder.find(element => {
           return top < element
         });
-        finalScore ? "" : finalScore = recorder[0];
+        finalScore ? '' : finalScore = recorder[0];
         screenMovement(finalScore)
       });
 
 
-      $('.fa-angle-up').on('click', function (e) {
+      $('.fa-angle-up').on('click', function () {
         top = window.pageYOffset;
         finalScore = recorderInverse.find(element => {
           return top > element
         });
-        finalScore ? "" : finalScore = recorder[0];
+        finalScore ? '' : finalScore = recorder[0];
         screenMovement(finalScore - mT);
       });
 
@@ -151,7 +151,7 @@ $(function () {
             movementdirectional = recorderInverse.find(element => {return lMovement > element});
             }
 
-          movementdirectional ? "" : movementdirectional = recorder[0];
+          movementdirectional ? '' : movementdirectional = recorder[0];
 
           let degree = (movementdirectional / recorder[recorder.length-1]) * 360;
 
@@ -163,7 +163,7 @@ $(function () {
           $('.imageBackground').animate({ 'margin-left': -(degree + 15) }, 'slow');
 
           $('.wheel').animate({ rotate: degree }, {
-            step: function (now, fx) {
+            step: function (now) {
               $(this).css('-webkit-transform', 'rotate(' + now + 'deg)');
             },
             duration: 'slow'
