@@ -11,8 +11,8 @@ function custom_post_type() {
 	$labels = array(
 		'name'                  => _x( 'Products', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Post Types', 'text_domain' ),
-		'name_admin_bar'        => __( 'Post Type', 'text_domain' ),
+		'menu_name'             => __( 'Products', 'text_domain' ),
+		'name_admin_bar'        => __( 'Products', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
@@ -36,6 +36,7 @@ function custom_post_type() {
 		'items_list'            => __( 'Items list', 'text_domain' ),
 		'items_list_navigation' => __( 'Items list navigation', 'text_domain' ),
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+
 	);
 	$args = array(
 		'label'                 => __( 'Product', 'text_domain' ),
@@ -46,6 +47,7 @@ function custom_post_type() {
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
+		'show_in_rest' => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
 		'show_in_admin_bar'     => true,
@@ -55,6 +57,7 @@ function custom_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'menu_icon'           => 'dashicons-cart',
 	);
 	register_post_type( 'products', $args );
 
