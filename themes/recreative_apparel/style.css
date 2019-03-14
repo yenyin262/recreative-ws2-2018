@@ -1076,8 +1076,8 @@ a {
     background-color: #636363;
     width: 0; }
 
-.will-be-hero {
-  height: 100vh;
+.top-banner {
+  height: 94vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
