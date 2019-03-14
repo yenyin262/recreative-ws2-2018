@@ -33,7 +33,7 @@
   margin-top: 18px;
   background-repeat: no-repeat;
   background-size: 78%;
-  background-repeat: no-repeat;
+ 
 
   @include desktop {
     width: 102px;
@@ -43,9 +43,11 @@
 }
 
 .about-statement {
-  font-size: 30px;
-  width: 400px;
-  color: #0f4ab4;
+  // font-size: 30px;
+  // width: 400px;
+  font-size: 26px;
+  width: 360px;
+  color:  #0545b2;
   text-align: center;
   margin: 0 auto;
   font-weight: bolder;
@@ -65,8 +67,8 @@
   }
 }
 .content-section {
-.blog-wrapper {
-  
+.about-wrapper {
+  height: 900px;
   .about-carousel {
     height: 900px;
     @include desktop { 
@@ -111,7 +113,7 @@
 
       .text {
         text-decoration: none;
-        color: #0f4ab4;
+        color:  #0545b2;
       }
     }
   }
@@ -120,16 +122,19 @@
 }
 
 .wrapper-progress-about {
-
   background-color: $color__border-gray;
   width: 90vw;
   margin: 20px auto;
-
+@include tablet { 
+  display: none;
+}
   .progress-about {
     height: 4px;
     background-color: $color__text-main;
-    width: 33.3%;
-
+    width: 0;
+    @include tablet { 
+      display: none;
+    }
 
   }
 

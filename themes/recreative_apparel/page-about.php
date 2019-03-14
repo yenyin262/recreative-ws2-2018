@@ -12,7 +12,7 @@ get_header(); ?>
 		
 		<?php if ( has_post_thumbnail() ) : ?>
 				<?php $about = get_the_post_thumbnail_url(); ?>
-				<div class="will-be-hero" style="background-image: url('<?php echo $about;?>')"></div>
+				<div class="top-banner" style="background-image: url('<?php echo $about;?>')"></div>
 			<?php endif; ?>
 
 			<?php get_template_part( 'template-parts/content-navbar' ); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
         <div id="progressAbout" class="progress-about"></div>
       </div>
 				<div class="content-section">
-					<div class="blog-wrapper">
+					<div class="blog-wrapper about-wrapper">
 						<div id="blogCarousel" class="blog-carousel about-carousel">
 							<?php get_template_part( 'template-parts/content-pageabout' ); ?>
 					</div>
