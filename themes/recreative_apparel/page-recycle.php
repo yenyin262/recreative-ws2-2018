@@ -29,7 +29,7 @@ Template Name: recycle
   
 
   
-        <div class="arrow-down">
+  <div class="arrow-down">
     <i class="fas fa-angle-down"></i>
   </div>
   
@@ -44,7 +44,7 @@ Template Name: recycle
         <img src='<?php echo $field['recycle_image'];?>'><br>
         <h2><?php echo $field['recycle_subtitle'];?></h2>
         <p><?php echo $field['recycle_content'];?></p>
-        </div>
+        </div><br><br><br>
      <?php }
     ?>
       

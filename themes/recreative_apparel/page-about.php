@@ -12,11 +12,7 @@ get_header(); ?>
 		
 		<?php if ( has_post_thumbnail() ) : ?>
 				<?php $about = get_the_post_thumbnail_url(); ?>
-<<<<<<< HEAD
-				<div class="will-be-hero" style="background-image: url('<?php echo $about;?>')"></div>
-=======
 				<div class="top-banner" style="background-image: url('<?php echo $about;?>')"></div>
->>>>>>> b6b39a30465d07bc7466907b823fd380bd3ecda0
 			<?php endif; ?>
 
 			<?php get_template_part( 'template-parts/content-navbar' ); ?>

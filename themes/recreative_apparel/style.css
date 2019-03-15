@@ -1067,13 +1067,20 @@ a {
       .blog-entry-meta .blog-entry-meta-author {
         display: inline; } }
 
-.wrapper-progress-blog {
-  background-color: #979797;
+.outer-wrapper-progress {
   width: 90vw;
   margin: 20px auto; }
   @media (min-width: 768px) {
-    .wrapper-progress-blog {
+    .outer-wrapper-progress {
       width: 95vw; } }
+  .outer-wrapper-progress .arrow-ui {
+    text-align: right; }
+    .outer-wrapper-progress .arrow-ui i {
+      margin-left: 10px;
+      cursor: pointer; }
+
+.wrapper-progress-blog {
+  background-color: #979797; }
   .wrapper-progress-blog .inside-progress {
     height: 4px;
     background-color: #636363;
@@ -1417,7 +1424,6 @@ wheel - contenedor
 text - contenedor 
 ====================*/
 .text-recycle {
-  width: 90vw;
   margin-top: 40px;
   line-height: 1.5rem;
   overflow: hidden; }
@@ -1458,7 +1464,6 @@ text - contenedor
     color: #0545b2;
     margin-bottom: 1rem; }
   .story-recycle p {
-    width: 90%;
     font-size: 0.6rem; }
     @media (min-width: 600px) {
       .story-recycle p {
@@ -1501,6 +1506,7 @@ text - contenedor
       cursor: pointer; } }
 
 .whiter {
+  display: none;
   background: white;
   padding: 20px 0;
   position: -webkit-sticky;
@@ -1511,7 +1517,8 @@ text - contenedor
   z-index: 0; }
   @media (min-width: 600px) {
     .whiter {
-      background: transparent; } }
+      background: transparent;
+      display: block; } }
 
 .shop-header {
   height: 10vh; }

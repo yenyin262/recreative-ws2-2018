@@ -134,15 +134,24 @@
   }
 }
 
-.wrapper-progress-blog {
-
-  background-color: $color__border-gray;
+.outer-wrapper-progress{
   width: 90vw;
   margin: 20px auto;
-
   @include tablet {
     width: 95vw;
   }
+  .arrow-ui{
+    text-align: right;
+    i{
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.wrapper-progress-blog {
+
+  background-color: $color__border-gray;
 
   .inside-progress {
 
@@ -156,7 +165,6 @@
 }
 
 //for now since someone is working on hero page
-
 .top-banner{
   height: 94vh;
   background-size:cover; 

@@ -77,11 +77,11 @@ $(function () {
     Arrow Up and arrow down
      =================    */
 
-
+    
     if (window.innerWidth > 600) {
       let recorder, baseselector, recorderInverse, finalScore, top, mT;
       top = 0;
-      mT = 50;
+      mT = 110;
 
       recorder = []
       baseselector = $('.lateralMovement')[0].childNodes;
@@ -95,10 +95,10 @@ $(function () {
       $('.fa-angle-down').on('click', function () {
         top = window.pageYOffset;
         finalScore = recorder.find(element => {
-          return top < element
+          return top +mT < element
         });
         finalScore ? '' : finalScore = recorder[0];
-        screenMovement(finalScore)
+        screenMovement(finalScore-mT)
       });
 
 
@@ -113,7 +113,7 @@ $(function () {
 
       let screenMovement = function (MoveIt) {
         $('html, body').animate({
-          scrollTop: MoveIt + mT
+          scrollTop: MoveIt + mT 
         }, 1500, 'linear'
         );
       }
