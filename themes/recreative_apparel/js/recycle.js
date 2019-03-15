@@ -114,7 +114,7 @@ $(function () {
       let screenMovement = function (MoveIt) {
         $('html, body').animate({
           scrollTop: MoveIt + mT 
-        }, 1500, 'linear'
+        }, 1000, 'linear'
         );
       }
     }
@@ -125,7 +125,7 @@ $(function () {
 
 
     if (window.innerWidth <= 600) {
-      let recorder, baseselector, recorderInverse, movementdirectional, mT, lMovement;
+      let recorder, baseselector, recorderInverse, movementdirectional, mT, lMovement,sideReport;
 
       mT = 20;
       movementdirectional = 0;
@@ -136,6 +136,7 @@ $(function () {
         if (element.offsetLeft) { recorder.push(element.offsetLeft - mT) }
       });
       recorder.pop();
+      recorder[0] = 0;
       recorderInverse = recorder.slice().reverse();
       
 
@@ -146,9 +147,11 @@ $(function () {
           if (window.innerWidth / 2 < initialTouch.touches[0].clientX) {
             movementdirectional = recorder.find(element => {
               return lMovement < element});
+              sideReport = 1;
             }
           else {
             movementdirectional = recorderInverse.find(element => {return lMovement > element});
+            sideReport = 0;
             }
 
           movementdirectional ? '' : movementdirectional = recorder[0];
@@ -157,8 +160,9 @@ $(function () {
 
 
           //View controller. 
-
-          $('.lateralMovement').animate({ 'margin-left': -movementdirectional }, 'slow');
+          let controlMovement = movementdirectional==recorder[0]&&sideReport==1&&lMovement>100;
+          let color = controlMovement?0:1;
+          $('.lateralMovement').animate({ 'margin-left': -movementdirectional, 'opacity': color }, controlMovement?0.5:'slow').animate({'opacity':1},500);
 
           $('.imageBackground').animate({ 'margin-left': -(degree + 15) }, 'slow');
 
