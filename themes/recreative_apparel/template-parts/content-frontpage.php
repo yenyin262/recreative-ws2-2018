@@ -14,7 +14,7 @@
             <?php $featuredImage = get_the_post_thumbnail_url(); ?>
             <div class="image-class" style="background-image: url('<?php echo $featuredImage;?>')"></div>
 		<?php endif; ?>
-</div>
+	</div>
 
 
 
@@ -27,7 +27,7 @@
 			<a class="ra-front-page-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
      	   <?php the_content(); ?>	
   		</div><!-- .entry-content -->
-	</div><!-- .entry-header -->
+	<!--</div> .entry-header -->
 
 
 
