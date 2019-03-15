@@ -11,7 +11,7 @@
   width: 90%;
   overflow: hidden;
   margin: 0 auto;
-  height: 500px;
+  height: 520px;
 
   @include tablet {
     width: 95%;
@@ -22,6 +22,9 @@
     height: 570px;
   }
   
+  .margin-carousel-ui{
+    margin-left:0;
+  }
 
   .blog-carousel{
 
@@ -29,6 +32,8 @@
     overflow-y: hidden; 
     white-space: nowrap;
     height: 100%;
+    margin-left: 0px;
+    transition: margin-left .2s;
     
     .post1{
     
