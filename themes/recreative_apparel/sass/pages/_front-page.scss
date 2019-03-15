@@ -17,13 +17,11 @@ html {
   }
 }
 .ra-statement {
-  width: 260px;
+  width: 269px;
   line-height: 1.7;
   margin-left: 20px;
   font-family: Avenir Book;
   font-size: 27px;
-  font-weight: 300rem;
-  font-weight: bold;
   color: #0545b2;
   font-weight: bolder;
   margin-top: 30px;
@@ -53,7 +51,7 @@ html {
   margin-top: 40px;
   margin-bottom: 100px;
   width: 270px;
-  font-size: 25px;
+ font-size:16px;
 
   @include tablet {
     width: 442px;
