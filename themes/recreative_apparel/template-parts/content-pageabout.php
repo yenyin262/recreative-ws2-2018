@@ -26,7 +26,6 @@
 			<p class="aboutLink"><?php echo $content['about_more_link'];?></p>
 			</a>
 		</div>
-
 	</article>
 </div>
 <?php }?>
