@@ -10,6 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="frontpage-top-content">
+	<a class="ra-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 		<?php if ( has_post_thumbnail() ) : ?>
             <?php $featuredImage = get_the_post_thumbnail_url(); ?>
             <div class="image-class" style="background-image: url('<?php echo $featuredImage;?>')"></div>
@@ -24,6 +25,7 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 		<div class="frontpage-content">
+	
 			<a class="ra-front-page-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
      	   <?php the_content(); ?>	
   		</div><!-- .entry-content -->

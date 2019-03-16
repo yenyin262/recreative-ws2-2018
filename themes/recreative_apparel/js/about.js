@@ -1,6 +1,6 @@
 $(function(){
 
-    if(window.location.search === "?page_id=13"){
+    if($('#progressAbout')){
   
       const postLength = $('#blogCarousel')[0].scrollWidth;
       const wrapperWidth = $('#blogCarousel')[0].clientWidth;

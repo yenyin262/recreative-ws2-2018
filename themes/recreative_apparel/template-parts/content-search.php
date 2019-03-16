@@ -24,7 +24,8 @@
               <div class="wrapper-progress-blog">
                 <div id="inProgress" class="inside-progress"></div>
               </div>
-           </div>		<?php endif; ?>
+      </div>	
+      	<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">

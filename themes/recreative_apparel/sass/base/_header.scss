@@ -1,4 +1,4 @@
-.ra-logo, .ra-blue-logo {
+ .ra-blue-logo {
     background-image: url(../../images/RA-logo.svg);
     position: absolute;
     width: 102px;
@@ -16,11 +16,11 @@
 
 
 
-.ra-logo{
-@include desktop {
-    background-image:none;
-    width: 102px;
-    height: 102px;
+// .ra-logo{
+// @include desktop {
+//     background-image:none;
+//     width: 102px;
+//     height: 102px;
     
-}
-}
+// }
+// }
