@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 <?php $row = CFS()->get('content_for_about');
 		foreach ( $row as $content ) {?>
@@ -13,7 +12,7 @@
 	<div class="upper-content">
 			<div>
 				<h3><?php echo $content['about_content_title'];?></h3>
-				<img src='<?php echo $content['about_content_image'];?>'>
+				<img src='<?php echo $content['about_content_image'];?>' alt='sustainability image'>
 			</div>
 
 			<div class="about-content">
@@ -22,11 +21,12 @@
 		</div>
 		
 		<div class="blog-entry-meta about-entry-meta">
-			<a href="<?php echo wp_trim_words($content['about_more_link'],20) ?>">
 			<p class="aboutLink"><?php echo $content['about_more_link'];?></p>
-			</a>
 		</div>
 
 	</article>
 </div>
 <?php }?>
+
+
+
