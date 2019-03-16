@@ -964,8 +964,7 @@ a {
 .blog-wrapper {
   width: 90%;
   overflow: hidden;
-  margin: 0 auto;
-  height: 520px; }
+  margin: 0 auto; }
   @media (min-width: 768px) {
     .blog-wrapper {
       width: 95%;

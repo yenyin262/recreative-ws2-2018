@@ -8,9 +8,6 @@
 ?>
 
 <article id="post-nav-<?php the_ID(); ?>" <?php post_class('sticky-nav'); ?>>
-
-
-
 <!-- SITE NAVIGATION -->
 <?php wp_nav_menu(
                         array(

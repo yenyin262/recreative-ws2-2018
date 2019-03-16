@@ -8,7 +8,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<div class="frontpage-top-content">
 		<a class="ra-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 		<?php if ( has_post_thumbnail() ) : ?>
@@ -17,21 +16,15 @@
 		<?php endif; ?>
 	</div>
 
-
-
-		<?php if ( 'post' === get_post_type() ) : ?>
+	<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
-		<?php endif; ?>
-
-		<div class="frontpage-content">
-			<a class="ra-front-page-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-     	   <?php the_content(); ?>	
-  		</div><!-- .entry-content -->
-	<!--</div> .entry-header -->
-
-
+	<?php endif; ?>
+	<div class="frontpage-content">
+		<a class="ra-front-page-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+    	<?php the_content(); ?>	
+  	</div><!-- .entry-content -->
 
 	<?php get_template_part( 'template-parts/content-navbar' ); ?>
 	
