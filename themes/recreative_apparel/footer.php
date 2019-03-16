@@ -7,8 +7,7 @@
 
 ?>
 
-
-			</div><!-- #content -->
+		</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer">
 				<div class="subscribe-section">
@@ -19,12 +18,13 @@
 						<label><input type="checkbox" class="subscribe-checkbox"  value="notification" id="notification">
 						<span class="confirm-text">I would like to receieve emails with environmental tips, news and discounts.</span></label>
 					</div>
-				</form>
-				<div class="social-icon-section">
-					<a href="#"><i class="fab fa-3x fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-3x fa-facebook-square"></i></a>
+					</form>
+					
+					<div class="social-icon-section">
+						<a href="#"><i class="fab fa-3x fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-3x fa-facebook-square"></i></a>
+					</div>
 				</div>
-			</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

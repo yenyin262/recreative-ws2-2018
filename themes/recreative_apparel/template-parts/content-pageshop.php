@@ -13,7 +13,6 @@
 	</header>
 
     <?php get_template_part( 'template-parts/content-navbar' ); ?>
-	 
 	<div class="shop-content-wrapper">
         <div class="shop-content">
         <h1>Coming Soon! </h1> 
