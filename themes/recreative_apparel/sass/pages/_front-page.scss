@@ -15,6 +15,29 @@ html {
   @include desktop {
     height: 90vh;
   }
+  .ra-logo {
+    background-image: url(../../images/RA-logo.svg);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 9px;
+    z-index: 999;
+    background-size: 78%;
+    background-repeat: no-repeat;
+
+    @include tablet { 
+        margin-top: 44px;
+    }
+
+@include desktop {
+    background-image:none;
+    width: 102px;
+    height: 102px;
+    
+}
+}
+
 }
 .ra-statement {
   width: 269px;
@@ -41,6 +64,9 @@ html {
     font-size: 25px;
     width: 270px;
   }
+  @include desktop-XL { 
+    font-size:28px;
+}
 }
 
 .home-statement {
@@ -64,8 +90,11 @@ html {
     margin-top: 25px;
   }
   @include desktop-large {
-    font-size: 22px;
+    font-size: 19px;
     width: 270px;
+  }
+  @include desktop-XL { 
+    font-size:25px;
   }
 }
 
@@ -85,8 +114,10 @@ html {
   }
 
   @include desktop {
-    background-position: bottom;
     background-size: cover;
+  }
+  @include desktop-XL {
+     background-position: 0 9px;
   }
 }
 .frontpage-content {
@@ -103,7 +134,7 @@ html {
   }
 }
 
-.ra-blue-logo,
+
 .ra-front-page-logo {
   display: none;
   @include desktop {
@@ -116,7 +147,31 @@ html {
     background-size: 90%;
     background-repeat: no-repeat;
   }
+  @include desktop-XL {
+  width: 160px;
+  height: 160px;
+  }
 }
+
+.ra-blue-logo {
+    background-image: url("../../images/RA-blue-logo.svg");
+    width: 102px;
+    height: 102px;
+    margin-left: 20px;
+    margin-top: 50px;
+    display: inherit;
+    background-size: 90%;
+    background-repeat: no-repeat;
+  }
+  @include desktop-XL {
+  width: 160px;
+  height: 160px;
+
+
+
+
+}
+
 
 .hentry {
   margin: 0;

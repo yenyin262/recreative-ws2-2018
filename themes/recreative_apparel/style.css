@@ -480,7 +480,7 @@ object {
   content: "";
   display: table; }
 
-.ra-logo, .ra-blue-logo {
+.ra-blue-logo {
   background-image: url(../../images/RA-logo.svg);
   position: absolute;
   width: 102px;
@@ -491,14 +491,8 @@ object {
   background-size: 78%;
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
-    .ra-logo, .ra-blue-logo {
+    .ra-blue-logo {
       margin-top: 44px; } }
-
-@media (min-width: 1024px) {
-  .ra-logo {
-    background-image: none;
-    width: 102px;
-    height: 102px; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1544,15 +1538,31 @@ text - contenedor
   background-image: url("../../images/rclogo.svg");
   position: absolute;
   width: 100%;
-  height: 102px;
+  height: 27px;
   margin-top: 20px;
   background-repeat: no-repeat;
-  left: 26%; }
+  left: 26%;
+  top: 20px; }
   @media (min-width: 768px) {
     .rc-logo {
       left: 37%; } }
   @media (min-width: 1024px) {
     .rc-logo {
+      left: 41%; } }
+
+.rc-shop-logo {
+  background-image: url("../../images/rclogo.svg");
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  left: 26%; }
+  @media (min-width: 768px) {
+    .rc-shop-logo {
+      left: 37%; } }
+  @media (min-width: 1024px) {
+    .rc-shop-logo {
       left: 41%; } }
 
 html {
@@ -1569,6 +1579,24 @@ html {
   @media (min-width: 1024px) {
     .frontpage-top-content {
       height: 90vh; } }
+  .frontpage-top-content .ra-logo {
+    background-image: url(../../images/RA-logo.svg);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 9px;
+    z-index: 999;
+    background-size: 78%;
+    background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      .frontpage-top-content .ra-logo {
+        margin-top: 44px; } }
+    @media (min-width: 1024px) {
+      .frontpage-top-content .ra-logo {
+        background-image: none;
+        width: 102px;
+        height: 102px; } }
 
 .ra-statement {
   width: 269px;
@@ -1594,6 +1622,9 @@ html {
     .ra-statement {
       font-size: 25px;
       width: 270px; } }
+  @media (min-width: 1920px) {
+    .ra-statement {
+      font-size: 28px; } }
 
 .home-statement {
   font-family: "Avenir Book";
@@ -1615,8 +1646,11 @@ html {
       margin-top: 25px; } }
   @media (min-width: 1200px) {
     .home-statement {
-      font-size: 22px;
+      font-size: 19px;
       width: 270px; } }
+  @media (min-width: 1920px) {
+    .home-statement {
+      font-size: 25px; } }
 
 .image-class {
   height: 62vh;
@@ -1633,8 +1667,10 @@ html {
       height: 90vh; } }
   @media (min-width: 1024px) {
     .image-class {
-      background-position: bottom;
       background-size: cover; } }
+  @media (min-width: 1920px) {
+    .image-class {
+      background-position: 0 9px; } }
 
 .frontpage-content {
   margin: 0; }
@@ -1648,11 +1684,9 @@ html {
       height: 90vh;
       width: 48%; } }
 
-.ra-blue-logo,
 .ra-front-page-logo {
   display: none; }
   @media (min-width: 1024px) {
-    .ra-blue-logo,
     .ra-front-page-logo {
       background-image: url("../../images/RA-blue-logo.svg");
       width: 102px;
@@ -1662,6 +1696,24 @@ html {
       display: inherit;
       background-size: 90%;
       background-repeat: no-repeat; } }
+  @media (min-width: 1920px) {
+    .ra-front-page-logo {
+      width: 160px;
+      height: 160px; } }
+
+.ra-blue-logo {
+  background-image: url("../../images/RA-blue-logo.svg");
+  width: 102px;
+  height: 102px;
+  margin-left: 20px;
+  margin-top: 50px;
+  display: inherit;
+  background-size: 90%;
+  background-repeat: no-repeat; }
+
+@media (min-width: 1920px) {
+  width: 160px;
+  height: 160px; }
 
 .hentry {
   margin: 0; }
