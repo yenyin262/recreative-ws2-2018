@@ -29,7 +29,10 @@
 			<a class="ra-front-page-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
      	   <?php the_content(); ?>	
   		</div><!-- .entry-content -->
-	
+	<!--</div> .entry-header -->
+
+
+
 	<?php get_template_part( 'template-parts/content-navbar' ); ?>
 	
 </article><!-- #post-## -->

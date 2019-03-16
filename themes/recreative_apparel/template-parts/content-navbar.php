@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('sticky-nav'); ?>>
+<article id="post-nav-<?php the_ID(); ?>" <?php post_class('sticky-nav'); ?>>
 
 
 

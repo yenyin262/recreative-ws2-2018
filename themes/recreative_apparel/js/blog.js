@@ -1,6 +1,6 @@
 $(function(){
 
-  if(window.location.search === "?page_id=158"){
+  if($('#inProgress')){
 
     const postLength = $('#blogCarousel')[0].scrollWidth;
     const wrapperWidth = $('#blogCarousel')[0].clientWidth;
@@ -15,14 +15,16 @@ $(function(){
       $('#inProgress').width(`${updateProgress*100}%`);
 
     })
-  }
 
-  // element to detect scroll direction of
+    // element to detect scroll direction of
   const left = $('#left-arrow');
-  const right = $('#right-arrow');
-
+  const right = $('#right-arrow'); 
+  const moveLeft = ($('.post1')[0].clientWidth)+10;
+  
   const handleRight = () => {
-    
+    console.log('right');
+    console.log(moveLeft);
+    $('#blogCarousel').css('margin-left', -moveLeft);
   }
 
   const handleLeft = () => {
@@ -31,5 +33,8 @@ $(function(){
 
   right.click(handleRight);
   left.click(handleLeft);
+  }
+
+  
 })
 
