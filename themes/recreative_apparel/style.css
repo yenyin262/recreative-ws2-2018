@@ -1645,7 +1645,8 @@ html {
       height: 90vh;
       width: 48%; } }
   .frontpage-content .ra-front-page-logo {
-    display: none; }
+    display: none;
+    position: fixed; }
     @media (min-width: 1024px) {
       .frontpage-content .ra-front-page-logo {
         background-image: url("../../images/RA-blue-logo.svg");

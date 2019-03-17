@@ -19,9 +19,11 @@
 
     $(window).on('scroll', function() {
       if (scrollFlag) {
+        $('.ra-blue-logo').css('display', 'none');
         $('html, body').animate(
           {scrollTop: $('.sticky-nav').offset().top}, 1000, function(){
             $('.rc-logo').css('display', 'none');
+            $('.ra-front-page-logo').css('display', 'none');
             $('.text-logo').css('display', 'block');    
           }
         );
