@@ -8,7 +8,7 @@
     display: inherit;
     background-size: 90%;
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
   }
   @include desktop-XL {
     width: 160px;

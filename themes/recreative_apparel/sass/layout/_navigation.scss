@@ -244,3 +244,15 @@ a {
 	}
 	}
 	
+
+	.text-logo {
+		display: none;
+		background-image: url(../../images/rclogo.svg);
+    position: fixed;
+    width: 200px;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 20px;
+		z-index: 100;
+    background-repeat: no-repeat;
+	}
