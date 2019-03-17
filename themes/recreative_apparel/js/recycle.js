@@ -1,6 +1,6 @@
 $(function () {
 
-  if (window.location.search === '?page_id=18') {
+  if ($('body').hasClass('.page-id-18')) {
 
     let modelCtrl = (function () {
       let data, max, percentage, degree, hScreen;

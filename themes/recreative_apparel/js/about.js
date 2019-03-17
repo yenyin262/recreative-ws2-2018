@@ -1,6 +1,6 @@
 $(function(){
 
-    if($('#progressAbout')){
+  if($('body').hasClass('page-id-13')){
   
       const postLength = $('#blogCarousel')[0].scrollWidth;
       const wrapperWidth = $('#blogCarousel')[0].clientWidth;
