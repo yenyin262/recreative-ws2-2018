@@ -46,15 +46,25 @@ $(function(){
   const handdleSwipe = (currentSlideIndex) => {
     let moveDirection = newArray[currentSlideIndex];
     console.log(moveDirection);
+    console.log((newArray[currentSlideIndex]/newArray[newArray.length-1])*100);
     track.css('margin-left',`-${moveDirection-newArray[0]}px`);
+    $('#inProgress').width(`${(newArray[currentSlideIndex]/newArray[newArray.length-1])*100}%`); 
+    // need percentage
   }
-  
+
   next.on('click',function(){
     if(window.outerWidth >= 768 && currentSlideIndex === (newArray.length-1)){
       console.log('stopHere');
     } else {
       currentSlideIndex++;
       handdleSwipe(currentSlideIndex);
+    }
+    if(currentSlideIndex === 0) {
+      prev.addClass('deactivateLink');
+      next.removeClass('deactivateLink');
+    } else if(currentSlideIndex ===(newArray.length-1)){
+      next.addClass('deactivateLink');
+      prev.removeClass('deactivateLink');
     }
   });
 
@@ -72,10 +82,7 @@ $(function(){
     currentSlideIndex--;
     handdleSwipe(currentSlideIndex);
   });
-  
 
   }
-
-  
 })
 

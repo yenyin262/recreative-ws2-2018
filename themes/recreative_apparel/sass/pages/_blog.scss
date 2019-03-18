@@ -141,9 +141,10 @@
 
 .outer-wrapper-progress{
   width: 90vw;
-  margin: 20px auto;
+  margin: 0 auto;
   @include tablet {
     width: 95vw;
+    margin: 20px auto;
   }
   .arrow-ui{
     text-align: right;
@@ -163,6 +164,7 @@
     height: 4px;
     background-color: $color__text-main;
     width: 0;
+    transition: width 1s;
 
 
   }
@@ -178,7 +180,10 @@
 }
 
 .bottom-margin-50{
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
 }
 
 //styling the search form
@@ -199,4 +204,11 @@
 
   }
 
+}
+
+// disable link when reach the end of post 
+.deactivateLink {
+  pointer-events: none;
+  cursor: default;
+  color: $color__border-gray;
 }

@@ -1079,10 +1079,11 @@ a {
 
 .outer-wrapper-progress {
   width: 90vw;
-  margin: 20px auto; }
+  margin: 0 auto; }
   @media (min-width: 768px) {
     .outer-wrapper-progress {
-      width: 95vw; } }
+      width: 95vw;
+      margin: 20px auto; } }
   .outer-wrapper-progress .arrow-ui {
     text-align: right; }
     .outer-wrapper-progress .arrow-ui i {
@@ -1094,7 +1095,9 @@ a {
   .wrapper-progress-blog .inside-progress {
     height: 4px;
     background-color: #636363;
-    width: 0; }
+    width: 0;
+    -webkit-transition: width 1s;
+    transition: width 1s; }
 
 .top-banner {
   height: 94vh;
@@ -1103,7 +1106,10 @@ a {
   background-attachment: fixed; }
 
 .bottom-margin-50 {
-  margin-bottom: 50px; }
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .bottom-margin-50 {
+      margin-bottom: 50px; } }
 
 .blog-button-styling button {
   border: none;
@@ -1113,6 +1119,11 @@ a {
 
 .blog-button-styling input:focus {
   outline: none; }
+
+.deactivateLink {
+  pointer-events: none;
+  cursor: default;
+  color: #979797; }
 
 .page-template-page-impact .content-area {
   position: relative; }
