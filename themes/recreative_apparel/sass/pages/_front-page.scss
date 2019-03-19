@@ -55,9 +55,9 @@ html {
     @include desktop {
       background-size: cover;
     }
-    @include desktop-XL {
-      background-position: 0 9px;
-    }
+    // @include desktop-XL {
+    //   background-position: 0 9px;
+    // }
   }
 }
 
@@ -117,7 +117,7 @@ html {
       width: 270px;
     }
     @include desktop-XL {
-      font-size: 28px;
+      font-size: 23px;
     }
   }
   
@@ -146,7 +146,8 @@ html {
       width: 270px;
     }
     @include desktop-XL {
-      font-size: 25px;
+      font-size: 22px;
+      width: 374px;
     }
   }
 }
