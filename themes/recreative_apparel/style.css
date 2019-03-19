@@ -1637,9 +1637,6 @@ html {
     @media (min-width: 1024px) {
       .frontpage-top-content .image-class {
         background-size: cover; } }
-    @media (min-width: 1920px) {
-      .frontpage-top-content .image-class {
-        background-position: 0 9px; } }
 
 .frontpage-content {
   margin: 0; }
@@ -1695,7 +1692,7 @@ html {
         width: 270px; } }
     @media (min-width: 1920px) {
       .frontpage-content .ra-statement {
-        font-size: 28px; } }
+        font-size: 23px; } }
   .frontpage-content .home-statement {
     font-family: "Avenir Book";
     text-align: left;
@@ -1720,7 +1717,8 @@ html {
         width: 270px; } }
     @media (min-width: 1920px) {
       .frontpage-content .home-statement {
-        font-size: 25px; } }
+        font-size: 22px;
+        width: 374px; } }
 
 .hentry {
   margin: 0; }
