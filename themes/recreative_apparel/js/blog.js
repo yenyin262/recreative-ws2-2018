@@ -43,7 +43,7 @@ $(function(){
   slides.forEach(setSlidePosition);
 
   // when I click right, move slides to right
-  const handdleSwipe = (currentSlideIndex) => {
+  const handleSwipe = (currentSlideIndex) => {
     let moveDirection = newArray[currentSlideIndex];
     console.log(moveDirection);
     console.log((newArray[currentSlideIndex]/newArray[newArray.length-1])*100);
@@ -52,37 +52,47 @@ $(function(){
     // need percentage
   }
 
+  function checkPosition(){
+    if(currentSlideIndex === 0) {
+      prev.addClass('deactivateLink');
+    } else if(currentSlideIndex === (newArray.length-1)){
+      next.addClass('deactivateLink');
+    } else {
+      prev.removeClass('deactivateLink');
+      next.removeClass('deactivateLink');
+    }
+  }
+  
   next.on('click',function(){
     if(window.outerWidth >= 768 && currentSlideIndex === (newArray.length-1)){
       console.log('stopHere');
     } else {
       currentSlideIndex++;
-      handdleSwipe(currentSlideIndex);
-    }
-    if(currentSlideIndex === 0) {
-      prev.addClass('deactivateLink');
-      next.removeClass('deactivateLink');
-    } else if(currentSlideIndex ===(newArray.length-1)){
-      next.addClass('deactivateLink');
-      prev.removeClass('deactivateLink');
+      handleSwipe(currentSlideIndex);
+      console.log(currentSlideIndex);
+      checkPosition();
     }
   });
 
-  track.on('scroll',function(){
-    if(window.outerWidth >= 768 && currentSlideIndex === (newArray.length-1)){
-      console.log('stopHere');
-    } else {
-      currentSlideIndex++;
-      handdleSwipe(currentSlideIndex);
-    }
-  });
-
+  
   // when I click left, move slides to left
   prev.click(() => {
     currentSlideIndex--;
-    handdleSwipe(currentSlideIndex);
+    handleSwipe(currentSlideIndex);
+    checkPosition();
   });
 
   }
 })
+
+// track.on('scroll',function(){
+  //   checkPosition();
+  //   if(window.outerWidth >= 768 && currentSlideIndex === (newArray.length-1)){
+  //     console.log('stopHere');
+  //   } else {
+  //     currentSlideIndex++;
+  //     handleSwipe(currentSlideIndex);
+  //   }
+  // });
+
 

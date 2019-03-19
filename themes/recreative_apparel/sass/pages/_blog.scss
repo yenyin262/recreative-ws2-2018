@@ -181,9 +181,6 @@
 
 .bottom-margin-50{
   margin-bottom: 15px;
-  @include tablet {
-    margin-bottom: 50px;
-  }
 }
 
 //styling the search form
@@ -212,3 +209,4 @@
   cursor: default;
   color: $color__border-gray;
 }
+

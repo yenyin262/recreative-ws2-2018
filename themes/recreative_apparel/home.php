@@ -37,7 +37,7 @@ get_header(); ?>
 
       <div class="outer-wrapper-progress">
         <div class="arrow-ui">
-          <i id="left-arrow" class="fas fa-chevron-left"></i>
+          <i id="left-arrow" class="fas fa-chevron-left deactivateLink"></i>
           <i id="right-arrow" class="fas fa-chevron-right"></i>
         </div>
         <div class="wrapper-progress-blog">
