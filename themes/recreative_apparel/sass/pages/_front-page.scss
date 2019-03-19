@@ -76,6 +76,7 @@ html {
   }
   .ra-front-page-logo {
     display: none;
+    position: fixed;
     @include desktop {
       background-image: url("../../images/RA-blue-logo.svg");
       width: 102px;
