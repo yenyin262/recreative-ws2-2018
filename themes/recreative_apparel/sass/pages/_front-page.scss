@@ -15,80 +15,53 @@ html {
   @include desktop {
     height: 90vh;
   }
-}
-.ra-statement {
-  width: 269px;
-  line-height: 1.7;
-  margin-left: 20px;
-  font-family: Avenir Book;
-  font-size: 27px;
-  color: #0545b2;
-  font-weight: bolder;
-  margin-top: 30px;
+  .ra-logo {
+    background-image: url(../../images/RA-logo.svg);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 9px;
+    z-index: 999;
+    background-size: 78%;
+    background-repeat: no-repeat;
 
-  @include tablet {
-    width: 359px;
-    margin-bottom: 0;
-    margin-left: 100px;
-    margin-top: 44px;
-  }
-  @include desktop {
-    margin-top: 30px;
-    width: 240px;
-    font-size: 23px;
-  }
-  @include desktop-large {
-    font-size: 25px;
-    width: 270px;
-  }
-}
+    @include tablet {
+        width: 102px;
+        height: 102px;
+      margin-top: 44px;
+    }
 
-.home-statement {
-  font-family: "Avenir Book";
-  text-align: left;
-  line-height: 1.7;
-  margin-left: 20px;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  width: 270px;
- font-size:16px;
-
-  @include tablet {
-    width: 442px;
-    margin-left: 100px;
+    @include desktop {
+      background-image: none;
+    
+    }
   }
-
-  @include desktop {
-    width: 253px;
-    font-size: 18px;
-    margin-top: 25px;
-  }
-  @include desktop-large {
-    font-size: 22px;
-    width: 270px;
-  }
-}
-
-.image-class {
-  height: 62vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  position: relative;
-  bottom: 20%;
-  width: 102%;
-
-  @include tablet {
-    position: unset;
-    bottom: unset;
-    height: 90vh;
-  }
-
-  @include desktop {
-    background-position: bottom;
+  .image-class {
+    height: 62vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    bottom: 20%;
+    width: 102%;
+  
+    @include tablet {
+      position: unset;
+      bottom: unset;
+      height: 90vh;
+    }
+  
+    @include desktop {
+      background-size: cover;
+    }
+    // @include desktop-XL {
+    //   background-position: 0 9px;
+    // }
   }
 }
+
+
 .frontpage-content {
   margin: 0;
 
@@ -101,22 +74,88 @@ html {
     height: 90vh;
     width: 48%;
   }
-}
-
-.ra-blue-logo,
-.ra-front-page-logo {
-  display: none;
-  @include desktop {
-    background-image: url("../../images/RA-blue-logo.svg");
-    width: 102px;
-    height: 102px;
+  .ra-front-page-logo {
+    display: none;
+    position: fixed;
+    @include desktop {
+      background-image: url("../../images/RA-blue-logo.svg");
+      width: 102px;
+      height: 102px;
+      margin-left: 20px;
+      margin-top: 50px;
+      display: inherit;
+      background-size: 90%;
+      background-repeat: no-repeat;
+    }
+    @include desktop-XL {
+      width: 160px;
+      height: 160px;
+    }
+  }
+  .ra-statement {
+    width: 269px;
+    line-height: 1.7;
     margin-left: 20px;
-    margin-top: 50px;
-    display: inherit;
-    background-size: 90%;
-    background-repeat: no-repeat;
+    font-family: Avenir Book;
+    font-size: 27px;
+    color: #0545b2;
+    font-weight: bolder;
+    margin-top: 30px;
+  
+    @include tablet {
+      width: 359px;
+      margin-bottom: 0;
+      margin-left: 100px;
+      margin-top: 44px;
+    }
+    @include desktop {
+      margin-top: 30px;
+      width: 240px;
+      font-size: 23px;
+    }
+    @include desktop-large {
+      font-size: 25px;
+      width: 270px;
+    }
+    @include desktop-XL {
+      font-size: 23px;
+    }
+  }
+  
+  .home-statement {
+    font-family: "Avenir Book";
+    text-align: left;
+    line-height: 1.7;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 270px;
+    font-size: 16px;
+  
+    @include tablet {
+      width: 442px;
+      margin-left: 100px;
+    }
+  
+    @include desktop {
+      width: 253px;
+      font-size: 18px;
+      margin-top: 25px;
+    }
+    @include desktop-large {
+      font-size: 19px;
+      width: 270px;
+    }
+    @include desktop-XL {
+      font-size: 22px;
+      width: 374px;
+    }
   }
 }
+
+
+
+
 
 .hentry {
   margin: 0;

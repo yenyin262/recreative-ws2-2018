@@ -16,6 +16,10 @@
 /* MEDIA QUERIES  */
 
 /********************************************************/
+@mixin desktop-XL {
+    @media (min-width: $breakpoint-desktop-XL) {
+        @content;
+    }};
 @mixin desktop-large {
     @media (min-width: $breakpoint-desktop-large) {
         @content;

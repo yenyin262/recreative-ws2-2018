@@ -13,18 +13,20 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="content-section">
-                  <div class="blog-wrapper">
-                    <div id="blogCarousel" class="blog-carousel">
-                      <?php while (have_posts()): the_post();?>
-                            <?php get_template_part('template-parts/content', 'home-blog');?>
-                          <?php endwhile; // End of the loop. ?>
-                      <?php wp_reset_postdata();?>
-                    </div>
-                  </div>
-              <div class="wrapper-progress-blog">
-                <div id="inProgress" class="inside-progress"></div>
-              </div>
-           </div>		<?php endif; ?>
+      <div class="blog-wrapper">
+        <div id="blogCarousel" class="blog-carousel">
+          <?php while (have_posts()): the_post();?>
+            <?php get_template_part('template-parts/content', 'home-blog');?>
+          <?php endwhile; // End of the loop. ?>
+          <?php wp_reset_postdata();?>
+        </div>
+      </div>
+      <div class="wrapper-progress-blog">
+        <div id="inProgress" class="inside-progress"></div>
+      </div>
+    </div>	
+    <?php endif; ?>
+    
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">

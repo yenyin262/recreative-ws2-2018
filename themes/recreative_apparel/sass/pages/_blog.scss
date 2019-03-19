@@ -11,7 +11,6 @@
   width: 90%;
   overflow: hidden;
   margin: 0 auto;
-  height: 500px;
 
   @include tablet {
     width: 95%;
@@ -22,6 +21,9 @@
     height: 570px;
   }
   
+  .margin-carousel-ui{
+    margin-left:0;
+  }
 
   .blog-carousel{
 
@@ -29,6 +31,8 @@
     overflow-y: hidden; 
     white-space: nowrap;
     height: 100%;
+    margin-left: 0px;
+    transition: margin-left .2s;
     
     .post1{
     
@@ -79,7 +83,8 @@
       }
 
       article {
-
+        
+        max-width: 90vw;
         margin: 0;
         height: 100%;
         display: flex;
@@ -136,9 +141,10 @@
 
 .outer-wrapper-progress{
   width: 90vw;
-  margin: 20px auto;
+  margin: 0 auto;
   @include tablet {
     width: 95vw;
+    margin: 20px auto;
   }
   .arrow-ui{
     text-align: right;
@@ -158,6 +164,7 @@
     height: 4px;
     background-color: $color__text-main;
     width: 0;
+    transition: width 1s;
 
 
   }
@@ -173,7 +180,10 @@
 }
 
 .bottom-margin-50{
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
 }
 
 //styling the search form
@@ -194,4 +204,11 @@
 
   }
 
+}
+
+// disable link when reach the end of post 
+.deactivateLink {
+  pointer-events: none;
+  cursor: default;
+  color: $color__border-gray;
 }
