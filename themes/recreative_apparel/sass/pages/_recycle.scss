@@ -31,6 +31,7 @@ wheel - contenedor
     left: 0;
     right: 0;
     margin: auto;
+    position: -webkit-sticky;
     position: sticky;
     padding-top: 150px;
     height: auto;
@@ -38,6 +39,7 @@ wheel - contenedor
     z-index: 2;
 
     @include mobile-recycle {
+        position: -webkit-sticky;
         position: sticky;
         display: inline-block;
         margin-top:100px;
@@ -101,16 +103,26 @@ text - contenedor
 }
 
 .lateralMovement{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 360vw;
 
     @include mobile-recycle {
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
         }
 }
 .story-recycle{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-width: 90vw;
     margin: 0 5vw;
 
@@ -147,6 +159,7 @@ text - contenedor
     display: none;
     @include mobile-recycle {
         display: block;
+        position: -webkit-sticky;
         position: sticky;
         text-align: right;
         margin-right: 33vw;
@@ -161,6 +174,7 @@ text - contenedor
     display: none;
     @include mobile-recycle {
         display: block;
+        position: -webkit-sticky;
         position: sticky;
         text-align: right;
         margin-top: 20vh;
@@ -175,6 +189,7 @@ text - contenedor
     display: none;
     background: white;
     padding: 20px 0;
+    position: -webkit-sticky;
     position: sticky;
     height: auto;
     top: 50px;

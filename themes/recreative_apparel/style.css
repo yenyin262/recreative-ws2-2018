@@ -1468,8 +1468,8 @@ text - contenedor
     .lateralMovement {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .story-recycle {
   display: -webkit-box;
@@ -1477,8 +1477,8 @@ text - contenedor
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-width: 90vw;
   margin: 0 5vw; }
   .story-recycle h2 {
@@ -1826,7 +1826,7 @@ html {
     text-transform: capitalize;
     margin-bottom: 20px;
     display: grid;
-    grid-template-areas: ' one two' 'three three';
+    grid-template-areas: ' one two' 'three three';
     width: 250px; }
     .blog-content-flex .single-blog-meta .author-info {
       display: -webkit-box;
