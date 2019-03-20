@@ -1472,13 +1472,16 @@ text - contenedor
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 360vw; }
+  width: 360vw;
+  margin-top: 15vh; }
   @media (min-width: 600px) {
     .lateralMovement {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 10vh;
+      margin-top: 0; } }
 
 .story-recycle {
   display: -webkit-box;
@@ -1494,7 +1497,7 @@ text - contenedor
     color: #0545b2;
     margin-bottom: 1rem; }
   .story-recycle p {
-    font-size: 0.6rem; }
+    font-size: 1rem; }
     @media (min-width: 600px) {
       .story-recycle p {
         margin-bottom: 100px;
@@ -1847,7 +1850,7 @@ html {
     text-transform: capitalize;
     margin-bottom: 20px;
     display: grid;
-    grid-template-areas: ' one two' 'three three';
+    grid-template-areas: ' one two' 'three three';
     width: 250px; }
     .blog-content-flex .single-blog-meta .author-info {
       display: -webkit-box;

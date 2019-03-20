@@ -7,7 +7,7 @@ $(function () {
     mobileController(mobileModel, mobileView);
 
     window.onresize = ()=>{
-      $('.lateralMovement').css('margin-left',0);
+      $('.lateralMovement').animate({'margin-left':0},200);
     }
  }
 })
