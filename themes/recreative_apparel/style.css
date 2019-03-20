@@ -1088,12 +1088,12 @@ a {
       margin: 20px auto; } }
   .outer-wrapper-progress .arrow-ui {
     text-align: right; }
-    @media (min-width: 768px) {
-      .outer-wrapper-progress .arrow-ui {
-        display: none; } }
     .outer-wrapper-progress .arrow-ui i {
       margin-left: 10px;
       cursor: pointer; }
+      @media (min-width: 768px) {
+        .outer-wrapper-progress .arrow-ui i {
+          display: none; } }
 
 .wrapper-progress-blog {
   background-color: #979797; }

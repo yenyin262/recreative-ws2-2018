@@ -152,12 +152,12 @@
   }
   .arrow-ui{
     text-align: right;
-    @include tablet {
-      display: none;
-    }
     i{
       margin-left: 10px;
       cursor: pointer;
+      @include tablet {
+        display: none;
+      }
     }
   }
 }
