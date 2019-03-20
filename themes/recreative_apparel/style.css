@@ -1111,7 +1111,12 @@ a {
   background-attachment: fixed; }
 
 .bottom-margin-50 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 50px; }
+  @media (min-width: 1024px) {
+    .bottom-margin-50 {
+      margin-top: 90px;
+      margin-bottom: 50px; } }
 
 .blog-button-styling button {
   border: none;
