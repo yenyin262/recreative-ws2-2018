@@ -1148,7 +1148,8 @@ a {
     font-weight: bold; }
   .page-template-page-impact .impact-container .grid-impact {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container .grid-impact {
         display: grid;
@@ -1165,7 +1166,7 @@ a {
     font-size: 9rem;
     font-weight: 1000;
     height: 150px;
-    z-index: 10;
+    z-index: -1;
     text-align: right; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-number {
@@ -1183,7 +1184,7 @@ a {
     text-align: right;
     padding: 10px 0;
     margin-right: 20px;
-    z-index: 10; }
+    z-index: -1; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-heading {
         grid-column: 1/span 5;
@@ -1197,7 +1198,7 @@ a {
   .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-img {
     position: relative;
     top: 100px;
-    z-index: -1;
+    z-index: -2;
     left: 20px; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-img {
@@ -1216,7 +1217,8 @@ a {
         left: 90px; } }
   .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-text {
     margin-right: 20px;
-    text-align: right; }
+    text-align: right;
+    z-index: -1; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(odd) .grid-impact-text {
         grid-column: 1 /span 3;
@@ -1232,9 +1234,8 @@ a {
     font-size: 9rem;
     font-weight: 1000;
     height: 150px;
-    z-index: 10;
     text-align: left;
-    z-index: 100; }
+    z-index: -1; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-number {
         grid-column: 5 /span 2;
@@ -1250,7 +1251,7 @@ a {
     text-align: left;
     padding: 10px 0;
     margin-left: 20px;
-    z-index: 100; }
+    z-index: -1; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-heading {
         grid-column: 6/span 4;
@@ -1280,7 +1281,8 @@ a {
         grid-row: 1 / span 4;
         top: 100px; } }
   .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-text {
-    margin-left: 20px; }
+    margin-left: 20px;
+    z-index: -1; }
     @media (min-width: 768px) {
       .page-template-page-impact .impact-container section:nth-child(even) .grid-impact-text {
         padding: 20px 0;
