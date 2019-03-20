@@ -1567,8 +1567,9 @@ text - contenedor
       font-size: 20px; } }
 
 .shop-content p {
-  text-align: center;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 60%;
+  margin: 0 auto; }
   @media (min-width: 768px) {
     .shop-content p {
       font-size: 20px; } }
@@ -1580,14 +1581,8 @@ text - contenedor
   height: 27px;
   margin-top: 20px;
   background-repeat: no-repeat;
-  left: 26%;
+  background-position: center;
   top: 20px; }
-  @media (min-width: 768px) {
-    .rc-logo {
-      left: 37%; } }
-  @media (min-width: 1024px) {
-    .rc-logo {
-      left: 41%; } }
 
 .rc-shop-logo {
   background-image: url("../../images/rclogo.svg");
@@ -1596,13 +1591,7 @@ text - contenedor
   height: 27px;
   margin-top: 20px;
   background-repeat: no-repeat;
-  left: 26%; }
-  @media (min-width: 768px) {
-    .rc-shop-logo {
-      left: 37%; } }
-  @media (min-width: 1024px) {
-    .rc-shop-logo {
-      left: 41%; } }
+  background-position: center; }
 
 html {
   margin-top: 0; }
