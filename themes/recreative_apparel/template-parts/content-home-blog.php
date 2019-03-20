@@ -13,7 +13,6 @@
     <div class="upper-content">
       <div>
         <?php the_title( '<h3>', '</h3>' ); ?>
-
         <?php if ( has_post_thumbnail() ) : ?>
           <?php the_post_thumbnail( 'large' ); ?>
         <?php endif; ?>
@@ -38,6 +37,5 @@
     </div>
 
   </article>
-
 </div>
 
