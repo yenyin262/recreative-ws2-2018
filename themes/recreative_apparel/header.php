@@ -26,7 +26,6 @@
 						<a class="text-logo" href="//localhost:3000/recreative_apparel/"></a>
 					<?php if (  is_single() ): ?>
 					<a class="rc-logo brand-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-						<!-- <a class="ra-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>					 -->
 					<?php elseif( is_page('about') || is_page('impact')):  ?>
 						<a  class="white-logo brand-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 					<?php elseif( is_page('recycle')): ?>
