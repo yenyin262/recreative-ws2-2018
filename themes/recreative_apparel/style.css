@@ -1768,10 +1768,10 @@ html {
       height: 60vh; } }
   @media (min-width: 1024px) {
     .blog-entry-header {
-      height: 60vh; } }
+      height: 70vh; } }
   .blog-entry-header .single-post-hero {
     background-size: cover;
-    height: 50vh;
+    height: 20vh;
     width: 100%; }
     @media (min-width: 768px) {
       .blog-entry-header .single-post-hero {

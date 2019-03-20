@@ -32,12 +32,12 @@
   }
 
   @include desktop {
-    height: 60vh;
+    height: 70vh;
   }
 
   .single-post-hero{
     background-size: cover;
-    height: 50vh; 
+    height: 20vh;
     width: 100%;
     @include tablet {
       height: 100%;
