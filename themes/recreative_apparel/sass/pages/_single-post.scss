@@ -1,5 +1,8 @@
 .wrapper-20{
   margin: 0 20px;
+  @include desktop {
+    margin: 0 30px;
+  }
 }
 
 .single-post-image{
@@ -22,18 +25,28 @@
   flex-flow: column nowrap;
   margin: 0;
 
-  h1 {
-    margin: 0;
-  }
-
   @include tablet {
     flex-flow: row nowrap;
     flex-direction: row-reverse;
-    height: auto;
+    height: 60vh;
   }
 
   @include desktop {
-    height: 561px;
+    height: 60vh;
+  }
+
+  .single-post-hero{
+    background-size: cover;
+    height: 50vh; 
+    width: 100%;
+    @include tablet {
+      height: 100%;
+      width: 50%;
+    }
+  }
+
+  h1 {
+    margin: 0;
   }
 
   .wp-post-image{
@@ -58,7 +71,7 @@
       justify-content: center;
       align-items: center;
       background-color: #F2F2F2;
-      font-size: 65px;
+      font-size: 80px;
       line-height: 1em;
       padding: 20px;
       width: 50%;
@@ -66,7 +79,7 @@
     }
 
     @include desktop {
-      font-size: 110px;
+      font-size: 105px;
       line-height: 1.2em;
     }
     
@@ -165,4 +178,9 @@
       font-size: 2rem;
     }
   }
+}
+
+.single-footer-image {
+  width: 300px;
+  background-size: cover;
 }

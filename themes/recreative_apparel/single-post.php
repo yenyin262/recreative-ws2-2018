@@ -15,6 +15,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'single-blog' ); ?>
 
 			<?php //the_post_navigation(); ?>
+			
 			<?php get_template_part( 'template-parts/content', 'post-navigation' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
