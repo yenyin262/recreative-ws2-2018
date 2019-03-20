@@ -1088,12 +1088,12 @@ a {
       margin: 20px auto; } }
   .outer-wrapper-progress .arrow-ui {
     text-align: right; }
-    @media (min-width: 768px) {
-      .outer-wrapper-progress .arrow-ui {
-        display: none; } }
     .outer-wrapper-progress .arrow-ui i {
       margin-left: 10px;
       cursor: pointer; }
+      @media (min-width: 768px) {
+        .outer-wrapper-progress .arrow-ui i {
+          display: none; } }
 
 .wrapper-progress-blog {
   background-color: #979797; }
@@ -1111,7 +1111,12 @@ a {
   background-attachment: fixed; }
 
 .bottom-margin-50 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 50px; }
+  @media (min-width: 1024px) {
+    .bottom-margin-50 {
+      margin-top: 90px;
+      margin-bottom: 50px; } }
 
 .blog-button-styling button {
   border: none;
@@ -1690,7 +1695,7 @@ html {
         margin-top: 44px; } }
     @media (min-width: 1024px) {
       .frontpage-content .ra-statement {
-        margin-top: 30px;
+        margin-top: 200px;
         width: 240px;
         font-size: 23px; } }
     @media (min-width: 1200px) {
@@ -1699,6 +1704,7 @@ html {
         width: 270px; } }
     @media (min-width: 1920px) {
       .frontpage-content .ra-statement {
+        margin-top: 250px;
         font-size: 23px; } }
   .frontpage-content .home-statement {
     font-family: "Avenir Book";

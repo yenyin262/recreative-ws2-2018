@@ -27,14 +27,13 @@ html {
     background-repeat: no-repeat;
 
     @include tablet {
-        width: 102px;
-        height: 102px;
+      width: 102px;
+      height: 102px;
       margin-top: 44px;
     }
 
     @include desktop {
       background-image: none;
-    
     }
   }
   .image-class {
@@ -45,22 +44,18 @@ html {
     position: relative;
     bottom: 20%;
     width: 102%;
-  
+
     @include tablet {
       position: unset;
       bottom: unset;
       height: 90vh;
     }
-  
+
     @include desktop {
       background-size: cover;
     }
-    // @include desktop-XL {
-    //   background-position: 0 9px;
-    // }
   }
 }
-
 
 .frontpage-content {
   margin: 0;
@@ -101,7 +96,7 @@ html {
     color: #0545b2;
     font-weight: bolder;
     margin-top: 30px;
-  
+
     @include tablet {
       width: 359px;
       margin-bottom: 0;
@@ -109,7 +104,7 @@ html {
       margin-top: 44px;
     }
     @include desktop {
-      margin-top: 30px;
+      margin-top: 200px;
       width: 240px;
       font-size: 23px;
     }
@@ -118,10 +113,11 @@ html {
       width: 270px;
     }
     @include desktop-XL {
+      margin-top: 250px;
       font-size: 23px;
     }
   }
-  
+
   .home-statement {
     font-family: "Avenir Book";
     text-align: left;
@@ -131,12 +127,12 @@ html {
     margin-bottom: 100px;
     width: 270px;
     font-size: 16px;
-  
+
     @include tablet {
       width: 442px;
       margin-left: 100px;
     }
-  
+
     @include desktop {
       width: 253px;
       font-size: 18px;
@@ -152,10 +148,6 @@ html {
     }
   }
 }
-
-
-
-
 
 .hentry {
   margin: 0;

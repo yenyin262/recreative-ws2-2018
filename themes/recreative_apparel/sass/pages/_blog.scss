@@ -152,12 +152,12 @@
   }
   .arrow-ui{
     text-align: right;
-    @include tablet {
-      display: none;
-    }
     i{
       margin-left: 10px;
       cursor: pointer;
+      @include tablet {
+        display: none;
+      }
     }
   }
 }
@@ -188,6 +188,11 @@
 
 .bottom-margin-50{
   margin-bottom: 15px;
+  margin-top: 50px;
+  @include desktop {
+    margin-top: 90px;
+    margin-bottom:50px;
+  }
 }
 
 //styling the search form
