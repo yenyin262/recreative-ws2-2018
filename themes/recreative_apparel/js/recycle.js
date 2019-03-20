@@ -1,15 +1,15 @@
 $(function () {
 
   if ($('body').hasClass('page-id-18')) {
+     
     controller(viewCtrl, modelCtrl);
     arrowController(arrowModel, arrowView);
     mobileController(mobileModel, mobileView);
 
-
     window.onresize = ()=>{
       $('.lateralMovement').css('margin-left',0);
     }
-  }
+ }
 })
 
 let modelCtrl = (function () {
@@ -18,14 +18,8 @@ let modelCtrl = (function () {
   return {
     calculateScroll: function (info, textR) {
 
-
-      if (info.pageY === undefined) {
-        data = info.path[1].pageYOffset - textR;
-
-      } else {
-        data = info.pageY - textR;
-      }
-
+      data = window.pageYOffset - textR;
+     
       max = $('.wheelPercentage')[0].offsetTop;
       hScreen = $(window).innerHeight();
       percentage = Math.round((data / (max - textR - hScreen / 2)) * 100);
