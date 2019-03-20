@@ -15,8 +15,5 @@ $(function(){
         $('#progressAbout').width(`${updateProgress*100}%`);
   
       })
-    }
-  
-  })
-  
-  
+  }
+})
