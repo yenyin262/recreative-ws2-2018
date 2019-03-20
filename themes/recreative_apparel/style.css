@@ -1688,7 +1688,7 @@ html {
         margin-top: 44px; } }
     @media (min-width: 1024px) {
       .frontpage-content .ra-statement {
-        margin-top: 30px;
+        margin-top: 200px;
         width: 240px;
         font-size: 23px; } }
     @media (min-width: 1200px) {
@@ -1697,6 +1697,7 @@ html {
         width: 270px; } }
     @media (min-width: 1920px) {
       .frontpage-content .ra-statement {
+        margin-top: 250px;
         font-size: 23px; } }
   .frontpage-content .home-statement {
     font-family: "Avenir Book";

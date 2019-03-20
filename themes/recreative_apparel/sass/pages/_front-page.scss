@@ -104,7 +104,7 @@ html {
       margin-top: 44px;
     }
     @include desktop {
-      margin-top: 30px;
+      margin-top: 200px;
       width: 240px;
       font-size: 23px;
     }
@@ -113,6 +113,7 @@ html {
       width: 270px;
     }
     @include desktop-XL {
+      margin-top: 250px;
       font-size: 23px;
     }
   }
