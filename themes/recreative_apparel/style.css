@@ -1063,6 +1063,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 14px; }
+  .blog-entry-meta .blog-entry-wrapper {
+    margin: 0 20px; }
   .blog-entry-meta p {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1891,6 +1893,10 @@ html {
     text-decoration: none; }
     .post-up-next a .post-nav-title {
       font-size: 2rem; }
+
+.single-footer-image {
+  width: 300px;
+  background-size: cover; }
 
 .search-page-header {
   text-align: center;

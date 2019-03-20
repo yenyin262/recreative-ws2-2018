@@ -51,35 +51,26 @@ $(function(){
     $('#inProgress').width(`${(newArray[currentSlideIndex]/newArray[newArray.length-1])*100}%`); 
     // need percentage
   }
-
-  function checkPosition(){
-    if(currentSlideIndex === 0) {
-      prev.addClass('deactivateLink');
-    } else if(currentSlideIndex === (newArray.length-1)){
-      next.addClass('deactivateLink');
-    } else {
-      prev.removeClass('deactivateLink');
-      next.removeClass('deactivateLink');
-    }
-  }
   
   next.on('click',function(){
-    if(window.outerWidth >= 768 && currentSlideIndex === (newArray.length-1)){
-      console.log('stopHere');
+    prev.removeClass('deactivateLink');
+    if(window.outerWidth >= 768 || currentSlideIndex === (newArray.length-1)){
+      next.addClass('deactivateLink');
     } else {
       currentSlideIndex++;
       handleSwipe(currentSlideIndex);
       console.log(currentSlideIndex);
-      checkPosition();
     }
   });
-
   
   // when I click left, move slides to left
   prev.click(() => {
+    if(currentSlideIndex === 0) {
+      prev.addClass('deactivateLink');
+    }
+    next.removeClass('deactivateLink');
     currentSlideIndex--;
     handleSwipe(currentSlideIndex);
-    checkPosition();
   });
 
   }
