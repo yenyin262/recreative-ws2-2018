@@ -37,7 +37,7 @@
 
   .single-post-hero{
     background-size: cover;
-    height: 20vh;
+    height: 250px;
     width: 100%;
     @include tablet {
       height: 100%;
@@ -107,10 +107,11 @@
 
   display: flex; 
   flex-flow: column nowrap;
-  padding: 100px 0;
+  padding: 50px 0;
 
 
   @include tablet {
+    padding: 100px 0;
     flex-flow: row nowrap;
   }
 

@@ -1771,7 +1771,7 @@ html {
       height: 70vh; } }
   .blog-entry-header .single-post-hero {
     background-size: cover;
-    height: 20vh;
+    height: 250px;
     width: 100%; }
     @media (min-width: 768px) {
       .blog-entry-header .single-post-hero {
@@ -1834,9 +1834,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 100px 0; }
+  padding: 50px 0; }
   @media (min-width: 768px) {
     .blog-content-flex {
+      padding: 100px 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row nowrap;
