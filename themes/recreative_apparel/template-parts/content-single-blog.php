@@ -7,10 +7,12 @@
 <article class="blog-entry-wrapper" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="blog-entry-header">
-		<?php the_title( '<h1 class="blog-entry-title">', '</h1>' ); ?>
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+		<?php the_title( '<h1 class="blog-entry-title">', '</h1>' ); ?>
+		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), $size = 'large', $icon = false ); ?>
+			<div class="single-post-hero" style="background-image: url('<?php echo $image[0]; ?>')">
+			</div>
+		<?php endif ?>
 	</header>
 
 	<div class="blog-content-flex">

@@ -118,6 +118,10 @@
   justify-content: space-between;
   font-size: 14px;
 
+  .blog-entry-wrapper{
+    margin: 0 20px;
+  }
+
   p {
 
     display: flex; 
@@ -151,6 +155,9 @@
     i{
       margin-left: 10px;
       cursor: pointer;
+      @include tablet {
+        display: none;
+      }
     }
   }
 }
@@ -181,8 +188,10 @@
 
 .bottom-margin-50{
   margin-bottom: 15px;
-  @include tablet {
-    margin-bottom: 50px;
+  margin-top: 50px;
+  @include desktop {
+    margin-top: 90px;
+    margin-bottom:50px;
   }
 }
 
@@ -212,3 +221,4 @@
   cursor: default;
   color: $color__border-gray;
 }
+
