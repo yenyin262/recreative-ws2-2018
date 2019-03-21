@@ -1852,7 +1852,7 @@ html {
     text-transform: capitalize;
     margin-bottom: 20px;
     display: grid;
-    grid-template-areas: ' one two' 'three three';
+    grid-template-areas: ' one two' 'three three';
     width: 250px; }
     .blog-content-flex .single-blog-meta .author-info {
       display: -webkit-box;
