@@ -23,7 +23,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<a class="text-logo" href="//localhost:3000/recreative_apparel/"></a>
+						<a class="text-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 					<?php if (  is_single() ): ?>
 					<a class="rc-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 					<?php elseif( is_page('about') || is_page('impact')):  ?>
