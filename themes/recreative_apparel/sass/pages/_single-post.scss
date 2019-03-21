@@ -13,8 +13,11 @@
 
 .single-post-wrapper{
   nav{
-    margin-top:100px;
-    margin-bottom: 93px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 93px;
+    }
   }
 }
 
@@ -177,6 +180,15 @@
     text-decoration: none;
     .post-nav-title{
       font-size: 2rem;
+    }
+  }
+  .nav-author{
+    text-transform: capitalize;
+  }
+  .nav-meta-box{
+    margin-left:20px;
+    h1{
+      margin: 0;
     }
   }
 }
