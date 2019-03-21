@@ -9,7 +9,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main bottom-margin-50" role="main">
+		<main id="main" class="site-main" role="main">
 
     <?php 
       if (is_home() && get_option('page_for_posts') ) {

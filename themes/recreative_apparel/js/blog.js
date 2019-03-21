@@ -21,7 +21,7 @@ $(function(){
   const next = $('#right-arrow');
   const prev = $('#left-arrow'); 
   const slideWidth = slides[0].getBoundingClientRect().width;
-  const newArray = [];
+  let newArray = [];
   let currentSlideIndex = 0;
 
   $('.post1').each(function() {
@@ -30,9 +30,13 @@ $(function(){
 
   // need to fix this for when window size changes
   $(window).resize(function(){
-    newArray.push($('.post1')[0].offsetLeft);
-    console.log('resizing');
-    track.css('margin-left','0px');
+    newArray.length = 0;
+    $('.post1').each(function() {
+      newArray.push($(this)[0].offsetLeft);
+    });
+    console.log(newArray);
+    handleSwipe(0);
+    // track.css('margin-left','0px');
   });
   
   console.log(newArray);
@@ -54,7 +58,7 @@ $(function(){
   
   next.on('click',function(){
     prev.removeClass('deactivateLink');
-    if(window.outerWidth >= 768 || currentSlideIndex === (newArray.length-1)){
+    if(window.outerWidth >= '768px' || currentSlideIndex === (newArray.length-1)){
       next.addClass('deactivateLink');
     } else {
       currentSlideIndex++;
@@ -74,16 +78,4 @@ $(function(){
   });
 
   }
-})
-
-// track.on('scroll',function(){
-  //   checkPosition();
-  //   if(window.outerWidth >= 768 && currentSlideIndex === (newArray.length-1)){
-  //     console.log('stopHere');
-  //   } else {
-  //     currentSlideIndex++;
-  //     handleSwipe(currentSlideIndex);
-  //   }
-  // });
-
-
+});

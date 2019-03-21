@@ -145,7 +145,7 @@
 
 .outer-wrapper-progress{
   width: 90vw;
-  margin: 0 auto;
+  margin: 0px auto 20px auto;
   @include tablet {
     width: 95vw;
     margin: 20px auto;
@@ -187,7 +187,7 @@
 }
 
 .bottom-margin-50{
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   margin-top: 50px;
   @include desktop {
     margin-top: 90px;
