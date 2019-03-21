@@ -107,12 +107,14 @@ text - contenedor
     display: -ms-flexbox;
     display: flex;
     width: 360vw;
+    margin-top: 15vh;
 
     @include mobile-recycle {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
+                  margin-top: 0;
         }
 }
 .story-recycle{
@@ -133,7 +135,7 @@ text - contenedor
 
     p{
         
-        font-size: 0.6rem;
+        font-size: 1rem;
     
         @include mobile-recycle {
             margin-bottom: 100px;
