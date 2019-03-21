@@ -29,10 +29,10 @@
 					<?php elseif( is_page('about') || is_page('impact')):  ?>
 						<a  class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 					<?php elseif( is_page('recycle')): ?>
-						<a  class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+						<a  class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 					<?php elseif( is_search() || is_page('shop')|| is_front_page()): ?>
 					<?php else : ?>
-						<a  class="ra-blue-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>	
+						<a  class="white-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>	
 					<?php endif; ?>
 				</div><!-- .site-branding -->          
 			</header><!-- #masthead -->
