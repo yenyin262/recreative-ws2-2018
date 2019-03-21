@@ -11,12 +11,12 @@
 
 			<footer id="colophon" class="site-footer">
 				<div class="subscribe-section">
-					<form class="subscribe-form"  action="#" method="get">
+					<form id="subscribe-submit" class="subscribe-form"  type="submit">
 					<input type="email" class="subscribe-email" placeholder="Subscribe" />
 					<button class="subscribe-btn" type="submit" value="Submit">></button>
 					<div class="notification-check">
 						<label><input type="checkbox" class="subscribe-checkbox"  value="notification" id="notification">
-						<span class="confirm-text">I would like to receieve emails with environmental tips, news and discounts.</span></label>
+						<span class="confirm-text">Please send me emails with environmental tips, news and discounts.</span></label>
 					</div>
 					</form>
 					

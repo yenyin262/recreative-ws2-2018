@@ -33,12 +33,14 @@
     const email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
     if (email_regex.test(val)) {
       console.log(email_regex.test(val));
+      checkBoxDiv.show();
       subscribeDiv.replaceWith(
         '<h3 class="blue-text">Welcome to Club Recreative!</h3>'
       );
     } else {
-      checkBoxDiv.show();
-      subscribeBtn.css('color', 'red');
+      subscribeBtn.replaceWith(
+        '<p style="color:red" > > please check your email</p>'
+      );
       emailBox
         .css('border-bottom', '2px solid red')
         .effect('shake', { times: 2, distance: 80 }, 600);
