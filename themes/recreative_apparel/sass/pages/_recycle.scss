@@ -85,7 +85,7 @@ text - contenedor
 
 .text-recycle{
     
-    margin-top:40px;
+    
     line-height: 1.5rem;
     overflow: hidden;
     @include mobile-recycle {
@@ -160,6 +160,7 @@ text - contenedor
 .arrow-down{
     display: none;
     @include mobile-recycle {
+        text-shadow: 2px 2px 9px white;
         display: block;
         position: -webkit-sticky;
         position: sticky;
@@ -175,6 +176,7 @@ text - contenedor
 .arrow-up{
     display: none;
     @include mobile-recycle {
+        text-shadow: 2px 2px 9px white;
         display: block;
         position: -webkit-sticky;
         position: sticky;
