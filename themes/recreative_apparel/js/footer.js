@@ -14,6 +14,7 @@
       $('.social-icon-section').hide();
     }
   });
+
   $('html').on('click', event => {
     if (
       !$(event.target).hasClass('subscribe-form') &&
@@ -37,7 +38,7 @@
       );
     } else {
       subscribeBtn.replaceWith(
-        '<p style="color:red" > > please check your email</p>'
+        '<button class="subscribe-btn" style="color:red" > > please check your email</button>'
       );
       emailBox
         .css('border-bottom', '2px solid red')
@@ -46,4 +47,14 @@
       }
 
   });
+
+  $('#subscribe-submit').on('submit', (e)=>{
+    e.preventDefault();
+    const val = emailBox.val();
+    const email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+    if (email_regex.test(val)) {
+      subscribeDiv.replaceWith(
+        '<h3 class="blue-text">Welcome to Club Recreative!</h3>'
+      )}
+  });  
 })(jQuery);

@@ -15,8 +15,9 @@
     $('html, body').animate({ scrollTop: navTop - 600 }, 800);
 
     $(window).on('scroll', function() {
-      let gap = window.innerWidth <= 425 ? 0 : 60 ;
+      let gap = window.innerWidth <= 425 ? 10 : 60 ;
       if ($window.scrollTop() >= navTop - gap) {
+        console.log(gap);
         $('.ra-blue-logo').css('display', 'none');
         $('.rc-logo').css('display', 'none');
         $('.white-logo').css('display', 'none');
