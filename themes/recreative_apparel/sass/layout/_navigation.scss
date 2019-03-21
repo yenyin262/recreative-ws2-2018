@@ -39,7 +39,7 @@ a {
 // 	margin-top: 50px;
 
 // }
-
+ 
 .menu-primary-menu-container {
 
 		position: relative;
@@ -48,6 +48,7 @@ a {
     border-top: 1px solid  #0545b2;
     z-index: 99;
 		background-color: #fff;
+		height: 80px;
 		
 	@include tablet { 
 
@@ -231,6 +232,7 @@ a {
 .sticky-nav {
 	position: sticky;
 	top: 0;
+	z-index: 10;
 }
 .home {
 	a {

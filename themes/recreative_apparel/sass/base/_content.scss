@@ -3,6 +3,10 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+.content-area {
+	background: #fff;
+	z-index: 3;
+}
 
 .sticky {
 	display: block;
