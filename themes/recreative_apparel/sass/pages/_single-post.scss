@@ -13,8 +13,11 @@
 
 .single-post-wrapper{
   nav{
-    margin-top:100px;
-    margin-bottom: 93px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 93px;
+    }
   }
 }
 
@@ -32,12 +35,12 @@
   }
 
   @include desktop {
-    height: 60vh;
+    height: 70vh;
   }
 
   .single-post-hero{
     background-size: cover;
-    height: 50vh; 
+    height: 250px;
     width: 100%;
     @include tablet {
       height: 100%;
@@ -107,10 +110,11 @@
 
   display: flex; 
   flex-flow: column nowrap;
-  padding: 100px 0;
+  padding: 50px 0;
 
 
   @include tablet {
+    padding: 100px 0;
     flex-flow: row nowrap;
   }
 
@@ -176,6 +180,15 @@
     text-decoration: none;
     .post-nav-title{
       font-size: 2rem;
+    }
+  }
+  .nav-author{
+    text-transform: capitalize;
+  }
+  .nav-meta-box{
+    margin-left:20px;
+    h1{
+      margin: 0;
     }
   }
 }

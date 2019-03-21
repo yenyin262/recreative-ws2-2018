@@ -1090,7 +1090,7 @@ a {
 
 .outer-wrapper-progress {
   width: 90vw;
-  margin: 0 auto; }
+  margin: 0px auto 20px auto; }
   @media (min-width: 768px) {
     .outer-wrapper-progress {
       width: 95vw;
@@ -1120,7 +1120,7 @@ a {
   background-attachment: fixed; }
 
 .bottom-margin-50 {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   margin-top: 50px; }
   @media (min-width: 1024px) {
     .bottom-margin-50 {
@@ -1481,13 +1481,15 @@ text - contenedor
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 360vw; }
+  width: 360vw;
+  margin-top: 15vh; }
   @media (min-width: 600px) {
     .lateralMovement {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 0; } }
 
 .story-recycle {
   display: -webkit-box;
@@ -1503,7 +1505,7 @@ text - contenedor
     color: #0545b2;
     margin-bottom: 1rem; }
   .story-recycle p {
-    font-size: 0.6rem; }
+    font-size: 1rem; }
     @media (min-width: 600px) {
       .story-recycle p {
         margin-bottom: 100px;
@@ -1573,8 +1575,9 @@ text - contenedor
       font-size: 20px; } }
 
 .shop-content p {
-  text-align: center;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 60%;
+  margin: 0 auto; }
   @media (min-width: 768px) {
     .shop-content p {
       font-size: 20px; } }
@@ -1584,16 +1587,10 @@ text - contenedor
   position: fixed;
   width: 100%;
   height: 27px;
-  margin-top: 20px;
+  margin-top: 0px;
   background-repeat: no-repeat;
-  left: 26%;
+  background-position: center;
   top: 20px; }
-  @media (min-width: 768px) {
-    .rc-logo {
-      left: 37%; } }
-  @media (min-width: 1024px) {
-    .rc-logo {
-      left: 41%; } }
 
 .rc-shop-logo {
   background-image: url("../../images/rclogo.svg");
@@ -1602,13 +1599,7 @@ text - contenedor
   height: 27px;
   margin-top: 20px;
   background-repeat: no-repeat;
-  left: 26%; }
-  @media (min-width: 768px) {
-    .rc-shop-logo {
-      left: 37%; } }
-  @media (min-width: 1024px) {
-    .rc-shop-logo {
-      left: 41%; } }
+  background-position: center; }
 
 html {
   margin-top: 0; }
@@ -1755,8 +1746,11 @@ html {
   width: 100%; }
 
 .single-post-wrapper nav {
-  margin-top: 100px;
-  margin-bottom: 93px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .single-post-wrapper nav {
+      margin-bottom: 93px; } }
 
 .blog-entry-header {
   width: 100%;
@@ -1779,10 +1773,10 @@ html {
       height: 60vh; } }
   @media (min-width: 1024px) {
     .blog-entry-header {
-      height: 60vh; } }
+      height: 70vh; } }
   .blog-entry-header .single-post-hero {
     background-size: cover;
-    height: 50vh;
+    height: 250px;
     width: 100%; }
     @media (min-width: 768px) {
       .blog-entry-header .single-post-hero {
@@ -1845,9 +1839,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 100px 0; }
+  padding: 50px 0; }
   @media (min-width: 768px) {
     .blog-content-flex {
+      padding: 100px 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row nowrap;
@@ -1913,6 +1908,12 @@ html {
     text-decoration: none; }
     .post-up-next a .post-nav-title {
       font-size: 2rem; }
+  .post-up-next .nav-author {
+    text-transform: capitalize; }
+  .post-up-next .nav-meta-box {
+    margin-left: 20px; }
+    .post-up-next .nav-meta-box h1 {
+      margin: 0; }
 
 .single-footer-image {
   width: 300px;
