@@ -30,12 +30,17 @@ $(function(){
 
   // need to fix this for when window size changes
   $(window).resize(function(){
+    console.log(newArray);
+    currentSlideIndex = 0;
+    handleSwipe(0);
+    prev.addClass('deactivateLink');
+    next.removeClass('deactivateLink');
     newArray.length = 0;
     $('.post1').each(function() {
       newArray.push($(this)[0].offsetLeft);
     });
+    console.log(currentSlideIndex);
     console.log(newArray);
-    handleSwipe(0);
     // track.css('margin-left','0px');
   });
   
@@ -56,7 +61,7 @@ $(function(){
     // need percentage
   }
   
-  next.on('click',function(){
+  next.click(() => {
     prev.removeClass('deactivateLink');
     if(window.outerWidth >= '768px' || currentSlideIndex === (newArray.length-1)){
       next.addClass('deactivateLink');
