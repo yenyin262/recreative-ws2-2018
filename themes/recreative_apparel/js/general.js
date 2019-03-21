@@ -15,19 +15,14 @@
     $('html, body').animate({ scrollTop: navTop - 600 }, 800);
 
     $(window).on('scroll', function() {
-      if ($window.hasClass('ra-blue-logo')) {
-        console.log('has blue');
-      }
-      if ($window.scrollTop() >= navTop) {
-        console.log('text-logo!');
+      if ($window.scrollTop() >= navTop - 60) {
         $('.ra-blue-logo').css('display', 'none');
         $('.rc-logo').css('display', 'none');
         if (!$('body').hasClass('single-post')) {
           $('.ra-front-page-logo').css('display', 'none');
-          $('.text-logo').css('display', 'block');
+          $('.text-logo').fadeIn();
         }
       } else {
-        console.log('round logo');
         $('.ra-blue-logo').css('display', 'block');
         $('.white-logo').css('display', 'block');
         $('.rc-logo').css('display', 'block');
