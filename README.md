@@ -1,6 +1,6 @@
-# RED Starter
+# Recreative Apparel
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A website for a lifestyle brand featuring a blog.
 
 ## Installation
 
@@ -8,14 +8,14 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter-master` directory
+### 2. Install the dev dependencies
 
-Make sure that the theme directory name is project appropriate!
+Next you'll need to run `npm install` **inside the theme directory -> recreative_apparel** next to install the node modules you'll need for Gulp, etc.
 
-### 3. Install the dev dependencies
+### 3. Use gulp for development
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+Run gulp if you plan to make any changes to the theme.
 
-### 4. Update the proxy in `gulpfile.js`
+### 4. Activate the theme in your wordpress installation
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+Activate the Recreative apparel theme in your Wordpress installation, and activate the Reacreative functionality, Recreative blocks, and the Custom Field Suite plugin.
